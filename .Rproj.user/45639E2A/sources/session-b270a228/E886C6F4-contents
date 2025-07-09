@@ -1,0 +1,33 @@
+# Ignorar carpeta de salida /docs
+files/
+# Si quieres mantener la carpeta vacía en el repo, pero no su contenido:
+# docs/*
+# !docs/.gitkeep
+
+# Archivos temporales de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos temporales de carpetas montadas
+._*
+
+# Icono de carpeta macOS
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Archivos temporales de editores comunes
+*.swp
+*.swo
+*.bak
+*.tmp
+*~
+
+# Archivos de caché del navegador/local
+.cache/
+node_modules/
+dist/
+
+# Archivos de sistema o configuración personal
+*.log.quarto/

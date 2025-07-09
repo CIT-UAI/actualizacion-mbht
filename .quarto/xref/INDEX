@@ -1,0 +1,35 @@
+{
+  "index.qmd": {
+    "index.html": "937299c1"
+  },
+  "references.qmd": {
+    "references.html": "2b69b2de"
+  },
+  "intro.qmd": {
+    "intro.html": "3ec424cf"
+  },
+  "marco_ref.qmd": {
+    "marco_ref.html": "2ae3fb6a"
+  },
+  "def_claves.qmd": {
+    "def_claves.html": "69b1ab0a"
+  },
+  "dim_mbht.qmd": {
+    "dim_mbht.html": "496d1d58"
+  },
+  "clas_institucionales.qmd": {
+    "clas_institucionales.html": "044e6dbb"
+  },
+  "met_actualizacion.qmd": {
+    "met_actualizacion.html": "1d8b5c95"
+  },
+  "proyectos.qmd": {
+    "proyectos.html": "802193c2"
+  },
+  "recomendaciones.qmd": {
+    "recomendaciones.html": "85d7bea2"
+  },
+  "anexos.qmd": {
+    "anexos.html": "ce2e315f"
+  }
+}
