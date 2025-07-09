@@ -4,15 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>5. Recomendaciones Operativas - MBHT</title>
+<title>Índice Completo - MBHT</title>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
+* { margin: 0; padding: 0; }
 html {
-  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: ui-sans-serif, system-ui, sans-serif;
   background: white !important;
   color: #111 !important;
 }
@@ -22,24 +18,10 @@ html {
   height: 100vh;
   background-color: white;
 }
-svg#mindmap .node > text {
-  fill: #111;
-  font-size: 14px;
-}
-svg#mindmap .link {
-  stroke: #ccc;
-  stroke-width: 1.5px;
-}
-svg#mindmap .node circle {
-  fill: #f9f9f9;
-  stroke: #999;
-  stroke-width: 1px;
-}
-@media (max-width: 768px) {
-  svg#mindmap {
-    font-size: 12px;
-  }
-}
+svg#mindmap .node > text { fill: #111; font-size: 14px; }
+svg#mindmap .link { stroke: #ccc; stroke-width: 1.5px; }
+svg#mindmap .node circle { fill: #f9f9f9; stroke: #999; stroke-width: 1px; }
+@media (max-width: 768px) { svg#mindmap { font-size: 12px; } }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
 </head>
@@ -50,26 +32,8 @@ svg#mindmap .node circle {
 <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script>
 
-<script>((l,U,M,R)=>{
-  const N=l();
-  const mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M);
-  window.mm=mm;
-
-  // crear toolbar mínima manualmente
-  const toolbar = new N.Toolbar({
-    items: [
-      N.Toolbar.createItem('zoom-in'),
-      N.Toolbar.createItem('zoom-out'),
-      N.Toolbar.createItem('fit')
-    ]
-  });
-  toolbar.attach(mm);
-  const toolbarEl = toolbar.render();
-  toolbarEl.style.position = "absolute";
-  toolbarEl.style.bottom = "20px";
-  toolbarEl.style.right = "20px";
-  document.body.append(toolbarEl);
-})(()=>window.markmap,null,{
+<script>
+const treeData = {
   "content":"5. Recomendaciones Operativas",
   "children":[
     {"content":"5.1. Coordinación Interinstitucional","children":[]},
@@ -79,7 +43,23 @@ svg#mindmap .node circle {
     {"content":"5.5. Participación Local y Validación Territorial","children":[]},
     {"content":"5.6. Sostenibilidad del Sistema MBHT","children":[]}
   ]
-})</script>
+};
+
+(() => {
+  const mm = window.markmap.Markmap.create("svg#mindmap", null, treeData);
+
+  // Ajuste inicial
+  setTimeout(() => mm.fit(), 500);
+
+  // Detectar clicks en nodos y encuadrar después de animar
+  const svg = document.querySelector('#mindmap');
+  svg.addEventListener('click', e => {
+    if (e.target.tagName === 'text' || e.target.tagName === 'circle') {
+      setTimeout(() => mm.fit(), 500);
+    }
+  });
+})();
+</script>
 
 </body>
 </html>

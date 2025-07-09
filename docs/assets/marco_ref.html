@@ -4,15 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Marco de Referencia - MBHT</title>
+<title>Índice Completo - MBHT</title>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
+* { margin: 0; padding: 0; }
 html {
-  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: ui-sans-serif, system-ui, sans-serif;
   background: white !important;
   color: #111 !important;
 }
@@ -22,39 +18,27 @@ html {
   height: 100vh;
   background-color: white;
 }
-svg#mindmap .node > text {
-  fill: #111;
-  font-size: 14px;
-}
-svg#mindmap .link {
-  stroke: #ccc;
-  stroke-width: 1.5px;
-}
-svg#mindmap .node circle {
-  fill: #f9f9f9;
-  stroke: #999;
-  stroke-width: 1px;
-}
-@media (max-width: 768px) {
-  svg#mindmap {
-    font-size: 12px;
-  }
-}
+svg#mindmap .node > text { fill: #111; font-size: 14px; }
+svg#mindmap .link { stroke: #ccc; stroke-width: 1.5px; }
+svg#mindmap .node circle { fill: #f9f9f9; stroke: #999; stroke-width: 1px; }
+@media (max-width: 768px) { svg#mindmap { font-size: 12px; } }
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
 </head>
 <body>
 <svg id="mindmap"></svg>
+
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script>
 
-<script>((l,U,M,R)=>{
-  const N=l();
-  window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M);
-})(()=>window.markmap,null,{
+<script>
+const treeData = {
   "content":"2. Marco de Referencia",
   "children":[
     {
       "content":"2.1. Definiciones clave",
+      "payload": { "fold": true },
       "children":[
         {"content":"2.1.1. Infraestructura territorial","children":[]},
         {"content":"2.1.2. Equipamientos","children":[]},
@@ -65,6 +49,7 @@ svg#mindmap .node circle {
     },
     {
       "content":"2.2. Dimensiones del Bienestar Territorial",
+      "payload": { "fold": true },
       "children":[
         {"content":"2.2.1. Accesibilidad Territorial","children":[]},
         {"content":"2.2.2. Seguridad y Prevención","children":[]},
@@ -75,6 +60,7 @@ svg#mindmap .node circle {
     },
     {
       "content":"2.3. Clasificaciones institucionales y complementarias",
+      "payload": { "fold": true },
       "children":[
         {"content":"2.3.1. Servicios Públicos","children":[]},
         {"content":"2.3.2. Nuevos Equipamientos","children":[]},
@@ -84,6 +70,23 @@ svg#mindmap .node circle {
       ]
     }
   ]
-})</script>
+};
+
+(() => {
+  const mm = window.markmap.Markmap.create("svg#mindmap", null, treeData);
+
+  // Ajuste inicial
+  setTimeout(() => mm.fit(), 500);
+
+  // Detectar clicks en nodos y encuadrar después de animar
+  const svg = document.querySelector('#mindmap');
+  svg.addEventListener('click', e => {
+    if (e.target.tagName === 'text' || e.target.tagName === 'circle') {
+      setTimeout(() => mm.fit(), 500);
+    }
+  });
+})();
+</script>
+
 </body>
 </html>

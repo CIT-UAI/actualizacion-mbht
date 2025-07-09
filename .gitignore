@@ -31,3 +31,5 @@ dist/
 
 # Archivos de sistema o configuración personal
 *.log.quarto/
+
+/.quarto/

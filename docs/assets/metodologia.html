@@ -4,15 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>3. Metodología de Actualización - MBHT</title>
+<title>Índice Completo - MBHT</title>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
+* { margin: 0; padding: 0; }
 html {
-  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: ui-sans-serif, system-ui, sans-serif;
   background: white !important;
   color: #111 !important;
 }
@@ -22,40 +18,27 @@ html {
   height: 100vh;
   background-color: white;
 }
-svg#mindmap .node > text {
-  fill: #111;
-  font-size: 14px;
-}
-svg#mindmap .link {
-  stroke: #ccc;
-  stroke-width: 1.5px;
-}
-svg#mindmap .node circle {
-  fill: #f9f9f9;
-  stroke: #999;
-  stroke-width: 1px;
-}
-@media (max-width: 768px) {
-  svg#mindmap {
-    font-size: 12px;
-  }
-}
+svg#mindmap .node > text { fill: #111; font-size: 14px; }
+svg#mindmap .link { stroke: #ccc; stroke-width: 1.5px; }
+svg#mindmap .node circle { fill: #f9f9f9; stroke: #999; stroke-width: 1px; }
+@media (max-width: 768px) { svg#mindmap { font-size: 12px; } }
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
 </head>
 <body>
 <svg id="mindmap"></svg>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script>
 
-<script>((l,U,M,R)=>{
-  const N=l();
-  window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M);
-})(()=>window.markmap,null,{
+<script>
+const treeData = {
   "content":"3. Metodología de Actualización",
   "children":[
     {
       "content":"3.1. Cálculo de Indicadores",
+      "payload": { "fold": true },
       "children":[
         {"content":"3.1.1. Tipos de variables utilizadas","children":[]},
         {"content":"3.1.2. Estructura del cálculo","children":[]},
@@ -65,6 +48,7 @@ svg#mindmap .node circle {
     },
     {
       "content":"3.2. Normalización",
+      "payload": { "fold": true },
       "children":[
         {"content":"3.2.1. Objetivo de la normalización","children":[]},
         {"content":"3.2.2. Criterios de la normalización","children":[]},
@@ -75,6 +59,7 @@ svg#mindmap .node circle {
     },
     {
       "content":"3.3. Ponderación",
+      "payload": { "fold": true },
       "children":[
         {"content":"3.3.1. Objetivo de la ponderación","children":[]},
         {"content":"3.3.2. Criterios de ponderación","children":[]},
@@ -85,6 +70,7 @@ svg#mindmap .node circle {
     },
     {
       "content":"3.4. Protocolos de Control de Calidad (QA/QC)",
+      "payload": { "fold": true },
       "children":[
         {"content":"3.4.1. Objetivos del control de calidad","children":[]},
         {"content":"3.4.2. Protocolos QA/QC aplicados","children":[]},
@@ -94,6 +80,7 @@ svg#mindmap .node circle {
     },
     {
       "content":"3.5. Validación Cruzada",
+      "payload": { "fold": true },
       "children":[
         {"content":"3.5.1. Objetivos de la validación cruzada","children":[]},
         {"content":"3.5.2. Tipos de validación cruzada","children":[]},
@@ -104,6 +91,7 @@ svg#mindmap .node circle {
     },
     {
       "content":"3.6. Georreferenciación",
+      "payload": { "fold": true },
       "children":[
         {"content":"3.6.1. Objetivos de la georreferenciación","children":[]},
         {"content":"3.6.2. Unidades espaciales utilizadas","children":[]},
@@ -115,7 +103,21 @@ svg#mindmap .node circle {
       ]
     }
   ]
-})</script>
+};(() => {
+  const mm = window.markmap.Markmap.create("svg#mindmap", null, treeData);
+
+  // Ajuste inicial
+  setTimeout(() => mm.fit(), 500);
+
+  // Detectar clicks en nodos y encuadrar después de animar
+  const svg = document.querySelector('#mindmap');
+  svg.addEventListener('click', e => {
+    if (e.target.tagName === 'text' || e.target.tagName === 'circle') {
+      setTimeout(() => mm.fit(), 500);
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
