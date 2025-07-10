@@ -1,15 +1,10 @@
----
-title: "Recomendaciones Operativas"
-subtitle: "Para la Acutulización de la MBHT 2025-2026"
-format: html
----
-
+# Recomendaciones Operativas {#sec-recomendaciones}
 
 <iframe src="assets/recomendaciones.html" width="100%" height="600px" style="border:none;"></iframe>
 
-## Coordinación Interinstitucional
-## Levantamiento de Información Territorial
-## Validación y Control de Calidad
-## Interoperabilidad y Estandarización
-## Participación Local y Validación Territorial
-## Sostenibilidad del Sistema MBHT
+## Coordinación Interinstitucional {#sec-recomendaciones-coordinacion}
+## Levantamiento de Información Territorial {#sec-recomendaciones-levantamiento}
+## Validación y Control de Calidad {#sec-recomendaciones-validacion}
+## Interoperabilidad y Estandarización {#sec-recomendaciones-interoperabilidad}
+## Participación Local y Validación Territorial {#sec-recomendaciones-participacion}
+## Sostenibilidad del Sistema MBHT {#sec-recomendaciones-sostenibilidad}

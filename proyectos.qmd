@@ -1,36 +1,34 @@
----
-title: "Proyectos de Actualización"
-format: html
----
+# Proyectos de Actualización {#sec-proyectos}
 
 <iframe src="assets/proyectos.html" width="100%" height="600px" style="border:none;"></iframe>
 
-## Proyecto 1: Actualización de la Dimensión Accesibilidad
-### Fases y Actividades
-### Riesgos y Estrategias de Mitigación
-### Recomendaciones Técnicas y Operativas
 
-## Proyecto 2
-### Fases y Actividades
-### Riesgos y Estrategias de Mitigación
-### Recomendaciones Técnicas y Operativas
+## Proyecto 1: Actualización de la Dimensión Accesibilidad {#sec-proyectos-1}
+### Fases y Actividades {#sec-proyectos-1-fases}
+### Riesgos y Estrategias de Mitigación {#sec-proyectos-1-riesgos}
+### Recomendaciones Técnicas y Operativas {#sec-proyectos-1-recomendaciones}
 
-## Proyecto 3
-### Fases y Actividades
-### Riesgos y Estrategias de Mitigación
-### Recomendaciones Técnicas y Operativas
+## Proyecto 2 {#sec-proyectos-2}
+### Fases y Actividades {#sec-proyectos-2-fases}
+### Riesgos y Estrategias de Mitigación {#sec-proyectos-2-riesgos}
+### Recomendaciones Técnicas y Operativas {#sec-proyectos-2-recomendaciones}
 
-## Proyecto 4
-### Fases y Actividades
-### Riesgos y Estrategias de Mitigación
-### Recomendaciones Técnicas y Operativas
+## Proyecto 3 {#sec-proyectos-3}
+### Fases y Actividades {#sec-proyectos-3-fases}
+### Riesgos y Estrategias de Mitigación {#sec-proyectos-3-riesgos}
+### Recomendaciones Técnicas y Operativas {#sec-proyectos-3-recomendaciones}
 
-## Proyecto 5: Solicitud de Información por Transparencia
-### Fases y Actividades
-### Riesgos y Estrategias de Mitigación
-### Recomendaciones Técnicas y Operativas
+## Proyecto 4 {#sec-proyectos-4}
+### Fases y Actividades {#sec-proyectos-4-fases}
+### Riesgos y Estrategias de Mitigación {#sec-proyectos-4-riesgos}
+### Recomendaciones Técnicas y Operativas {#sec-proyectos-4-recomendaciones}
 
-## Proyecto 6: Actualización de la Dimensión Seguridad
-### Fases y Actividades
-### Riesgos y Estrategias de Mitigación
-### Recomendaciones Técnicas y Operativas
+## Proyecto 5: Solicitud de Información por Transparencia {#sec-proyectos-5}
+### Fases y Actividades {#sec-proyectos-5-fases}
+### Riesgos y Estrategias de Mitigación {#sec-proyectos-5-riesgos}
+### Recomendaciones Técnicas y Operativas {#sec-proyectos-5-recomendaciones}
+
+## Proyecto 6: Actualización de la Dimensión Seguridad {#sec-proyectos-6}
+### Fases y Actividades {#sec-proyectos-6-fases}
+### Riesgos y Estrategias de Mitigación {#sec-proyectos-6-riesgos}
+### Recomendaciones Técnicas y Operativas {#sec-proyectos-6-recomendaciones}

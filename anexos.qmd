@@ -1,6 +1,3 @@
----
-title: "Anexos"
-format: html
----
+# Anexos {#sec-anexos}
 
-## Fichas
+## Fichas {#sec-anexos-fichas}

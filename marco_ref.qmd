@@ -1,26 +1,29 @@
 
-# Marco de Referencia
+# Marco de Referencia {#sec-mref}
 
 
 <iframe src="assets/marco_ref.html" width="100%" height="600px" style="border:none;"></iframe>
 
-## Deficiones Claves
-### Infraestructura territorial
-### Equipamientos
-### Servicios públicos
-### Servicios de apoyo
-### Interrelaciones Territoriales entre los elementos de la MBHT
+## Definiciones Claves {#sec-rdefclaves}
 
-## Dimensiones del Bienestar Territorial
-### Accesibilidad Territorial
-### Seguridad y Prevención
-### Sostenibilidad Ambiental
-### Turismo y Patrimonio
-### Conectividad y Movilidad
+### Infraestructura territorial {#sec-mref-infraestructura}
+### Equipamientos {#sec-mref-equipamientos}
+### Servicios públicos {#sec-mref-servicios-publicos}
+### Servicios de apoyo {#sec-mref-apoyo}
+### Interrelaciones Territoriales entre los elementos de la MBHT {#sec-mref-interrelaciones}
 
-## Clasificaciones institucionales y complementarias
-### Servicios Públicos
-### Nuevos Equipamientos
-### Infraestructura de Seguridad Vial
-### Clasificación de Elementos Turísticos
-### Vinculación entre Clasificaciones e Indicadores MBHT
+## Dimensiones del Bienestar Territorial {#sec-rdimensiones}
+
+### Accesibilidad Territorial {#sec-mref-accesibilidad}
+### Seguridad y Prevención {#sec-mref-seguridad}
+### Sostenibilidad Ambiental {#sec-mref-sostenibilidad}
+### Turismo y Patrimonio {#sec-mref-turismo}
+### Conectividad y Movilidad {#sec-mref-conectividad}
+
+## Clasificaciones institucionales y complementarias {#sec-rclasificaciones}
+
+### Servicios Públicos {#sec-mref-servicios-publicos2}
+### Nuevos Equipamientos {#sec-mref-nuevos-equipamientos}
+### Infraestructura de Seguridad Vial {#sec-mref-seguridad-vial}
+### Clasificación de Elementos Turísticos {#sec-mref-turisticos}
+### Vinculación entre Clasificaciones e Indicadores MBHT {#sec-mref-vinculacion}

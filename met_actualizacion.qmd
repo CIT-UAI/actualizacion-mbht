@@ -1,48 +1,47 @@
----
-title: "Metodología de Actualización"
-format: html
----
+
+# Metodología de Actualización {#sec-metodologia}
+
 <iframe src="assets/metodologia.html" width="100%" height="600px" style="border:none;"></iframe>
 
 
+## Cálculo de Indicadores {#sec-metodologia-calculo}
+### Tipos de variables utilizadas {#sec-metodologia-calculo-tipos}
+### Estructura del cálculo {#sec-metodologia-calculo-estructura}
+### Consideraciones técnicas {#sec-metodologia-calculo-consideraciones}
+### Ejemplo aplicado {#sec-metodologia-calculo-ejemplo}
 
-## Cálculo de Indicadores
-### Tipos de variables utilizadas
-### Estructura del cálculo
-### Consideraciones técnicas
-### Ejemplo aplicado
+## Normalización {#sec-metodologia-normalizacion}
+### Objetivo de la normalización {#sec-metodologia-normalizacion-objetivo}
+### Criterios de la normalización {#sec-metodologia-normalizacion-criterios}
+### Método utilizado {#sec-metodologia-normalizacion-metodo}
+### Consideraciones metodológicas {#sec-metodologia-normalizacion-consideraciones}
+### Ejemplo aplicado {#sec-metodologia-normalizacion-ejemplo}
 
-## Normalización
-### Objetivo de la normalización
-### Criterios de la normalización
-### Método utilizado
-### Consideraciones metodológicas
-### Ejemplo aplicado
+## Ponderación {#sec-metodologia-ponderacion}
+### Objetivo de la ponderación {#sec-metodologia-ponderacion-objetivo}
+### Criterios de ponderación {#sec-metodologia-ponderacion-criterios}
+### Métodos utilizados {#sec-metodologia-ponderacion-metodos}
+### Consideraciones metodológicas {#sec-metodologia-ponderacion-consideraciones}
+### Ejemplo aplicado {#sec-metodologia-ponderacion-ejemplo}
 
-## Ponderación
-### Objetivo de la ponderación
-### Criterios de ponderación
-### Métodos utilizados
-### Consideraciones metodológicas
-### Ejemplo aplicado
+## Protocolos de Control de Calidad (QA/QC) {#sec-metodologia-qa}
+### Objetivos del control de calidad {#sec-metodologia-qa-objetivos}
+### Protocolos QA/QC aplicados {#sec-metodologia-qa-protocolos}
+### Herramientas utilizadas {#sec-metodologia-qa-herramientas}
+### Ejemplo aplicado {#sec-metodologia-qa-ejemplo}
 
-## Protocolos de Control de Calidad (QA/QC)
-### Objetivos del control de calidad
-### Protocolos QA/QC aplicados
-### Herramientas utilizadas
-### Ejemplo aplicado
+## Validación Cruzada {#sec-metodologia-validacion}
+### Objetivos de la validación cruzada {#sec-metodologia-validacion-objetivos}
+### Tipos de validación cruzada {#sec-metodologia-validacion-tipos}
+### Procedimientos aplicados {#sec-metodologia-validacion-procedimientos}
+### Resultados esperados {#sec-metodologia-validacion-resultados}
+### Ejemplo aplicado {#sec-metodologia-validacion-ejemplo}
 
-## Validación Cruzada
-### Objetivos de la validación cruzada
-### Tipos de validación cruzada
-### Procedimientos aplicados
-### Resultados esperados
-### Ejemplo aplicado
-
-## Georreferenciación
-### Objetivos de la georreferenciación
-### Unidades espaciales utilizadas
-### Sistemas de referencia y formatos
-### Fuentes de datos georreferenciados
-### Procedimientos aplicados
-### Resultados esperados
+## Georreferenciación {#sec-metodologia-georef}
+### Objetivos de la georreferenciación {#sec-metodologia-georef-objetivos}
+### Unidades espaciales utilizadas {#sec-metodologia-georef-unidades}
+### Sistemas de referencia y formatos {#sec-metodologia-georef-sistemas}
+### Fuentes de datos georreferenciados {#sec-metodologia-georef-fuentes}
+### Procedimientos aplicados {#sec-metodologia-georef-procedimientos}
+### Resultados esperados {#sec-metodologia-georef-resultados}
+### Ejemplo aplicado {#sec-metodologia-georef-ejemplo}

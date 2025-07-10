@@ -1,4 +1,4 @@
-# Introductión
+# Introductión {#sec-intro}
 
 La Matriz de Bienestar Humano Territorial (MBHT) es una herramienta desarrollada por el Centro de Inteligencia Territorial de la Universidad Adolfo Ibáñez (CIT-UAI) que permite evaluar, de manera integrada y multiescalar, las condiciones de vida en los territorios de Chile. A través de indicadores georreferenciados, clasificaciones institucionales y metodologías estandarizadas, la MBHT ofrece una radiografía territorial del bienestar, facilitando la toma de decisiones informadas por parte de gobiernos locales, regionales y organismos públicos.
 
