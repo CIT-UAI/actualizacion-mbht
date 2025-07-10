@@ -24,7 +24,7 @@
     "href": "index.html#tabla-de-contenidos",
     "title": "Guía Técnica MBHT",
     "section": "Tabla de Contenidos",
-    "text": "Tabla de Contenidos",
+    "text": "Tabla de Contenidos\n\n\n\nIntroducción\nMarco de Referencia\n2.1. Definiciones Claves\n2.1.1. Infraestructura territorial\n2.1.2. Equipamientos\n2.1.3. Servicios públicos\n2.1.4. Servicios de apoyo\n2.1.5. Interrelaciones Territoriales entre los elementos de la MBHT\n2.2. Dimensiones del Bienestar Territorial\n2.2.1. Accesibilidad Territorial\n2.2.2. Seguridad y Prevención\n2.2.3. Sostenibilidad Ambiental\n2.2.4. Turismo y Patrimonio\n2.2.5. Conectividad y Movilidad\n2.3. Clasificaciones institucionales y complementarias\n2.3.1. Servicios Públicos\n2.3.2. Nuevos Equipamientos\n2.3.3. Infraestructura de Seguridad Vial\n2.3.4. Clasificación de Elementos Turísticos\n2.3.5. Vinculación entre Clasificaciones e Indicadores MBHT\nMetodología de Actualización\n3.1. Cálculo de Indicadores\n3.1.1. Tipos de variables utilizadas\n3.1.2. Estructura del cálculo\n3.1.3. Consideraciones técnicas\n3.1.4. Ejemplo aplicado\n3.2. Normalización\n3.2.1. Objetivo de la normalización\n3.2.2. Criterios de la normalización\n3.2.3. Método utilizado\n3.2.4. Consideraciones metodológicas\n3.2.5. Ejemplo aplicado\n3.3. Ponderación\n3.3.1. Objetivo de la ponderación\n3.3.2. Criterios de ponderación\n3.3.3. Métodos utilizados\n3.3.4. Consideraciones metodológicas\n3.3.5. Ejemplo aplicado\n3.4. Protocolos de Control de Calidad (QA/QC)\n3.4.1. Objetivos del control de calidad\n3.4.2. Protocolos QA/QC aplicados\n3.4.3. Herramientas utilizadas\n3.4.4. Ejemplo aplicado\n3.5. Validación Cruzada\n3.5.1. Objetivos de la validación cruzada\n3.5.2. Tipos de validación cruzada\n3.5.3. Procedimientos aplicados\n3.5.4. Resultados esperados\n3.5.5. Ejemplo aplicado\n3.6. Georreferenciación\n3.6.1. Objetivos de la georreferenciación\n3.6.2. Unidades espaciales utilizadas\n3.6.3. Sistemas de referencia y formatos\n3.6.4. Fuentes de datos georreferenciados\n3.6.5. Procedimientos aplicados\n3.6.6. Resultados esperados\n3.6.7. Ejemplo aplicado\nProyectos de Actualización\n4.1. Proyecto 1: Actualización de la Dimensión Accesibilidad\n4.1.1. Fases y Actividades\n4.1.2. Riesgos y Estrategias de Mitigación\n4.1.3. Recomendaciones Técnicas y Operativas\n4.2. Proyecto 2\n4.2.1. Fases y Actividades\n4.2.2. Riesgos y Estrategias de Mitigación\n4.2.3. Recomendaciones Técnicas y Operativas\n4.3. Proyecto 3\n4.3.1. Fases y Actividades\n4.3.2. Riesgos y Estrategias de Mitigación\n4.3.3. Recomendaciones Técnicas y Operativas\n4.4. Proyecto 4\n4.4.1. Fases y Actividades\n4.4.2. Riesgos y Estrategias de Mitigación\n4.4.3. Recomendaciones Técnicas y Operativas\n4.5. Proyecto 5: Solicitud de Información por Transparencia\n4.5.1. Fases y Actividades\n4.5.2. Riesgos y Estrategias de Mitigación\n4.5.3. Recomendaciones Técnicas y Operativas\n4.6. Proyecto 6: Actualización de la Dimensión Seguridad\n4.6.1. Fases y Actividades\n4.6.2. Riesgos y Estrategias de Mitigación\n4.6.3. Recomendaciones Técnicas y Operativas\nRecomendaciones Operativas para la Actualización de la MBHT 2025–2026\n5.1. Coordinación Interinstitucional\n5.2. Levantamiento de Información Territorial\n5.3. Validación y Control de Calidad\n5.4. Interoperabilidad y Estandarización\n5.5. Participación Local y Validación Territorial\n5.6. Sostenibilidad del Sistema MBHT\nBibliografía\nAnexos\n7.1. Fichas",
     "crumbs": [
       "Prefacio"
     ]
@@ -64,14 +64,14 @@
     "href": "marco_ref.html",
     "title": "2  Marco de Referencia",
     "section": "",
-    "text": "2.1 Deficiones Claves",
+    "text": "2.1 Definiciones Claves",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Marco de Referencia</span>"
     ]
   },
   {
-    "objectID": "marco_ref.html#deficiones-claves",
-    "href": "marco_ref.html#deficiones-claves",
+    "objectID": "marco_ref.html#sec-rdefclaves",
+    "href": "marco_ref.html#sec-rdefclaves",
     "title": "2  Marco de Referencia",
     "section": "",
     "text": "2.1.1 Infraestructura territorial\n\n\n2.1.2 Equipamientos\n\n\n2.1.3 Servicios públicos\n\n\n2.1.4 Servicios de apoyo\n\n\n2.1.5 Interrelaciones Territoriales entre los elementos de la MBHT",
@@ -80,8 +80,8 @@
     ]
   },
   {
-    "objectID": "marco_ref.html#dimensiones-del-bienestar-territorial",
-    "href": "marco_ref.html#dimensiones-del-bienestar-territorial",
+    "objectID": "marco_ref.html#sec-rdimensiones",
+    "href": "marco_ref.html#sec-rdimensiones",
     "title": "2  Marco de Referencia",
     "section": "2.2 Dimensiones del Bienestar Territorial",
     "text": "2.2 Dimensiones del Bienestar Territorial\n\n2.2.1 Accesibilidad Territorial\n\n\n2.2.2 Seguridad y Prevención\n\n\n2.2.3 Sostenibilidad Ambiental\n\n\n2.2.4 Turismo y Patrimonio\n\n\n2.2.5 Conectividad y Movilidad",
@@ -90,8 +90,8 @@
     ]
   },
   {
-    "objectID": "marco_ref.html#clasificaciones-institucionales-y-complementarias",
-    "href": "marco_ref.html#clasificaciones-institucionales-y-complementarias",
+    "objectID": "marco_ref.html#sec-rclasificaciones",
+    "href": "marco_ref.html#sec-rclasificaciones",
     "title": "2  Marco de Referencia",
     "section": "2.3 Clasificaciones institucionales y complementarias",
     "text": "2.3 Clasificaciones institucionales y complementarias\n\n2.3.1 Servicios Públicos\n\n\n2.3.2 Nuevos Equipamientos\n\n\n2.3.3 Infraestructura de Seguridad Vial\n\n\n2.3.4 Clasificación de Elementos Turísticos\n\n\n2.3.5 Vinculación entre Clasificaciones e Indicadores MBHT",
@@ -110,8 +110,8 @@
     ]
   },
   {
-    "objectID": "met_actualizacion.html#cálculo-de-indicadores",
-    "href": "met_actualizacion.html#cálculo-de-indicadores",
+    "objectID": "met_actualizacion.html#sec-metodologia-calculo",
+    "href": "met_actualizacion.html#sec-metodologia-calculo",
     "title": "3  Metodología de Actualización",
     "section": "",
     "text": "3.1.1 Tipos de variables utilizadas\n\n\n3.1.2 Estructura del cálculo\n\n\n3.1.3 Consideraciones técnicas\n\n\n3.1.4 Ejemplo aplicado",
@@ -120,8 +120,8 @@
     ]
   },
   {
-    "objectID": "met_actualizacion.html#normalización",
-    "href": "met_actualizacion.html#normalización",
+    "objectID": "met_actualizacion.html#sec-metodologia-normalizacion",
+    "href": "met_actualizacion.html#sec-metodologia-normalizacion",
     "title": "3  Metodología de Actualización",
     "section": "3.2 Normalización",
     "text": "3.2 Normalización\n\n3.2.1 Objetivo de la normalización\n\n\n3.2.2 Criterios de la normalización\n\n\n3.2.3 Método utilizado\n\n\n3.2.4 Consideraciones metodológicas\n\n\n3.2.5 Ejemplo aplicado",
@@ -130,8 +130,8 @@
     ]
   },
   {
-    "objectID": "met_actualizacion.html#ponderación",
-    "href": "met_actualizacion.html#ponderación",
+    "objectID": "met_actualizacion.html#sec-metodologia-ponderacion",
+    "href": "met_actualizacion.html#sec-metodologia-ponderacion",
     "title": "3  Metodología de Actualización",
     "section": "3.3 Ponderación",
     "text": "3.3 Ponderación\n\n3.3.1 Objetivo de la ponderación\n\n\n3.3.2 Criterios de ponderación\n\n\n3.3.3 Métodos utilizados\n\n\n3.3.4 Consideraciones metodológicas\n\n\n3.3.5 Ejemplo aplicado",
@@ -140,8 +140,8 @@
     ]
   },
   {
-    "objectID": "met_actualizacion.html#protocolos-de-control-de-calidad-qaqc",
-    "href": "met_actualizacion.html#protocolos-de-control-de-calidad-qaqc",
+    "objectID": "met_actualizacion.html#sec-metodologia-qa",
+    "href": "met_actualizacion.html#sec-metodologia-qa",
     "title": "3  Metodología de Actualización",
     "section": "3.4 Protocolos de Control de Calidad (QA/QC)",
     "text": "3.4 Protocolos de Control de Calidad (QA/QC)\n\n3.4.1 Objetivos del control de calidad\n\n\n3.4.2 Protocolos QA/QC aplicados\n\n\n3.4.3 Herramientas utilizadas\n\n\n3.4.4 Ejemplo aplicado",
@@ -150,8 +150,8 @@
     ]
   },
   {
-    "objectID": "met_actualizacion.html#validación-cruzada",
-    "href": "met_actualizacion.html#validación-cruzada",
+    "objectID": "met_actualizacion.html#sec-metodologia-validacion",
+    "href": "met_actualizacion.html#sec-metodologia-validacion",
     "title": "3  Metodología de Actualización",
     "section": "3.5 Validación Cruzada",
     "text": "3.5 Validación Cruzada\n\n3.5.1 Objetivos de la validación cruzada\n\n\n3.5.2 Tipos de validación cruzada\n\n\n3.5.3 Procedimientos aplicados\n\n\n3.5.4 Resultados esperados\n\n\n3.5.5 Ejemplo aplicado",
@@ -160,11 +160,11 @@
     ]
   },
   {
-    "objectID": "met_actualizacion.html#georreferenciación",
-    "href": "met_actualizacion.html#georreferenciación",
+    "objectID": "met_actualizacion.html#sec-metodologia-georef",
+    "href": "met_actualizacion.html#sec-metodologia-georef",
     "title": "3  Metodología de Actualización",
     "section": "3.6 Georreferenciación",
-    "text": "3.6 Georreferenciación\n\n3.6.1 Objetivos de la georreferenciación\n\n\n3.6.2 Unidades espaciales utilizadas\n\n\n3.6.3 Sistemas de referencia y formatos\n\n\n3.6.4 Fuentes de datos georreferenciados\n\n\n3.6.5 Procedimientos aplicados\n\n\n3.6.6 Resultados esperados",
+    "text": "3.6 Georreferenciación\n\n3.6.1 Objetivos de la georreferenciación\n\n\n3.6.2 Unidades espaciales utilizadas\n\n\n3.6.3 Sistemas de referencia y formatos\n\n\n3.6.4 Fuentes de datos georreferenciados\n\n\n3.6.5 Procedimientos aplicados\n\n\n3.6.6 Resultados esperados\n\n\n3.6.7 Ejemplo aplicado",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Metodología de Actualización</span>"
     ]
@@ -180,8 +180,8 @@
     ]
   },
   {
-    "objectID": "proyectos.html#proyecto-1-actualización-de-la-dimensión-accesibilidad",
-    "href": "proyectos.html#proyecto-1-actualización-de-la-dimensión-accesibilidad",
+    "objectID": "proyectos.html#sec-proyectos-1",
+    "href": "proyectos.html#sec-proyectos-1",
     "title": "4  Proyectos de Actualización",
     "section": "",
     "text": "4.1.1 Fases y Actividades\n\n\n4.1.2 Riesgos y Estrategias de Mitigación\n\n\n4.1.3 Recomendaciones Técnicas y Operativas",
@@ -190,8 +190,8 @@
     ]
   },
   {
-    "objectID": "proyectos.html#proyecto-2",
-    "href": "proyectos.html#proyecto-2",
+    "objectID": "proyectos.html#sec-proyectos-2",
+    "href": "proyectos.html#sec-proyectos-2",
     "title": "4  Proyectos de Actualización",
     "section": "4.2 Proyecto 2",
     "text": "4.2 Proyecto 2\n\n4.2.1 Fases y Actividades\n\n\n4.2.2 Riesgos y Estrategias de Mitigación\n\n\n4.2.3 Recomendaciones Técnicas y Operativas",
@@ -200,8 +200,8 @@
     ]
   },
   {
-    "objectID": "proyectos.html#proyecto-3",
-    "href": "proyectos.html#proyecto-3",
+    "objectID": "proyectos.html#sec-proyectos-3",
+    "href": "proyectos.html#sec-proyectos-3",
     "title": "4  Proyectos de Actualización",
     "section": "4.3 Proyecto 3",
     "text": "4.3 Proyecto 3\n\n4.3.1 Fases y Actividades\n\n\n4.3.2 Riesgos y Estrategias de Mitigación\n\n\n4.3.3 Recomendaciones Técnicas y Operativas",
@@ -210,8 +210,8 @@
     ]
   },
   {
-    "objectID": "proyectos.html#proyecto-4",
-    "href": "proyectos.html#proyecto-4",
+    "objectID": "proyectos.html#sec-proyectos-4",
+    "href": "proyectos.html#sec-proyectos-4",
     "title": "4  Proyectos de Actualización",
     "section": "4.4 Proyecto 4",
     "text": "4.4 Proyecto 4\n\n4.4.1 Fases y Actividades\n\n\n4.4.2 Riesgos y Estrategias de Mitigación\n\n\n4.4.3 Recomendaciones Técnicas y Operativas",
@@ -220,8 +220,8 @@
     ]
   },
   {
-    "objectID": "proyectos.html#proyecto-5-solicitud-de-información-por-transparencia",
-    "href": "proyectos.html#proyecto-5-solicitud-de-información-por-transparencia",
+    "objectID": "proyectos.html#sec-proyectos-5",
+    "href": "proyectos.html#sec-proyectos-5",
     "title": "4  Proyectos de Actualización",
     "section": "4.5 Proyecto 5: Solicitud de Información por Transparencia",
     "text": "4.5 Proyecto 5: Solicitud de Información por Transparencia\n\n4.5.1 Fases y Actividades\n\n\n4.5.2 Riesgos y Estrategias de Mitigación\n\n\n4.5.3 Recomendaciones Técnicas y Operativas",
@@ -230,8 +230,8 @@
     ]
   },
   {
-    "objectID": "proyectos.html#proyecto-6-actualización-de-la-dimensión-seguridad",
-    "href": "proyectos.html#proyecto-6-actualización-de-la-dimensión-seguridad",
+    "objectID": "proyectos.html#sec-proyectos-6",
+    "href": "proyectos.html#sec-proyectos-6",
     "title": "4  Proyectos de Actualización",
     "section": "4.6 Proyecto 6: Actualización de la Dimensión Seguridad",
     "text": "4.6 Proyecto 6: Actualización de la Dimensión Seguridad\n\n4.6.1 Fases y Actividades\n\n\n4.6.2 Riesgos y Estrategias de Mitigación\n\n\n4.6.3 Recomendaciones Técnicas y Operativas",
@@ -250,8 +250,8 @@
     ]
   },
   {
-    "objectID": "recomendaciones.html#levantamiento-de-información-territorial",
-    "href": "recomendaciones.html#levantamiento-de-información-territorial",
+    "objectID": "recomendaciones.html#sec-recomendaciones-levantamiento",
+    "href": "recomendaciones.html#sec-recomendaciones-levantamiento",
     "title": "5  Recomendaciones Operativas",
     "section": "5.2 Levantamiento de Información Territorial",
     "text": "5.2 Levantamiento de Información Territorial",
@@ -260,8 +260,8 @@
     ]
   },
   {
-    "objectID": "recomendaciones.html#validación-y-control-de-calidad",
-    "href": "recomendaciones.html#validación-y-control-de-calidad",
+    "objectID": "recomendaciones.html#sec-recomendaciones-validacion",
+    "href": "recomendaciones.html#sec-recomendaciones-validacion",
     "title": "5  Recomendaciones Operativas",
     "section": "5.3 Validación y Control de Calidad",
     "text": "5.3 Validación y Control de Calidad",
@@ -270,8 +270,8 @@
     ]
   },
   {
-    "objectID": "recomendaciones.html#interoperabilidad-y-estandarización",
-    "href": "recomendaciones.html#interoperabilidad-y-estandarización",
+    "objectID": "recomendaciones.html#sec-recomendaciones-interoperabilidad",
+    "href": "recomendaciones.html#sec-recomendaciones-interoperabilidad",
     "title": "5  Recomendaciones Operativas",
     "section": "5.4 Interoperabilidad y Estandarización",
     "text": "5.4 Interoperabilidad y Estandarización",
@@ -280,8 +280,8 @@
     ]
   },
   {
-    "objectID": "recomendaciones.html#participación-local-y-validación-territorial",
-    "href": "recomendaciones.html#participación-local-y-validación-territorial",
+    "objectID": "recomendaciones.html#sec-recomendaciones-participacion",
+    "href": "recomendaciones.html#sec-recomendaciones-participacion",
     "title": "5  Recomendaciones Operativas",
     "section": "5.5 Participación Local y Validación Territorial",
     "text": "5.5 Participación Local y Validación Territorial",
@@ -290,8 +290,8 @@
     ]
   },
   {
-    "objectID": "recomendaciones.html#sostenibilidad-del-sistema-mbht",
-    "href": "recomendaciones.html#sostenibilidad-del-sistema-mbht",
+    "objectID": "recomendaciones.html#sec-recomendaciones-sostenibilidad",
+    "href": "recomendaciones.html#sec-recomendaciones-sostenibilidad",
     "title": "5  Recomendaciones Operativas",
     "section": "5.6 Sostenibilidad del Sistema MBHT",
     "text": "5.6 Sostenibilidad del Sistema MBHT",
