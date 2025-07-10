@@ -127,3 +127,17 @@ html-math-method: katex
 
 ## Índice de Tablas
 ## Glosario de Siglas
+
+{{< var mbht.sigla >}}: {{< var mbht.name >}}.  
+{{< var cit.sigla >}}-{{< var uai.sigla >}}: {{< var cit.name >}} - {{< var uai.name >}}.  
+SPD: Subsecretaría de Prevención del Delito.    
+INE: Instituto Nacional de Estadísticas.    
+MINSAL: Ministerio de Salud.    
+MINEDUC: Ministerio de Educación.    
+MINVU: Ministerio de Vivienda y Urbanismo.    
+SIEDCO: Sistema de Información Estratégica sobre Delincuencia Organizada.    
+STOP: Sistema Táctico de Operación Policial.    
+ENUSC: Encuesta Nacional Urbana de Seguridad Ciudadana.    
+
+
+
