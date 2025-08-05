@@ -128,16 +128,17 @@ html-math-method: katex
 ## Índice de Tablas
 ## Glosario de Siglas
 
-{{< var mbht.sigla >}}: {{< var mbht.name >}}.  
-{{< var cit.sigla >}}-{{< var uai.sigla >}}: {{< var cit.name >}} - {{< var uai.name >}}.  
-SPD: Subsecretaría de Prevención del Delito.    
-INE: Instituto Nacional de Estadísticas.    
-MINSAL: Ministerio de Salud.    
-MINEDUC: Ministerio de Educación.    
-MINVU: Ministerio de Vivienda y Urbanismo.    
-SIEDCO: Sistema de Información Estratégica sobre Delincuencia Organizada.    
-STOP: Sistema Táctico de Operación Policial.    
-ENUSC: Encuesta Nacional Urbana de Seguridad Ciudadana.    
+{{< var mbht.sigla >}}: {{< var mbht.name >}}.\
+{{< var cit.sigla >}}: {{< var cit.name >}}.\
+{{< var uai.sigla >}}: {{< var uai.name >}}.\
+{{< var ine.sigla >}}: {{< var ine.name >}}.  \
+{{< var mineduc.sigla >}}: {{< var mineduc.name >}}.  \
+{{< var minvu.sigla >}}: {{< var minvu.name >}}.  \
+{{< var mop.sigla >}}: {{< var mop.name >}}.  \
+{{< var minsal.sigla >}}: {{< var minsal.name >}}.  \
+{{< var spd.sigla >}}: {{< var spd.name >}}.  \
+{{< var stop.sigla >}}: {{< var stop.name >}}.  \
+{{< var enusc.sigla >}}: {{< var enusc.name >}}.  \
 
 
 

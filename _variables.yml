@@ -31,14 +31,14 @@ szuniga:
   
 # Insituciones ------------------------------------------------------------
 ine:
-  name: "[Instituto Nacional de Estadísticas (INE)](https://www.ine.gob.cl/)"
+  name: "[Instituto Nacional de Estadísticas](https://www.ine.gob.cl/)"
   sigla: "[INE](https://www.ine.gob.cl/)"
   censo_2017: "[Censo de Población y Vivienda 2017](http://resultados.censo2017.cl/)"
   censo_2017s: "[Censo 2017](http://resultados.censo2017.cl/)"
   censo_2024: "[Censo de Población y Vivienda 2024](https://censo2024.ine.gob.cl/)"
 
 mbht:
-  name: "[Matriz de Bienstar Humano Territorial](https://matrizbht.cl/)"
+  name: "[Matriz de Bienestar Humano Territorial](https://matrizbht.cl/)"
   sigla: "[MBHT](https://matrizbht.cl/)"
 
 cit:
@@ -53,6 +53,10 @@ mma:
   name: "[Ministerio del Medio Ambiente](https://mma.gob.cl/)"
   sigla: "[MMA](https://mma.gob.cl/)"
   
+sinca:
+  name: "[Sistema Nacional de Información de Calidad del Aire](https://sinca.mma.gob.cl/)"
+  sigla: "[SINCA](https://sinca.mma.gob.cl/)"
+  
 sernageomin:
   name: "[Servicio Nacional de Geología y Minería](https://www.sernageomin.cl/)"
   sigla: "[SERNAGEOMIN](https://www.sernageomin.cl/)"
@@ -62,12 +66,62 @@ retc:
   sigla: "[RETC](https://retc.mma.gob.cl/)"
   
 mineduc:
-  name: "[Ministerio de Ecucación](https://www.mineduc.cl/)"
+  name: "[Ministerio de Educación](https://www.mineduc.cl/)"
   sigla: "[MINEDUC](https://www.mineduc.cl/)"
   
+cestudios:
+  name: "[Centro de Estudios del Mineduc](https://centroestudios.mineduc.cl/)"
+
+acalidad:
+  name: "[Agencia de Calidad de la Educación](https://www.agenciaeducacion.cl/)"
+
 simce:
   name: "[Sistema de Medición de la Calidad de la Educación](https://www.agenciaeducacion.cl/simce/)"
   sigla: "[SIMCE](https://www.agenciaeducacion.cl/simce/)"
+  
+junji:
+  name: "[Junta Nacional de Jardines Infantiles](https://junji.cl/)"
+  sigla: "[JUNJI](https://junji.cl/)"
+  
+integra:
+  name: "[Integra](https://www.integra.cl/nuestros-jardines-infantiles/)"
+  name_m: "[Fundación Integra](https://www.integra.cl/nuestros-jardines-infantiles/)"
+  name_l: "[Fundación Integra: Red de Salas Cuna y Jardines Infantiles](https://www.integra.cl/nuestros-jardines-infantiles/)"
+  
+minvu:
+  name: "[Ministerio de Vvienda y Urbanismo](https://www.minvu.gob.cl/)"
+  sigla: "[MINVU](https://www.minvu.gob.cl/)"
+  
+mop:
+  name: "[Ministerio de Obras Públicas](https://www.mop.gob.cl/)"
+  sigla: "[MOP](https://www.mop.gob.cl/)"
+  
+subdere:
+  name: "Subsecretaria de Desarrollo Regional"
+  sigla: "SUBDERE"
+  
+spd:
+  name: "[Subsecretaría de Prevención del Delito](https://www.interior.gob.cl/autoridades/subsecretaria-de-prevencion-del-delito/)"
+  sigla: "[SPD](https://www.interior.gob.cl/autoridades/subsecretaria-de-prevencion-del-delito/)"
+  
+minsal:
+  name: "[Ministerio de Salud](https://www.gob.cl/ministerios/ministerio-de-salud/)"
+  sigla: "[MINSAL](https://www.gob.cl/ministerios/ministerio-de-salud/)"
+  
+stop:
+  name: "[Sistema Táctico de Operación Policial](https://stop.carabineros.cl/)"
+  sigla: "[S.T.O.P](https://stop.carabineros.cl/)"
+  
+mincap:
+  name: "[Ministerio de las Culturas, las Artes y el Patrimonio](https://www.cultura.gob.cl/)"
+  sigla: "[MINCAP](https://www.cultura.gob.cl/)"
+
+# Encuestas ---------------------------------------------------------------
+
+enusc:
+  name: "[Encuesta Nacional Urbana de Seguridad Ciudadana](https://www.ine.gob.cl/encuesta-nacional-urbana-de-seguridad-ciudadana)"
+  sigla: "[ENUSC](https://www.ine.gob.cl/encuesta-nacional-urbana-de-seguridad-ciudadana)"
+  
 
 # Documentos --------------------------------------------------------------
 

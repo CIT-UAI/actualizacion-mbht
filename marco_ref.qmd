@@ -4,7 +4,7 @@
 
 </iframe>
 
-La actualización de la {{< var mbht.sigla >}} para el periodo 2025–2026 se sustenta en un marco de referencia que articula los fundamentos conceptuales, metodológicos e institucionales necesarios para garantizar la coherencia, pertinencia y legitimidad del proceso. Este marco integra definiciones operativas, clasificaciones oficiales y criterios técnicos desarrollados por el {{< var cit.sigla >}}-{{< var uai.sigla >}}, a partir de fuentes institucionales, documentos normativos y experiencias acumuladas en versiones anteriores de la MBHT.
+La actualización de la {{< var mbht.name >}} ({{< var mbht.sigla >}}) para el periodo 2025–2026 se sustenta en un marco de referencia que articula los fundamentos conceptuales, metodológicos e institucionales necesarios para garantizar la coherencia, pertinencia y legitimidad del proceso. Este marco integra definiciones operativas, clasificaciones oficiales y criterios técnicos desarrollados por el {{< var cit.name >}} de la {{< var uai.name >}} ({{< var cit.sigla >}}-{{< var uai.sigla >}}), a partir de fuentes institucionales, documentos normativos y experiencias acumuladas en versiones anteriores de la MBHT.
 
 Su propósito es ofrecer una base común para todos los actores involucrados en la actualización de la matriz, facilitando la comprensión de los componentes territoriales que inciden en el bienestar humano, y promoviendo una lectura integral del territorio desde múltiples escalas y dimensiones.
 
@@ -26,7 +26,7 @@ La infraestructura territorial corresponde al conjunto de elementos físicos, es
 
 *	Ejemplos de infraestructura incluyen: caminos, puentes, redes de agua potable y alcantarillado, redes eléctricas, infraestructura vial urbana, ciclovías, veredas, infraestructura de seguridad vial (lomos de toro, barandas, señalización), y redes de telecomunicaciones.
 
-*	Fuente: Ministerio de Obras Públicas (MOP), Ministerio de Vivienda y Urbanismo (MINVU), Subsecretaría de Desarrollo Regional (SUBDERE), y Clasificación de Infraestructura de Seguridad Vial (CIT-UAI, 2023).
+*	Fuente: Ministerio de Obras Públicas (MOP), Ministerio de Vivienda y Urbanismo (MIMVU), Subsecretaría de Desarrollo Regional (SUBDERE), y Clasificación de Infraestructura de Seguridad Vial (CIT-UAI, 2023).
 
 
 ### Equipamientos {#sec-mref-equipamientos}
@@ -57,21 +57,122 @@ Los servicios de apoyo corresponden a funciones complementarias que permiten el 
 
 ### Interrelaciones Territoriales entre los elementos de la MBHT {#sec-mref-interrelaciones}
 
+
+
+La infraestructura, los equipamientos, los servicios públicos y los servicios de apoyo no son elementos aislados dentro del territorio, sino componentes interdependientes que, en conjunto, configuran las condiciones materiales y funcionales del bienestar humano (MOP, 2024). Su articulación territorial es clave para comprender cómo se estructura la vida cotidiana en las ciudades, barrios y localidades del país. 
+
+![TODO: Agregar Imagen Real luego de revisión. Relaciones territoriales entre Infraestructuras, equipamientos y servicios.](images/icono_01.png){#fig-elementos}
+
+De la @fig-elementos se desprende que la infraestructura constituye la base física sobre la cual se despliegan los demás componentes. Caminos, redes de agua, electricidad, telecomunicaciones y obras viales permiten la localización, operación y conectividad de los equipamientos y servicios. Sin una infraestructura adecuada, el acceso a derechos básicos como salud, educación o seguridad se ve limitado, especialmente en territorios rurales o periféricos. 
+
+A su vez, los equipamientos se apoyan en esta infraestructura para funcionar y prestar servicios a la población. Escuelas, hospitales, bibliotecas, centros deportivos o culturales requieren conectividad vial, suministro eléctrico, acceso digital y condiciones de seguridad para operar de forma efectiva. Estos equipamientos son nodos clave de provisión de servicios públicos, como la educación, la salud o la protección social. 
+
+Los servicios públicos representan la dimensión institucional de esta red territorial. Son las funciones del Estado que se materializan a través de equipamientos y se sostienen sobre la infraestructura existente. Su cobertura, calidad y equidad dependen tanto de la planificación territorial como de la capacidad institucional para garantizar su funcionamiento. 
+
+Por su parte, los servicios de apoyo cumplen un rol transversal y habilitante. Permiten que la infraestructura y los equipamientos funcionen de manera continua, segura y accesible. Incluyen desde el mantenimiento urbano y la gestión de riesgos, hasta la conectividad digital y la asistencia técnica a grupos vulnerables. Su presencia es especialmente relevante en contextos de emergencia, zonas rurales o territorios con brechas estructurales. 
+
+En conjunto, estos cuatro componentes forman un sistema territorial integrado. Su análisis articulado permite identificar brechas, planificar inversiones y diseñar políticas públicas más efectivas y equitativas, orientadas a mejorar el bienestar de las personas en sus territorios. 
+
 ## Dimensiones del Bienestar Territorial {#sec-rdimensiones}
+
+Las dimensiones del Bienestar Humano Territorial (BHT) constituyen el eje estructurante de la MBHT. Su inclusión en esta guía responde a la necesidad de contar con un marco analítico que permita descomponer el bienestar en componentes temáticos observables, medibles y territorialmente diferenciables. 
+
+Cada dimensión representa un ámbito clave del desarrollo territorial, vinculado a derechos sociales, condiciones ambientales, accesibilidad a bienes públicos, seguridad ciudadana y conectividad. Estas dimensiones no solo permiten caracterizar la calidad de vida en los distintos territorios del país, sino que también orientan la formulación de indicadores, la priorización de políticas públicas y la focalización de inversiones. 
+
+La definición y actualización de estas dimensiones ha sido el resultado de un proceso técnico y participativo liderado por el CIT-UAI, en diálogo con instituciones sectoriales, gobiernos locales y expertos en planificación territorial. Su estructura busca reflejar tanto los desafíos históricos del desarrollo urbano y rural en Chile, como las nuevas demandas emergentes en materia de equidad, sostenibilidad y resiliencia. 
+
+En esta sección se presentan las principales dimensiones consideradas en la actualización 2025–2026, junto con sus fundamentos conceptuales, ejemplos aplicados y referencias institucionales. Su comprensión es clave para interpretar los indicadores de la MBHT y para utilizar la matriz como una herramienta efectiva de análisis, planificación y toma de decisiones territoriales. 
 
 ### Accesibilidad Territorial {#sec-mref-accesibilidad}
 
+La dimensión de Accesibilidad Territorial evalúa el grado en que la población puede acceder de manera equitativa y oportuna a bienes públicos esenciales, tales como áreas verdes, centros de salud, establecimientos educacionales, espacios culturales y deportivos. Esta dimensión considera criterios de cobertura espacial, densidad de servicios y equidad territorial, permitiendo identificar brechas de acceso que afectan la calidad de vida. 
+
+Los indicadores asociados miden, entre otros aspectos, la distancia a servicios clave, la proporción de población cubierta y la conectividad física entre zonas residenciales y equipamientos urbanos. 
+
+- Ejemplos: acceso a parques urbanos (MINVU), cobertura de CESFAM (MINSAL), distancia a bibliotecas públicas (MINCAP). 
+
+- Fuente: Ministerio de Vivienda y Urbanismo (MINVU), Ministerio de Salud (MINSAL), Ministerio de las Culturas (MINCAP). 
+
 ### Seguridad y Prevención {#sec-mref-seguridad}
+
+Esta dimensión aborda las condiciones de seguridad ciudadana y la infraestructura orientada a la prevención del delito y la movilidad segura. Integra tanto indicadores objetivos (como tasas de delitos) como elementos de percepción, infraestructura vial segura, señalización, iluminación y servicios de emergencia. 
+
+Su análisis permite identificar territorios con mayores niveles de vulnerabilidad, así como evaluar la efectividad de las políticas públicas en materia de prevención y control del delito. 
+
+- Ejemplos: tasa de delitos por comuna (SPD), presencia de lomos de toro y semáforos (MOP), cobertura de cámaras de vigilancia (municipalidades). 
+
+- Fuente: Subsecretaría de Prevención del Delito (SPD), Ministerio de Obras Públicas (MOP), municipalidades. 
+
 
 ### Sostenibilidad Ambiental {#sec-mref-sostenibilidad}
 
+La dimensión de Sostenibilidad Ambiental considera la presencia, calidad y acceso a infraestructura verde, servicios ecosistémicos urbanos, gestión de residuos, calidad del aire y resiliencia frente a riesgos naturales. Busca integrar criterios de sustentabilidad en la planificación territorial, promoviendo entornos urbanos más saludables, resilientes y equitativos. 
+
+Los indicadores permiten evaluar tanto la oferta ambiental como la capacidad de los territorios para enfrentar amenazas climáticas y desastres naturales. 
+
+- Ejemplos: superficie de áreas verdes por habitante (MINVU), cobertura de reciclaje (MMA), zonas de riesgo y mitigación (ONEMI). 
+
+- Fuente: Ministerio del Medio Ambiente (MMA), Oficina Nacional de Emergencia (ONEMI), MINVU. 
+
 ### Turismo y Patrimonio {#sec-mref-turismo}
+
+Esta dimensión analiza la infraestructura, equipamientos y servicios vinculados al turismo, el patrimonio cultural y el patrimonio natural. Evalúa la presencia de atractivos turísticos, la calidad de la señalética, la accesibilidad, los servicios de apoyo y la gestión ambiental del turismo. 
+
+Su inclusión permite visibilizar el potencial turístico de los territorios, así como su capacidad para generar desarrollo local sostenible y preservar el patrimonio. 
+
+- Ejemplos: senderos y miradores (SERNATUR), centros de información turística, baños públicos, rutas escénicas. 
+
+- Fuente: Servicio Nacional de Turismo (SERNATUR), Subsecretaría de Turismo, MINCAP. 
+
+
 
 ### Conectividad y Movilidad {#sec-mref-conectividad}
 
+La dimensión de Conectividad y Movilidad examina la infraestructura y los servicios que permiten la conexión física y digital de los territorios. Incluye transporte público, caminos estructurantes, ciclovías, accesibilidad universal, cobertura de internet y programas de alfabetización digital. 
+
+Esta dimensión es clave para garantizar la inclusión territorial, reducir desigualdades y facilitar el acceso a oportunidades sociales, económicas y culturales. 
+
+- Ejemplos: cobertura de transporte público (MINTRANS), kilómetros de ciclovías (MINVU), puntos Wifi-públicos (SUBTEL). 
+
+- Fuente: Ministerio de Transportes y Telecomunicaciones (MTT), SUBTEL, MINVU. 
+
+
 ## Clasificaciones institucionales y complementarias {#sec-rclasificaciones}
 
+La actualización de la Matriz de Bienestar Humano Territorial (MBHT) requiere una base conceptual y técnica sólida para clasificar de manera coherente los elementos que componen el territorio. En este contexto, las clasificaciones institucionales y complementarias cumplen un rol fundamental, ya que permiten organizar, jerarquizar y estandarizar los distintos tipos de infraestructura, equipamientos y servicios que inciden en el bienestar de la población. 
+
+Estas clasificaciones han sido construidas a partir de fuentes oficiales —como el Clasificador Presupuestario de la Dirección de Presupuestos (DIPRES), catastros sectoriales y normativas ministeriales— y han sido complementadas con criterios técnicos desarrollados por el Centro de Inteligencia Territorial de la Universidad Adolfo Ibáñez (CIT-UAI). Su objetivo es asegurar la comparabilidad territorial, la interoperabilidad de datos y la trazabilidad metodológica en el cálculo de indicadores. 
+
+La sección se estructura en cuatro bloques temáticos: 
+
+- Servicios Públicos: clasificados según su función estatal (sociales, de seguridad, económicos, ambientales y de administración), con tipologías específicas y fuentes institucionales. 
+
+- Nuevos Equipamientos: incorpora categorías emergentes como infraestructura para emergencias, abastecimiento alimentario, inclusión digital y resiliencia territorial. 
+
+- Infraestructura de Seguridad Vial: sistematiza elementos orientados a la movilidad segura, con énfasis en control de velocidad, accesibilidad universal y gestión ambiental. 
+
+- Elementos Turísticos: clasifica la infraestructura y servicios vinculados al turismo y patrimonio, integrando criterios de sostenibilidad, accesibilidad y hospitalidad. 
+
+Estas clasificaciones no solo permiten una lectura técnica del territorio, sino que también habilitan el diseño de indicadores más precisos, la identificación de brechas estructurales y la formulación de políticas públicas con enfoque territorial. 
+
 ### Servicios Públicos {#sec-mref-servicios-publicos2}
+
+Los servicios públicos representan las funciones esenciales del Estado para garantizar derechos sociales, seguridad, desarrollo económico, protección ambiental y gobernanza. Su clasificación se basa en el Clasificador Presupuestario de la Dirección de Presupuestos (DIPRES), que agrupa los servicios en cinco grandes categorías: sociales, de orden y seguridad, económicos, ambientales y de administración general. 
+
+Cada categoría incluye tipologías específicas (como salud, educación, justicia, fomento productivo o planificación territorial) que permiten identificar la presencia y cobertura institucional en los territorios. Esta clasificación es clave para evaluar la oferta pública disponible, su distribución espacial y su capacidad de respuesta frente a las necesidades locales. 
+
+Además, se incorporan subcategorías complementarias que permiten capturar aspectos territoriales relevantes, como infraestructura urbana básica, movilidad, seguridad urbana, medio ambiente y accesibilidad a servicios, integrando fuentes como el Índice de Bienestar Territorial (MINVU) y la Encuesta de Bienestar Social (MDSF). 
+
+| **Categoría**                           | **Tipologías de Servicios Públicos**                                                                                                                                         | **Fuente Oficial**                                                                          |
+|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| **Servicios Sociales**                 | Salud (atención primaria, secundaria, terciaria)</br>Educación (parvularia, básica, media, superior)</br>Protección social (SENAMA, SENAME, SENADIS)</br>Vivienda y urbanismo | DIPRES – Clasificador Presupuestario                                                         |
+| **Servicios de Orden y Seguridad**     | Policía (Carabineros, PDI)</br>Justicia (tribunales, defensoría, fiscalía)</br>Gendarmería</br>Seguridad pública y prevención del delito                                     | DIPRES – Clasificador Presupuestario                                                         |
+| **Servicios Económicos y Productivos** | Fomento productivo (CORFO, SERCOTEC, INDAP)</br>Transporte y telecomunicaciones</br>Energía y minería</br>Agricultura y pesca                                               | DIPRES – Clasificador Presupuestario                                                         |
+| **Servicios Ambientales y Territoriales** | Medio ambiente (SMA, CONAF, MMA)</br>Recursos hídricos</br>Planificación territorial y obras públicas (MOP, SERVIU)                                                           | DIPRES – Clasificador Presupuestario                                                         |
+| **Servicios de Administración y Gobierno** | Administración central (ministerios, subsecretarías)</br>Gobiernos regionales y municipalidades</br>Relaciones exteriores</br>Defensa nacional                               | DL N° 1.263 – Ley Orgánica de Administración Financiera del Estado                           |
+: Categorías y tipologías de Servicios Públicos. {#tbl-categoria-sp}
+
+
 
 ### Nuevos Equipamientos {#sec-mref-nuevos-equipamientos}
 
