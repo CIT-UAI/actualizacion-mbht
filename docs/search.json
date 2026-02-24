@@ -30,26 +30,6 @@
     ]
   },
   {
-    "objectID": "index.html#índice-de-tablas",
-    "href": "index.html#índice-de-tablas",
-    "title": "Guía Técnica MBHT",
-    "section": "Índice de Tablas",
-    "text": "Índice de Tablas",
-    "crumbs": [
-      "Prefacio"
-    ]
-  },
-  {
-    "objectID": "index.html#glosario-de-siglas",
-    "href": "index.html#glosario-de-siglas",
-    "title": "Guía Técnica MBHT",
-    "section": "Glosario de Siglas",
-    "text": "Glosario de Siglas\nMBHT: Matriz de Bienestar Humano Territorial.\nCIT: Centro de Inteligencia Territorial.\nUAI: Universidad Adolfo Ibáñez.\nINE: Instituto Nacional de Estadísticas.\nMINEDUC: Ministerio de Educación.\nMINVU: Ministerio de Vvienda y Urbanismo.\nMOP: Ministerio de Obras Públicas.\nMINSAL: Ministerio de Salud.\nSPD: Subsecretaría de Prevención del Delito.\nS.T.O.P: Sistema Táctico de Operación Policial.\nENUSC: Encuesta Nacional Urbana de Seguridad Ciudadana.",
-    "crumbs": [
-      "Prefacio"
-    ]
-  },
-  {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "1  Introducción",
@@ -57,256 +37,6 @@
     "text": "La Matriz de Bienestar Humano Territorial (MBHT) es una herramienta desarrollada por el Centro de Inteligencia Territorial de la Universidad Adolfo Ibáñez (CIT-UAI) que permite evaluar, de manera integrada y multiescalar, las condiciones de vida en los territorios de Chile. A través de indicadores georreferenciados, clasificaciones institucionales y metodologías estandarizadas, la MBHT ofrece una radiografía territorial del bienestar, facilitando la toma de decisiones informadas por parte de gobiernos locales, regionales y organismos públicos.\nEsta guía técnica para la actualización de la MBHT 2025-2026 tiene como propósito orientar el proceso de revisión, mejora y expansión de esta matriz, incorporando nuevas fuentes de información, fortaleciendo la calidad de los datos existentes y ampliando las dimensiones consideradas. El objetivo es reflejar con mayor precisión y actualidad las realidades territoriales del país, en un contexto marcado por transformaciones sociales, ambientales y tecnológicas.\nLa actualización 2025–2026 se estructura en torno a una metodología robusta y replicable, que integra componentes clave como el cálculo de indicadores, la normalización y ponderación de variables, el control de calidad (QA/QC), la validación cruzada y la georreferenciación. Asimismo, se desarrollan proyectos específicos por dimensión —como accesibilidad, seguridad, sostenibilidad ambiental, turismo y conectividad— que permiten abordar desafíos territoriales emergentes con enfoque técnico y operativo.\nEsta guía no solo documenta el proceso metodológico, sino que también entrega recomendaciones prácticas para su implementación, promoviendo la interoperabilidad institucional, la participación local y la sostenibilidad del sistema MBHT en el tiempo. Su contenido está dirigido a equipos técnicos municipales y regionales, profesionales del urbanismo y la planificación, investigadores, y tomadores de decisiones que buscan fortalecer la equidad territorial y el bienestar de las comunidades.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción</span>"
-    ]
-  },
-  {
-    "objectID": "marco_ref.html",
-    "href": "marco_ref.html",
-    "title": "2  Marco de Referencia",
-    "section": "",
-    "text": "2.1 Definiciones Claves\nLa actualización de la Matriz de Bienestar Humano Territorial (MBHT) para el periodo 2025–2026 se sustenta en un marco de referencia que articula los fundamentos conceptuales, metodológicos e institucionales necesarios para garantizar la coherencia, pertinencia y legitimidad del proceso. Este marco integra definiciones operativas, clasificaciones oficiales y criterios técnicos desarrollados por el Centro de Inteligencia Territorial de la Universidad Adolfo Ibáñez (CIT-UAI), a partir de fuentes institucionales, documentos normativos y experiencias acumuladas en versiones anteriores de la MBHT.\nSu propósito es ofrecer una base común para todos los actores involucrados en la actualización de la matriz, facilitando la comprensión de los componentes territoriales que inciden en el bienestar humano, y promoviendo una lectura integral del territorio desde múltiples escalas y dimensiones.\nEl marco de referencia se estructura en tres componentes clave:\nEste marco no solo orienta la construcción metodológica de la MBHT, sino que también fortalece su capacidad de interoperar con otras plataformas de información pública, de adaptarse a nuevas fuentes de datos, y de responder a los desafíos emergentes del desarrollo territorial en Chile.\nPara garantizar la coherencia conceptual y metodológica de la MBHT, esta sección establece las definiciones operativas fundamentales que estructuran sus dimensiones y componentes. Estas definiciones han sido elaboradas a partir de fuentes institucionales oficiales, documentos técnicos y la experiencia acumulada del CIT-UAI.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Marco de Referencia</span>"
-    ]
-  },
-  {
-    "objectID": "marco_ref.html#sec-rdefclaves",
-    "href": "marco_ref.html#sec-rdefclaves",
-    "title": "2  Marco de Referencia",
-    "section": "",
-    "text": "2.1.1 Infraestructura territorial\nLa infraestructura territorial corresponde al conjunto de elementos físicos, estructurales y funcionales que permiten el soporte básico para el desarrollo de actividades humanas, la movilidad, el acceso a servicios y la conectividad entre territorios. Incluye obras civiles, redes técnicas y sistemas de soporte urbano y rural.\n\nEjemplos de infraestructura incluyen: caminos, puentes, redes de agua potable y alcantarillado, redes eléctricas, infraestructura vial urbana, ciclovías, veredas, infraestructura de seguridad vial (lomos de toro, barandas, señalización), y redes de telecomunicaciones.\nFuente: Ministerio de Obras Públicas (MOP), Ministerio de Vivienda y Urbanismo (MIMVU), Subsecretaría de Desarrollo Regional (SUBDERE), y Clasificación de Infraestructura de Seguridad Vial (CIT-UAI, 2023).\n\n\n\n2.1.2 Equipamientos\nLos equipamientos corresponden a edificaciones, instalaciones o espacios habilitados para la provisión de bienes y servicios a la población. Se clasifican según su función en: educacionales, de salud, culturales, deportivos, de abastecimiento, tecnológicos, turísticos, entre otros.\n\nEjemplos de equipamientos incluyen: escuelas, liceos, universidades, hospitales, CESFAM, bibliotecas, centros culturales, estadios, multicanchas, ferias libres, centros de datos, telecentros, centros de información turística, baños públicos, entre otros.\nFuente: Ministerio de Educación (MINEDUC), Ministerio de Salud (MINSAL), Ministerio de las Culturas, las Artes y el Patrimonio (MINCAP), Ministerio del Deporte (MINDEP), SERNATUR, y Clasificación de Equipamientos MBHT (CIT-UAI, 2023).\n\n\n\n2.1.3 Servicios públicos\nLos servicios públicos corresponden a las funciones institucionales y operativas del Estado orientadas a garantizar derechos sociales, seguridad, desarrollo económico y gobernanza. Se clasifican institucionalmente según la Dirección de Presupuestos (DIPRES) en servicios sociales, de orden y seguridad, económicos, ambientales y de administración general.\n\nEjemplos de servicios públicos incluyen: atención primaria de salud, educación pública, servicios de justicia, policía, fomento productivo, servicios ambientales, y funciones municipales.\nFuente: Dirección de Presupuestos (DIPRES), Ministerio del Interior, Ministerio de Desarrollo Social y Familia (MDSF), y Clasificación de Servicios Públicos (CIT-UAI, 2023).\n\n\n\n2.1.4 Servicios de apoyo\nLos servicios de apoyo corresponden a funciones complementarias que permiten el funcionamiento, acceso y sostenibilidad de los equipamientos e infraestructuras. Incluyen servicios de conectividad, mantenimiento, gestión de riesgos, asistencia técnica, alfabetización digital, entre otros.\n\nEjemplos de servicios de apoyo incluyen: Wifi público, asistencia a adultos mayores en tecnologías, oficinas de protección civil, bancos de alimentos, programas de alfabetización digital, y servicios de monitoreo urbano.\nFuente: Subsecretaría de Telecomunicaciones (SUBTEL), ONEMI, Ministerio de Desarrollo Social y Familia (MDSF), y Clasificación de Nuevos Equipamientos (CIT-UAI, 2023).\n\n\n\n2.1.5 Interrelaciones Territoriales entre los elementos de la MBHT\nLa infraestructura, los equipamientos, los servicios públicos y los servicios de apoyo no son elementos aislados dentro del territorio, sino componentes interdependientes que, en conjunto, configuran las condiciones materiales y funcionales del bienestar humano (MOP, 2024). Su articulación territorial es clave para comprender cómo se estructura la vida cotidiana en las ciudades, barrios y localidades del país.\n\n\n\n\n\n\nFigure 2.1: TODO: Agregar Imagen Real luego de revisión. Relaciones territoriales entre Infraestructuras, equipamientos y servicios.\n\n\n\nDe la Figura 2.1 se desprende que la infraestructura constituye la base física sobre la cual se despliegan los demás componentes. Caminos, redes de agua, electricidad, telecomunicaciones y obras viales permiten la localización, operación y conectividad de los equipamientos y servicios. Sin una infraestructura adecuada, el acceso a derechos básicos como salud, educación o seguridad se ve limitado, especialmente en territorios rurales o periféricos.\nA su vez, los equipamientos se apoyan en esta infraestructura para funcionar y prestar servicios a la población. Escuelas, hospitales, bibliotecas, centros deportivos o culturales requieren conectividad vial, suministro eléctrico, acceso digital y condiciones de seguridad para operar de forma efectiva. Estos equipamientos son nodos clave de provisión de servicios públicos, como la educación, la salud o la protección social.\nLos servicios públicos representan la dimensión institucional de esta red territorial. Son las funciones del Estado que se materializan a través de equipamientos y se sostienen sobre la infraestructura existente. Su cobertura, calidad y equidad dependen tanto de la planificación territorial como de la capacidad institucional para garantizar su funcionamiento.\nPor su parte, los servicios de apoyo cumplen un rol transversal y habilitante. Permiten que la infraestructura y los equipamientos funcionen de manera continua, segura y accesible. Incluyen desde el mantenimiento urbano y la gestión de riesgos, hasta la conectividad digital y la asistencia técnica a grupos vulnerables. Su presencia es especialmente relevante en contextos de emergencia, zonas rurales o territorios con brechas estructurales.\nEn conjunto, estos cuatro componentes forman un sistema territorial integrado. Su análisis articulado permite identificar brechas, planificar inversiones y diseñar políticas públicas más efectivas y equitativas, orientadas a mejorar el bienestar de las personas en sus territorios.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Marco de Referencia</span>"
-    ]
-  },
-  {
-    "objectID": "marco_ref.html#sec-rdimensiones",
-    "href": "marco_ref.html#sec-rdimensiones",
-    "title": "2  Marco de Referencia",
-    "section": "2.2 Dimensiones del Bienestar Territorial",
-    "text": "2.2 Dimensiones del Bienestar Territorial\nLas dimensiones del Bienestar Humano Territorial (BHT) constituyen el eje estructurante de la MBHT. Su inclusión en esta guía responde a la necesidad de contar con un marco analítico que permita descomponer el bienestar en componentes temáticos observables, medibles y territorialmente diferenciables.\nCada dimensión representa un ámbito clave del desarrollo territorial, vinculado a derechos sociales, condiciones ambientales, accesibilidad a bienes públicos, seguridad ciudadana y conectividad. Estas dimensiones no solo permiten caracterizar la calidad de vida en los distintos territorios del país, sino que también orientan la formulación de indicadores, la priorización de políticas públicas y la focalización de inversiones.\nLa definición y actualización de estas dimensiones ha sido el resultado de un proceso técnico y participativo liderado por el CIT-UAI, en diálogo con instituciones sectoriales, gobiernos locales y expertos en planificación territorial. Su estructura busca reflejar tanto los desafíos históricos del desarrollo urbano y rural en Chile, como las nuevas demandas emergentes en materia de equidad, sostenibilidad y resiliencia.\nEn esta sección se presentan las principales dimensiones consideradas en la actualización 2025–2026, junto con sus fundamentos conceptuales, ejemplos aplicados y referencias institucionales. Su comprensión es clave para interpretar los indicadores de la MBHT y para utilizar la matriz como una herramienta efectiva de análisis, planificación y toma de decisiones territoriales.\n\n2.2.1 Accesibilidad Territorial\nLa dimensión de Accesibilidad Territorial evalúa el grado en que la población puede acceder de manera equitativa y oportuna a bienes públicos esenciales, tales como áreas verdes, centros de salud, establecimientos educacionales, espacios culturales y deportivos. Esta dimensión considera criterios de cobertura espacial, densidad de servicios y equidad territorial, permitiendo identificar brechas de acceso que afectan la calidad de vida.\nLos indicadores asociados miden, entre otros aspectos, la distancia a servicios clave, la proporción de población cubierta y la conectividad física entre zonas residenciales y equipamientos urbanos.\n\nEjemplos: acceso a parques urbanos (MINVU), cobertura de CESFAM (MINSAL), distancia a bibliotecas públicas (MINCAP).\nFuente: Ministerio de Vivienda y Urbanismo (MINVU), Ministerio de Salud (MINSAL), Ministerio de las Culturas (MINCAP).\n\n\n\n2.2.2 Seguridad y Prevención\nEsta dimensión aborda las condiciones de seguridad ciudadana y la infraestructura orientada a la prevención del delito y la movilidad segura. Integra tanto indicadores objetivos (como tasas de delitos) como elementos de percepción, infraestructura vial segura, señalización, iluminación y servicios de emergencia.\nSu análisis permite identificar territorios con mayores niveles de vulnerabilidad, así como evaluar la efectividad de las políticas públicas en materia de prevención y control del delito.\n\nEjemplos: tasa de delitos por comuna (SPD), presencia de lomos de toro y semáforos (MOP), cobertura de cámaras de vigilancia (municipalidades).\nFuente: Subsecretaría de Prevención del Delito (SPD), Ministerio de Obras Públicas (MOP), municipalidades.\n\n\n\n2.2.3 Sostenibilidad Ambiental\nLa dimensión de Sostenibilidad Ambiental considera la presencia, calidad y acceso a infraestructura verde, servicios ecosistémicos urbanos, gestión de residuos, calidad del aire y resiliencia frente a riesgos naturales. Busca integrar criterios de sustentabilidad en la planificación territorial, promoviendo entornos urbanos más saludables, resilientes y equitativos.\nLos indicadores permiten evaluar tanto la oferta ambiental como la capacidad de los territorios para enfrentar amenazas climáticas y desastres naturales.\n\nEjemplos: superficie de áreas verdes por habitante (MINVU), cobertura de reciclaje (MMA), zonas de riesgo y mitigación (ONEMI).\nFuente: Ministerio del Medio Ambiente (MMA), Oficina Nacional de Emergencia (ONEMI), MINVU.\n\n\n\n2.2.4 Turismo y Patrimonio\nEsta dimensión analiza la infraestructura, equipamientos y servicios vinculados al turismo, el patrimonio cultural y el patrimonio natural. Evalúa la presencia de atractivos turísticos, la calidad de la señalética, la accesibilidad, los servicios de apoyo y la gestión ambiental del turismo.\nSu inclusión permite visibilizar el potencial turístico de los territorios, así como su capacidad para generar desarrollo local sostenible y preservar el patrimonio.\n\nEjemplos: senderos y miradores (SERNATUR), centros de información turística, baños públicos, rutas escénicas.\nFuente: Servicio Nacional de Turismo (SERNATUR), Subsecretaría de Turismo, MINCAP.\n\n\n\n2.2.5 Conectividad y Movilidad\nLa dimensión de Conectividad y Movilidad examina la infraestructura y los servicios que permiten la conexión física y digital de los territorios. Incluye transporte público, caminos estructurantes, ciclovías, accesibilidad universal, cobertura de internet y programas de alfabetización digital.\nEsta dimensión es clave para garantizar la inclusión territorial, reducir desigualdades y facilitar el acceso a oportunidades sociales, económicas y culturales.\n\nEjemplos: cobertura de transporte público (MINTRANS), kilómetros de ciclovías (MINVU), puntos Wifi-públicos (SUBTEL).\nFuente: Ministerio de Transportes y Telecomunicaciones (MTT), SUBTEL, MINVU.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Marco de Referencia</span>"
-    ]
-  },
-  {
-    "objectID": "marco_ref.html#sec-rclasificaciones",
-    "href": "marco_ref.html#sec-rclasificaciones",
-    "title": "2  Marco de Referencia",
-    "section": "2.3 Clasificaciones institucionales y complementarias",
-    "text": "2.3 Clasificaciones institucionales y complementarias\nLa actualización de la Matriz de Bienestar Humano Territorial (MBHT) requiere una base conceptual y técnica sólida para clasificar de manera coherente los elementos que componen el territorio. En este contexto, las clasificaciones institucionales y complementarias cumplen un rol fundamental, ya que permiten organizar, jerarquizar y estandarizar los distintos tipos de infraestructura, equipamientos y servicios que inciden en el bienestar de la población.\nEstas clasificaciones han sido construidas a partir de fuentes oficiales —como el Clasificador Presupuestario de la Dirección de Presupuestos (DIPRES), catastros sectoriales y normativas ministeriales— y han sido complementadas con criterios técnicos desarrollados por el Centro de Inteligencia Territorial de la Universidad Adolfo Ibáñez (CIT-UAI). Su objetivo es asegurar la comparabilidad territorial, la interoperabilidad de datos y la trazabilidad metodológica en el cálculo de indicadores.\nLa sección se estructura en cuatro bloques temáticos:\n\nServicios Públicos: clasificados según su función estatal (sociales, de seguridad, económicos, ambientales y de administración), con tipologías específicas y fuentes institucionales.\nNuevos Equipamientos: incorpora categorías emergentes como infraestructura para emergencias, abastecimiento alimentario, inclusión digital y resiliencia territorial.\nInfraestructura de Seguridad Vial: sistematiza elementos orientados a la movilidad segura, con énfasis en control de velocidad, accesibilidad universal y gestión ambiental.\nElementos Turísticos: clasifica la infraestructura y servicios vinculados al turismo y patrimonio, integrando criterios de sostenibilidad, accesibilidad y hospitalidad.\n\nEstas clasificaciones no solo permiten una lectura técnica del territorio, sino que también habilitan el diseño de indicadores más precisos, la identificación de brechas estructurales y la formulación de políticas públicas con enfoque territorial.\n\n2.3.1 Servicios Públicos\nLos servicios públicos representan las funciones esenciales del Estado para garantizar derechos sociales, seguridad, desarrollo económico, protección ambiental y gobernanza. Su clasificación se basa en el Clasificador Presupuestario de la Dirección de Presupuestos (DIPRES), que agrupa los servicios en cinco grandes categorías: sociales, de orden y seguridad, económicos, ambientales y de administración general.\nCada categoría incluye tipologías específicas (como salud, educación, justicia, fomento productivo o planificación territorial) que permiten identificar la presencia y cobertura institucional en los territorios. Esta clasificación es clave para evaluar la oferta pública disponible, su distribución espacial y su capacidad de respuesta frente a las necesidades locales.\nAdemás, se incorporan subcategorías complementarias que permiten capturar aspectos territoriales relevantes, como infraestructura urbana básica, movilidad, seguridad urbana, medio ambiente y accesibilidad a servicios, integrando fuentes como el Índice de Bienestar Territorial (MINVU) y la Encuesta de Bienestar Social (MDSF).\n\n\n\nTable 2.1: Categorías y tipologías de Servicios Públicos.\n\n\n\n\n\n\n\n\n\n\nCategoría\nTipologías de Servicios Públicos\nFuente Oficial\n\n\n\n\nServicios Sociales\nSalud (atención primaria, secundaria, terciaria)Educación (parvularia, básica, media, superior)Protección social (SENAMA, SENAME, SENADIS)Vivienda y urbanismo\nDIPRES – Clasificador Presupuestario\n\n\nServicios de Orden y Seguridad\nPolicía (Carabineros, PDI)Justicia (tribunales, defensoría, fiscalía)GendarmeríaSeguridad pública y prevención del delito\nDIPRES – Clasificador Presupuestario\n\n\nServicios Económicos y Productivos\nFomento productivo (CORFO, SERCOTEC, INDAP)Transporte y telecomunicacionesEnergía y mineríaAgricultura y pesca\nDIPRES – Clasificador Presupuestario\n\n\nServicios Ambientales y Territoriales\nMedio ambiente (SMA, CONAF, MMA)Recursos hídricosPlanificación territorial y obras públicas (MOP, SERVIU)\nDIPRES – Clasificador Presupuestario\n\n\nServicios de Administración y Gobierno\nAdministración central (ministerios, subsecretarías)Gobiernos regionales y municipalidadesRelaciones exterioresDefensa nacional\nDL N° 1.263 – Ley Orgánica de Administración Financiera del Estado\n\n\n\n\n\n\n\n\n2.3.2 Nuevos Equipamientos\n\n\n2.3.3 Infraestructura de Seguridad Vial\n\n\n2.3.4 Clasificación de Elementos Turísticos\n\n\n2.3.5 Vinculación entre Clasificaciones e Indicadores MBHT",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Marco de Referencia</span>"
-    ]
-  },
-  {
-    "objectID": "met_actualizacion.html",
-    "href": "met_actualizacion.html",
-    "title": "3  Metodología de Actualización",
-    "section": "",
-    "text": "3.1 Cálculo de Indicadores",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Metodología de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "met_actualizacion.html#sec-metodologia-calculo",
-    "href": "met_actualizacion.html#sec-metodologia-calculo",
-    "title": "3  Metodología de Actualización",
-    "section": "",
-    "text": "3.1.1 Tipos de variables utilizadas\n\n\n3.1.2 Estructura del cálculo\n\n\n3.1.3 Consideraciones técnicas\n\n\n3.1.4 Ejemplo aplicado",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Metodología de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "met_actualizacion.html#sec-metodologia-normalizacion",
-    "href": "met_actualizacion.html#sec-metodologia-normalizacion",
-    "title": "3  Metodología de Actualización",
-    "section": "3.2 Normalización",
-    "text": "3.2 Normalización\n\n3.2.1 Objetivo de la normalización\n\n\n3.2.2 Criterios de la normalización\n\n\n3.2.3 Método utilizado\n\n\n3.2.4 Consideraciones metodológicas\n\n\n3.2.5 Ejemplo aplicado",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Metodología de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "met_actualizacion.html#sec-metodologia-ponderacion",
-    "href": "met_actualizacion.html#sec-metodologia-ponderacion",
-    "title": "3  Metodología de Actualización",
-    "section": "3.3 Ponderación",
-    "text": "3.3 Ponderación\n\n3.3.1 Objetivo de la ponderación\n\n\n3.3.2 Criterios de ponderación\n\n\n3.3.3 Métodos utilizados\n\n\n3.3.4 Consideraciones metodológicas\n\n\n3.3.5 Ejemplo aplicado",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Metodología de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "met_actualizacion.html#sec-metodologia-qa",
-    "href": "met_actualizacion.html#sec-metodologia-qa",
-    "title": "3  Metodología de Actualización",
-    "section": "3.4 Protocolos de Control de Calidad (QA/QC)",
-    "text": "3.4 Protocolos de Control de Calidad (QA/QC)\n\n3.4.1 Objetivos del control de calidad\n\n\n3.4.2 Protocolos QA/QC aplicados\n\n\n3.4.3 Herramientas utilizadas\n\n\n3.4.4 Ejemplo aplicado",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Metodología de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "met_actualizacion.html#sec-metodologia-validacion",
-    "href": "met_actualizacion.html#sec-metodologia-validacion",
-    "title": "3  Metodología de Actualización",
-    "section": "3.5 Validación Cruzada",
-    "text": "3.5 Validación Cruzada\n\n3.5.1 Objetivos de la validación cruzada\n\n\n3.5.2 Tipos de validación cruzada\n\n\n3.5.3 Procedimientos aplicados\n\n\n3.5.4 Resultados esperados\n\n\n3.5.5 Ejemplo aplicado",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Metodología de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "met_actualizacion.html#sec-metodologia-georef",
-    "href": "met_actualizacion.html#sec-metodologia-georef",
-    "title": "3  Metodología de Actualización",
-    "section": "3.6 Georreferenciación",
-    "text": "3.6 Georreferenciación\n\n3.6.1 Objetivos de la georreferenciación\n\n\n3.6.2 Unidades espaciales utilizadas\n\n\n3.6.3 Sistemas de referencia y formatos\n\n\n3.6.4 Fuentes de datos georreferenciados\n\n\n3.6.5 Procedimientos aplicados\n\n\n3.6.6 Resultados esperados\n\n\n3.6.7 Ejemplo aplicado",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Metodología de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "proyectos.html",
-    "href": "proyectos.html",
-    "title": "4  Proyectos de Actualización",
-    "section": "",
-    "text": "4.1 Proyecto 1: Actualización de la Dimensión Accesibilidad",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyectos de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "proyectos.html#sec-proyectos-1",
-    "href": "proyectos.html#sec-proyectos-1",
-    "title": "4  Proyectos de Actualización",
-    "section": "",
-    "text": "4.1.1 Fases y Actividades\n\n\n4.1.2 Riesgos y Estrategias de Mitigación\n\n\n4.1.3 Recomendaciones Técnicas y Operativas",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyectos de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "proyectos.html#sec-proyectos-2",
-    "href": "proyectos.html#sec-proyectos-2",
-    "title": "4  Proyectos de Actualización",
-    "section": "4.2 Proyecto 2: Dimensión Ambiental",
-    "text": "4.2 Proyecto 2: Dimensión Ambiental\n\n4.2.1 Fases y Actividades\n\n4.2.1.1 Introducción\n\n\n4.2.1.2 Índice de Cobertura Vegetal (ICV)\nLevantamiento de Insumos Satelitales\nCálculo de NDVI\nDefinición de Umbral de NDVI\n\n\n4.2.1.3 Índice de Amplitud Térmica (IATA)",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyectos de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "proyectos.html#sec-proyectos-3",
-    "href": "proyectos.html#sec-proyectos-3",
-    "title": "4  Proyectos de Actualización",
-    "section": "4.3 Proyecto 3",
-    "text": "4.3 Proyecto 3",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyectos de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "proyectos.html#sec-proyectos-4",
-    "href": "proyectos.html#sec-proyectos-4",
-    "title": "4  Proyectos de Actualización",
-    "section": "4.4 Proyecto 4",
-    "text": "4.4 Proyecto 4",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyectos de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "proyectos.html#sec-proyectos-5",
-    "href": "proyectos.html#sec-proyectos-5",
-    "title": "4  Proyectos de Actualización",
-    "section": "4.5 Proyecto 5: Solicitud de Información por Transparencia",
-    "text": "4.5 Proyecto 5: Solicitud de Información por Transparencia",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyectos de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "proyectos.html#sec-proyectos-6",
-    "href": "proyectos.html#sec-proyectos-6",
-    "title": "4  Proyectos de Actualización",
-    "section": "4.6 Proyecto 6: Actualización de la Dimensión Seguridad",
-    "text": "4.6 Proyecto 6: Actualización de la Dimensión Seguridad",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyectos de Actualización</span>"
-    ]
-  },
-  {
-    "objectID": "recomendaciones.html",
-    "href": "recomendaciones.html",
-    "title": "5  Recomendaciones Operativas",
-    "section": "",
-    "text": "5.1 Coordinación Interinstitucional",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Recomendaciones Operativas</span>"
-    ]
-  },
-  {
-    "objectID": "recomendaciones.html#sec-recomendaciones-levantamiento",
-    "href": "recomendaciones.html#sec-recomendaciones-levantamiento",
-    "title": "5  Recomendaciones Operativas",
-    "section": "5.2 Levantamiento de Información Territorial",
-    "text": "5.2 Levantamiento de Información Territorial",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Recomendaciones Operativas</span>"
-    ]
-  },
-  {
-    "objectID": "recomendaciones.html#sec-recomendaciones-validacion",
-    "href": "recomendaciones.html#sec-recomendaciones-validacion",
-    "title": "5  Recomendaciones Operativas",
-    "section": "5.3 Validación y Control de Calidad",
-    "text": "5.3 Validación y Control de Calidad",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Recomendaciones Operativas</span>"
-    ]
-  },
-  {
-    "objectID": "recomendaciones.html#sec-recomendaciones-interoperabilidad",
-    "href": "recomendaciones.html#sec-recomendaciones-interoperabilidad",
-    "title": "5  Recomendaciones Operativas",
-    "section": "5.4 Interoperabilidad y Estandarización",
-    "text": "5.4 Interoperabilidad y Estandarización",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Recomendaciones Operativas</span>"
-    ]
-  },
-  {
-    "objectID": "recomendaciones.html#sec-recomendaciones-participacion",
-    "href": "recomendaciones.html#sec-recomendaciones-participacion",
-    "title": "5  Recomendaciones Operativas",
-    "section": "5.5 Participación Local y Validación Territorial",
-    "text": "5.5 Participación Local y Validación Territorial",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Recomendaciones Operativas</span>"
-    ]
-  },
-  {
-    "objectID": "recomendaciones.html#sec-recomendaciones-sostenibilidad",
-    "href": "recomendaciones.html#sec-recomendaciones-sostenibilidad",
-    "title": "5  Recomendaciones Operativas",
-    "section": "5.6 Sostenibilidad del Sistema MBHT",
-    "text": "5.6 Sostenibilidad del Sistema MBHT",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Recomendaciones Operativas</span>"
-    ]
-  },
-  {
-    "objectID": "anexos.html",
-    "href": "anexos.html",
-    "title": "4  Anexos",
-    "section": "",
-    "text": "4.1 Fichas",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anexos</span>"
     ]
   },
   {
@@ -320,71 +50,11 @@
     ]
   },
   {
-    "objectID": "c_geometric.html#descripción-general",
-    "href": "c_geometric.html#descripción-general",
-    "title": "4  Corrección Geométrica",
-    "section": "",
-    "text": "Branch 1: Manzanas (mz_*)\nBranch 2: Entidades (ent_*)",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Corrección Geométrica</span>"
-    ]
-  },
-  {
-    "objectID": "c_geometric.html#flujo-de-trabajo-targets-pipeline",
-    "href": "c_geometric.html#flujo-de-trabajo-targets-pipeline",
-    "title": "4  Corrección Geométrica",
-    "section": "4.2 Flujo de Trabajo (Targets Pipeline)",
-    "text": "4.2 Flujo de Trabajo (Targets Pipeline)\nEl proceso sigue una lógica de optimización para evitar cálculos costosos innecesarios.\n\n4.2.1 1. Ingesta y Preparación\n\nLectura: Se leen las capas espaciales desde la base de datos DuckDB (censo_2024.duckdb).\nPreparación (prep_manzanas):\n\nEstandarización de CRS (EPSG:32719).\nValidación de geometrías (st_make_valid).\nCálculo del área base de la geometría.\n\n\n\n\n4.2.2 2. Optimización: Análisis de Multipolígonos\nTarget: mz_analysis | ent_analysis Función: verify_id_multiparts\nAquí detectamos qué geometrías son “problemáticas” y requieren un análisis detallado de edificaciones, y cuáles son simples.\n\nSe identifican geometrías con múltiples partes (MULTIPOLYGON).\nSe calcula la distancia de cada parte al centroide del conjunto.\nCriterio de “Sospecha”: Si una parte está a más de dist_radio_th (e.g., 500m) del centro, se marca como suspicious.\nResultado:\n\nMaestro (mz_parts_all): Todos los polígonos explotados con IDs únicos sufijados (e.g., 12345-001).\nSubset Proceso (mz_process_sf): Solo las partes “sospechosas” que requieren cálculo de edificios. Las demás asumen w=1 o distribución por área simple.\n\n\n\n\n4.2.3 3. Caché de Edificaciones (Optimización I/O)\nTarget: mz_building_cache_dir Función: create_building_cache_batched\nPara las geometrías sospechosas, extraemos las edificaciones relevantes desde el GPKG nacional:\n\nGenera clusters espaciales (batches) de las zonas a procesar.\nLee edificaciones solo en el área de interés (+ buffer de 20m).\nConvierte geometrías complejas a puntos representativos + índice H3.\nGuarda en formato Parquet particionado por H3 parent, optimizando la lectura posterior.\n\n\n\n4.2.4 4. Cálculo de Estadísticas (Rust Integration)\nTarget: mz_batch_stats Función: run_all_batches -&gt; process_batch\nEl núcleo del procesamiento pesado:\n\nItera sobre batches de polígonos objetivo.\nCarga candidatos (edificios) desde el caché parquet eficientemente usando índices H3.\nLlamada a Rust (buildingR::assign_points_to_polygons): Realiza el “Point-inj-Polygon” de alto rendimiento.\nRetorna conteo de edificios (n_buildings) y suma de área (area_sum) para cada parte.\n\n\n\n4.2.5 5. Cálculo de Pesos y Consolidación\nTarget: mz_weights_calc -&gt; mz_weights_final Función: compute_weights\nFusiona los resultados del cálculo intensivo con el dataset maestro:\n\nPara partes calculadas: w = \\frac{\\text{Area Edificios Parte}}{\\text{Area Edificios Total ID}}\nPara partes no calculadas (sin edificios o no sospechosas): Se usa el fallback (default w=1 o proporcional al área de terreno).\nSe rellenan valores nulos coalesce con 0 para conteos y 1 para pesos únicos.\n\n\n\n4.2.6 6. Salidas\nSe generan tres formatos de salida sincronizados:\n\nParquet: data/out/*_weights.parquet (Consumo rápido en R/Python).\nGeoPackage: data/out/*_weights.gpkg (Visualización GIS).\nDuckDB: Tablas manzanas_weights y entidades_weights escritas de vuelta a la DB.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Corrección Geométrica</span>"
-    ]
-  },
-  {
-    "objectID": "c_geometric.html#referencia-de-funciones-clave",
-    "href": "c_geometric.html#referencia-de-funciones-clave",
-    "title": "4  Corrección Geométrica",
-    "section": "4.3 Referencia de Funciones Clave",
-    "text": "4.3 Referencia de Funciones Clave\nUbicadas principalmente en R/multi_ID/.\n\n4.3.1 verify_id_multiparts(manz_sf, max_dist_threshold_m, ...)\n\nUbicación: R/multi_ID/fnc_validation_id.R\nPropósito: Separa el flujo de trabajo. Analiza la dispersión de multipolígonos.\nParámetro clave: max_dist_threshold_m. Define qué tan lejos debe estar una parte para considerar que requiere validación de edificaciones independiente.\n\n\n\n4.3.2 create_building_cache_batched(...)\n\nUbicación: R/multi_ID/fnc_get_building.R\nPropósito: Crea el dataset intermedio de edificios.\nDetalle: Usa h3_res (10) para indexar edificios y h3p_res (5) para particionar el parquet. Esto permite que en el paso siguiente solo se carguen ficheros parquet relevantes para cada batch de manzanas.\n\n\n\n4.3.3 run_all_batches(...)\n\nUbicación: R/multi_ID/fnc_get_building.R\nPropósito: Orquestador del procesamiento paralelo/serial.\nDetalle: Gestiona checkpoints (tmp_dir) para que si el proceso falla, se pueda reanudar sin empezar de cero. Transforma datos a WGS84 antes de enviarlos a Rust.\n\n\n\n4.3.4 process_batch(idx, cache_ds, ...)\n\nUbicación: R/multi_ID/fnc_get_building.R\nPropósito: Unidad de trabajo.\n\n\nget_robust_h3_parents: Identifica celdas H3 que cubren el polígono.\nread_candidates_arrow: Trae solo los edificios potenciales.\nbuildingR::assign_points_to_polygons: Rust. Cruce geométrico ultra-rápido.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Corrección Geométrica</span>"
-    ]
-  },
-  {
-    "objectID": "c_geometric.html#parámetros-configurables",
-    "href": "c_geometric.html#parámetros-configurables",
-    "title": "4  Corrección Geométrica",
-    "section": "4.4 Parámetros Configurables",
-    "text": "4.4 Parámetros Configurables\nSi deseas ajustar el comportamiento del flujo, modifica la sección Parámetros en _targets.R.\n\n\n\n\n\n\n\n\nParámetro\nValor Actual\nDescripción\n\n\n\n\ndist_radio_th\n500\nUmbral en metros. Si una parte de un multipolígono está a más de 500m del centro, se procesa con edificios. Reducir esto aumentará el tiempo de cómputo (más polígonos analizados).\n\n\nbuffer_m\n20\nBuffer alrededor de las manzanas para buscar edificios cercanos (margen de error GPS/dibujo).\n\n\nh3_res\n10\nResolución H3 para representar la ubicación del edificio.\n\n\nh3p_res\n5\nResolución H3 “Parent” para particionar los archivos parquet.\n\n\nbatch_size\n200\nCantidad de polígonos por lote enviado a procesar.\n\n\nw_method\n\"by_area\"\nMétodo fallback si no hay edificios: \"by_area\" (proporcional al terreno) o \"uniform\" (1/n).",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Corrección Geométrica</span>"
-    ]
-  },
-  {
-    "objectID": "c_geometric.html#cómo-ejecutar",
-    "href": "c_geometric.html#cómo-ejecutar",
-    "title": "4  Corrección Geométrica",
-    "section": "4.5 Cómo Ejecutar",
-    "text": "4.5 Cómo Ejecutar\nPara correr el flujo completo o actualizar cambios:\nlibrary(targets)\n# Ver el estado del pipeline (qué está desactualizado)\ntar_visnetwork()\n\n# Ejecutar el pipeline\ntar_make()\nPara cargar resultados específicos en tu sesión de R:\ntar_load(mz_weights_final)\n# O leer directamente el parquet de salida\ndf &lt;- sfarrow::st_read_parquet(\"data/out/mz_weights.parquet\")",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Corrección Geométrica</span>"
-    ]
-  },
-  {
     "objectID": "c_geometric.html#por-qué-fue-necesaria-esta-corrección",
     "href": "c_geometric.html#por-qué-fue-necesaria-esta-corrección",
     "title": "2  Corrección Geométrica",
     "section": "",
     "text": "La visualización de resultados,\nLa agregación y desagregación de variables,\nEl cálculo de indicadores territoriales,\nLa interpretación espacial de los datos.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Corrección Geométrica</span>"
-    ]
-  },
-  {
-    "objectID": "c_geometric.html#problema-identificado",
-    "href": "c_geometric.html#problema-identificado",
-    "title": "2  Corrección Geométrica",
-    "section": "2.2 Problema identificado",
-    "text": "2.2 Problema identificado\nEl problema observado puede resumirse así: Un ID censal único (por ejemplo, una manzana o entidad rural) aparece representado por múltiples polígonos. Estos polígonos pueden estar contiguos (parte de una misma unidad con geometría multipart) Figura 2.1 (a), o separados espacialmente de forma evidente (casos problemáticos) Figura 2.1 (b), como se observa en la siguientes figuras:\n\n\n\n\n\n\n\n\n\n\n\n(a) Geometrías que comparten ID se encuentran contiguas\n\n\n\n\n\n\n\n\n\n\n\n(b) Geometrías que comparten ID se encuentran Separadas espacialemnte\n\n\n\n\n\n\n\nFigure 2.1: Tipos de problemas en geometrías que comparten el mismo ID.\n\n\n\nDesde el punto de vista del procesamiento, esto obliga a responder una pregunta clave:\n\nSi una unidad censal original se divide en varios polígonos independientes, ¿cómo se distribuyen sus atributos en los nuevos polígonos resultantes?\n\nLa respuesta adoptada en esta metodología fue una distribución proporcional basada en la presencia de edificaciones, utilizando un archivo nacional de buildings (huellas de edificaciones).",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Corrección Geométrica</span>"
     ]
@@ -400,31 +70,11 @@
     ]
   },
   {
-    "objectID": "c_geometric.html#principio-metodológico-de-redistribución",
-    "href": "c_geometric.html#principio-metodológico-de-redistribución",
+    "objectID": "c_geometric.html#principio-de-redistribución",
+    "href": "c_geometric.html#principio-de-redistribución",
     "title": "2  Corrección Geométrica",
-    "section": "2.3 Principio metodológico de redistribución",
-    "text": "2.3 Principio metodológico de redistribución\nLa idea central es que, cuando un ID original debe separarse en más de un polígono, la información asociada a ese ID se redistribuye entre los nuevos polígonos de forma proporcional a la cantidad (y/o superficie) de edificaciones contenidas en cada uno.\n\n2.3.1 ¿Por qué usar edificaciones como criterio?\nPorque en términos censales y territoriales, las edificaciones son una mejor aproximación a la ocupación real del espacio que el área del polígono por sí sola. Dos polígonos pueden tener tamaños similares, pero contener una cantidad muy distinta de construcciones.\nEsto permite una redistribución más realista de los atributos cuando una unidad original se fragmenta.\n\n\n2.3.2 Casos en que aplica la redistribución\nLa redistribución proporcional se aplica solo en los casos donde un ID original está representado por más de un polígono.\n\nSi una geometría corresponde a un único polígono, no requiere redistribución.\nSi un ID se divide en múltiples partes, se calcula un peso de diseminación para cada parte.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Corrección Geométrica</span>"
-    ]
-  },
-  {
-    "objectID": "c_geometric.html#objetivo-del-procedimiento",
-    "href": "c_geometric.html#objetivo-del-procedimiento",
-    "title": "2  Corrección Geométrica",
-    "section": "2.4 Objetivo del procedimiento",
-    "text": "2.4 Objetivo del procedimiento\nEl objetivo del flujo es calcular, para cada parte geométrica resultante, un peso (w) que permita distribuir atributos del ID original hacia los nuevos polígonos corregidos.\nEn términos generales:\n\ncada polígono resultante recibe un peso,\ny la suma de los pesos de todas las partes de un mismo ID original debe ser 1 (en los casos redistribuidos).\n\nEste peso se utiliza posteriormente para desagregar variables de manera consistente.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Corrección Geométrica</span>"
-    ]
-  },
-  {
-    "objectID": "c_geometric.html#enfoque-general-del-procesamiento",
-    "href": "c_geometric.html#enfoque-general-del-procesamiento",
-    "title": "2  Corrección Geométrica",
-    "section": "2.5 Enfoque general del procesamiento",
-    "text": "2.5 Enfoque general del procesamiento\nEl flujo fue implementado con dos ramas principales que siguen la misma lógica:\n\nManzanas (mz_*)\nEntidades rurales (ent_*)\n\nEl proceso fue diseñado con foco en:\n\nconsistencia geométrica,\neficiencia computacional,\nreproducibilidad,\ny escalabilidad nacional (por el volumen de datos involucrado).",
+    "section": "2.3 Principio de redistribución",
+    "text": "2.3 Principio de redistribución\nLa metodología se basa en un principio simple pero fundamental: cuando un ID censal original debe separarse en más de un polígono, la información asociada a ese ID no puede copiarse de forma idéntica en cada parte, sino que debe redistribuirse proporcionalmente. Para ello, se utiliza como criterio la cantidad y/o superficie de edificaciones contenidas en cada polígono resultante. Esta decisión metodológica busca que la distribución de atributos refleje mejor la ocupación real del espacio, en lugar de depender únicamente del área del terreno.\nEl uso de edificaciones como base de redistribución responde a una razón analítica importante: en términos censales y territoriales, la huella construida suele representar de mejor manera la intensidad de uso del espacio. En la práctica, dos polígonos pueden tener áreas similares, pero una concentración muy distinta de construcciones. Por ello, distribuir atributos en función de edificaciones permite una asignación más realista y más consistente con la estructura territorial observada.\nEste procedimiento se aplica solo cuando un mismo ID está representado por más de un polígono. Si una geometría corresponde a un único polígono, no se requiere redistribución. En cambio, cuando el ID se divide en múltiples partes, se calcula un peso de diseminación para cada una de ellas, que luego permite repartir los atributos del registro original de forma proporcional.\nObjetivo del procedimiento\nEl objetivo del flujo, por tanto, es calcular para cada parte geométrica un peso (w) que permita transferir atributos desde el ID original hacia los nuevos polígonos corregidos. En términos generales, cada polígono resultante recibe un peso y, dentro de cada ID original fragmentado, la suma de esos pesos debe ser igual a 1. Esto asegura que la redistribución mantenga consistencia interna y que posteriormente las variables puedan desagregarse sin alterar el total original.\nEnfoque general\nA nivel de implementación, el procesamiento se organiza en dos ramas principales que siguen la misma lógica metodológica: una para manzanas (mz_*) y otra para entidades rurales (ent_*). Aunque se aplican sobre unidades espaciales distintas, ambas ramas comparten el mismo enfoque de corrección y redistribución. En su diseño general, el flujo prioriza cuatro criterios: consistencia geométrica, para asegurar que las unidades corregidas sean espacialmente válidas; eficiencia computacional, para procesar grandes volúmenes de datos; reproducibilidad, para poder repetir y auditar el procedimiento; y escalabilidad nacional, considerando que el procesamiento utiliza información espacial de cobertura nacional.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Corrección Geométrica</span>"
     ]
@@ -440,23 +90,13 @@
     ]
   },
   {
-    "objectID": "c_geometric.html#principio-de-redistribución-objetivo-del-procedimiento-y-enfoque-general",
-    "href": "c_geometric.html#principio-de-redistribución-objetivo-del-procedimiento-y-enfoque-general",
-    "title": "2  Corrección Geométrica",
-    "section": "2.3 Principio de redistribución, objetivo del procedimiento y enfoque general",
-    "text": "2.3 Principio de redistribución, objetivo del procedimiento y enfoque general\nLa metodología se basa en un principio simple pero fundamental: cuando un ID censal original debe separarse en más de un polígono, la información asociada a ese ID no puede copiarse de forma idéntica en cada parte, sino que debe redistribuirse proporcionalmente. Para ello, se utiliza como criterio la cantidad y/o superficie de edificaciones contenidas en cada polígono resultante. Esta decisión metodológica busca que la distribución de atributos refleje mejor la ocupación real del espacio, en lugar de depender únicamente del área del terreno.\nEl uso de edificaciones como base de redistribución responde a una razón analítica importante: en términos censales y territoriales, la huella construida suele representar de mejor manera la intensidad de uso del espacio. En la práctica, dos polígonos pueden tener áreas similares, pero una concentración muy distinta de construcciones. Por ello, distribuir atributos en función de edificaciones permite una asignación más realista y más consistente con la estructura territorial observada.\nEste procedimiento se aplica solo cuando un mismo ID está representado por más de un polígono. Si una geometría corresponde a un único polígono, no se requiere redistribución. En cambio, cuando el ID se divide en múltiples partes, se calcula un peso de diseminación para cada una de ellas, que luego permite repartir los atributos del registro original de forma proporcional.\nEl objetivo del flujo, por tanto, es calcular para cada parte geométrica un peso (w) que permita transferir atributos desde el ID original hacia los nuevos polígonos corregidos. En términos generales, cada polígono resultante recibe un peso y, dentro de cada ID original fragmentado, la suma de esos pesos debe ser igual a 1. Esto asegura que la redistribución mantenga consistencia interna y que posteriormente las variables puedan desagregarse sin alterar el total original.\nA nivel de implementación, el procesamiento se organiza en dos ramas principales que siguen la misma lógica metodológica: una para manzanas (mz_*) y otra para entidades rurales (ent_*). Aunque se aplican sobre unidades espaciales distintas, ambas ramas comparten el mismo enfoque de corrección y redistribución. En su diseño general, el flujo prioriza cuatro criterios: consistencia geométrica, para asegurar que las unidades corregidas sean espacialmente válidas; eficiencia computacional, para procesar grandes volúmenes de datos; reproducibilidad, para poder repetir y auditar el procedimiento; y escalabilidad nacional, considerando que el procesamiento utiliza información espacial de cobertura nacional.",
+    "objectID": "anexos.html",
+    "href": "anexos.html",
+    "title": "4  Anexos",
+    "section": "",
+    "text": "4.1 Fichas",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Corrección Geométrica</span>"
-    ]
-  },
-  {
-    "objectID": "c_geometric.html#principio-de-redistribución",
-    "href": "c_geometric.html#principio-de-redistribución",
-    "title": "2  Corrección Geométrica",
-    "section": "2.3 Principio de redistribución",
-    "text": "2.3 Principio de redistribución\nLa metodología se basa en un principio simple pero fundamental: cuando un ID censal original debe separarse en más de un polígono, la información asociada a ese ID no puede copiarse de forma idéntica en cada parte, sino que debe redistribuirse proporcionalmente. Para ello, se utiliza como criterio la cantidad y/o superficie de edificaciones contenidas en cada polígono resultante. Esta decisión metodológica busca que la distribución de atributos refleje mejor la ocupación real del espacio, en lugar de depender únicamente del área del terreno.\nEl uso de edificaciones como base de redistribución responde a una razón analítica importante: en términos censales y territoriales, la huella construida suele representar de mejor manera la intensidad de uso del espacio. En la práctica, dos polígonos pueden tener áreas similares, pero una concentración muy distinta de construcciones. Por ello, distribuir atributos en función de edificaciones permite una asignación más realista y más consistente con la estructura territorial observada.\nEste procedimiento se aplica solo cuando un mismo ID está representado por más de un polígono. Si una geometría corresponde a un único polígono, no se requiere redistribución. En cambio, cuando el ID se divide en múltiples partes, se calcula un peso de diseminación para cada una de ellas, que luego permite repartir los atributos del registro original de forma proporcional.\nObjetivo del procedimiento\nEl objetivo del flujo, por tanto, es calcular para cada parte geométrica un peso (w) que permita transferir atributos desde el ID original hacia los nuevos polígonos corregidos. En términos generales, cada polígono resultante recibe un peso y, dentro de cada ID original fragmentado, la suma de esos pesos debe ser igual a 1. Esto asegura que la redistribución mantenga consistencia interna y que posteriormente las variables puedan desagregarse sin alterar el total original.\nEnfoque general\nA nivel de implementación, el procesamiento se organiza en dos ramas principales que siguen la misma lógica metodológica: una para manzanas (mz_*) y otra para entidades rurales (ent_*). Aunque se aplican sobre unidades espaciales distintas, ambas ramas comparten el mismo enfoque de corrección y redistribución. En su diseño general, el flujo prioriza cuatro criterios: consistencia geométrica, para asegurar que las unidades corregidas sean espacialmente válidas; eficiencia computacional, para procesar grandes volúmenes de datos; reproducibilidad, para poder repetir y auditar el procedimiento; y escalabilidad nacional, considerando que el procesamiento utiliza información espacial de cobertura nacional.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Corrección Geométrica</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Anexos</span>"
     ]
   }
 ]

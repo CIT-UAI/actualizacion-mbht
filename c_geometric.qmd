@@ -1,7 +1,8 @@
 ---
 title: "Corrección Geométrica"
 subtite: "Corrección geométrica y redistribución proporcional de atributos"
-author: {{< var dberroeta.name >}}
+author:  ["{{< var dberroeta.name >}}"]
+date:  "2026-02-24"
 ---
 
 ## ¿Por qué fue necesaria esta corrección?
