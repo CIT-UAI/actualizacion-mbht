@@ -18,10 +18,11 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - marco_ref.qmd
-    - met_actualizacion.qmd
-    - proyectos.qmd
-    - recomendaciones.qmd
+    # - marco_ref.qmd
+    # - met_actualizacion.qmd
+    - c_geometric.qmd
+    # - proyectos.qmd
+    # - recomendaciones.qmd
     # - part: "Marco de Referencia"
       # chapters:
         # - marco_ref.qmd

@@ -8,27 +8,42 @@
 ### Riesgos y Estrategias de Mitigación {#sec-proyectos-1-riesgos}
 ### Recomendaciones Técnicas y Operativas {#sec-proyectos-1-recomendaciones}
 
-## Proyecto 2 {#sec-proyectos-2}
+## Proyecto 2: Dimensión Ambiental {#sec-proyectos-2}
 ### Fases y Actividades {#sec-proyectos-2-fases}
-### Riesgos y Estrategias de Mitigación {#sec-proyectos-2-riesgos}
-### Recomendaciones Técnicas y Operativas {#sec-proyectos-2-recomendaciones}
+
+
+#### Introducción 
+#### Índice de Cobertura Vegetal (ICV)
+
+**Levantamiento de Insumos Satelitales**
+
+**Cálculo de NDVI**
+
+**Definición de Umbral de NDVI**
+
+
+
+#### Índice de Amplitud Térmica (IATA)
+
+<!-- ### Riesgos y Estrategias de Mitigación {#sec-proyectos-2-riesgos} -->
+<!-- ### Recomendaciones Técnicas y Operativas {#sec-proyectos-2-recomendaciones} -->
 
 ## Proyecto 3 {#sec-proyectos-3}
-### Fases y Actividades {#sec-proyectos-3-fases}
-### Riesgos y Estrategias de Mitigación {#sec-proyectos-3-riesgos}
-### Recomendaciones Técnicas y Operativas {#sec-proyectos-3-recomendaciones}
+<!-- ### Fases y Actividades {#sec-proyectos-3-fases} -->
+<!-- ### Riesgos y Estrategias de Mitigación {#sec-proyectos-3-riesgos} -->
+<!-- ### Recomendaciones Técnicas y Operativas {#sec-proyectos-3-recomendaciones} -->
 
 ## Proyecto 4 {#sec-proyectos-4}
-### Fases y Actividades {#sec-proyectos-4-fases}
-### Riesgos y Estrategias de Mitigación {#sec-proyectos-4-riesgos}
-### Recomendaciones Técnicas y Operativas {#sec-proyectos-4-recomendaciones}
+<!-- ### Fases y Actividades {#sec-proyectos-4-fases} -->
+<!-- ### Riesgos y Estrategias de Mitigación {#sec-proyectos-4-riesgos} -->
+<!-- ### Recomendaciones Técnicas y Operativas {#sec-proyectos-4-recomendaciones} -->
 
 ## Proyecto 5: Solicitud de Información por Transparencia {#sec-proyectos-5}
-### Fases y Actividades {#sec-proyectos-5-fases}
-### Riesgos y Estrategias de Mitigación {#sec-proyectos-5-riesgos}
-### Recomendaciones Técnicas y Operativas {#sec-proyectos-5-recomendaciones}
+<!-- ### Fases y Actividades {#sec-proyectos-5-fases} -->
+<!-- ### Riesgos y Estrategias de Mitigación {#sec-proyectos-5-riesgos} -->
+<!-- ### Recomendaciones Técnicas y Operativas {#sec-proyectos-5-recomendaciones} -->
 
 ## Proyecto 6: Actualización de la Dimensión Seguridad {#sec-proyectos-6}
-### Fases y Actividades {#sec-proyectos-6-fases}
-### Riesgos y Estrategias de Mitigación {#sec-proyectos-6-riesgos}
-### Recomendaciones Técnicas y Operativas {#sec-proyectos-6-recomendaciones}
+<!-- ### Fases y Actividades {#sec-proyectos-6-fases} -->
+<!-- ### Riesgos y Estrategias de Mitigación {#sec-proyectos-6-riesgos} -->
+<!-- ### Recomendaciones Técnicas y Operativas {#sec-proyectos-6-recomendaciones} -->

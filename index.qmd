@@ -17,128 +17,128 @@ html-math-method: katex
 
 <iframe src="assets/indice.html" width="100%" height="600px" style="border:none;">
 
-</iframe>
+<!-- </iframe> -->
 
-1. [Introducción](#sec-intro)
+<!-- 1. [Introducción](#sec-intro) -->
 
-2. [Marco de Referencia](#sec-mref)  
-   2.1. [Definiciones Claves](#sec-rdefclaves)  
-       2.1.1. [Infraestructura territorial](#sec-mref-infraestructura)  
-       2.1.2. [Equipamientos](#sec-mref-equipamientos)  
-       2.1.3. [Servicios públicos](#sec-mref-servicios-publicos)  
-       2.1.4. [Servicios de apoyo](#sec-mref-apoyo)  
-       2.1.5. [Interrelaciones Territoriales entre los elementos de la MBHT](#sec-mref-interrelaciones)  
+<!-- 2. [Marco de Referencia](#sec-mref)   -->
+<!--    2.1. [Definiciones Claves](#sec-rdefclaves)   -->
+<!--        2.1.1. [Infraestructura territorial](#sec-mref-infraestructura)   -->
+<!--        2.1.2. [Equipamientos](#sec-mref-equipamientos)   -->
+<!--        2.1.3. [Servicios públicos](#sec-mref-servicios-publicos)   -->
+<!--        2.1.4. [Servicios de apoyo](#sec-mref-apoyo)   -->
+<!--        2.1.5. [Interrelaciones Territoriales entre los elementos de la MBHT](#sec-mref-interrelaciones)   -->
 
-   2.2. [Dimensiones del Bienestar Territorial](#sec-rdimensiones)  
-       2.2.1. [Accesibilidad Territorial](#sec-mref-accesibilidad)  
-       2.2.2. [Seguridad y Prevención](#sec-mref-seguridad)  
-       2.2.3. [Sostenibilidad Ambiental](#sec-mref-sostenibilidad)  
-       2.2.4. [Turismo y Patrimonio](#sec-mref-turismo)  
-       2.2.5. [Conectividad y Movilidad](#sec-mref-conectividad)  
+<!--    2.2. [Dimensiones del Bienestar Territorial](#sec-rdimensiones)   -->
+<!--        2.2.1. [Accesibilidad Territorial](#sec-mref-accesibilidad)   -->
+<!--        2.2.2. [Seguridad y Prevención](#sec-mref-seguridad)   -->
+<!--        2.2.3. [Sostenibilidad Ambiental](#sec-mref-sostenibilidad)   -->
+<!--        2.2.4. [Turismo y Patrimonio](#sec-mref-turismo)   -->
+<!--        2.2.5. [Conectividad y Movilidad](#sec-mref-conectividad)   -->
 
-   2.3. [Clasificaciones institucionales y complementarias](#sec-rclasificaciones)  
-       2.3.1. [Servicios Públicos](#sec-mref-servicios-publicos2)  
-       2.3.2. [Nuevos Equipamientos](#sec-mref-nuevos-equipamientos)  
-       2.3.3. [Infraestructura de Seguridad Vial](#sec-mref-seguridad-vial)  
-       2.3.4. [Clasificación de Elementos Turísticos](#sec-mref-turisticos)  
-       2.3.5. [Vinculación entre Clasificaciones e Indicadores MBHT](#sec-mref-vinculacion)
+<!--    2.3. [Clasificaciones institucionales y complementarias](#sec-rclasificaciones)   -->
+<!--        2.3.1. [Servicios Públicos](#sec-mref-servicios-publicos2)   -->
+<!--        2.3.2. [Nuevos Equipamientos](#sec-mref-nuevos-equipamientos)   -->
+<!--        2.3.3. [Infraestructura de Seguridad Vial](#sec-mref-seguridad-vial)   -->
+<!--        2.3.4. [Clasificación de Elementos Turísticos](#sec-mref-turisticos)   -->
+<!--        2.3.5. [Vinculación entre Clasificaciones e Indicadores MBHT](#sec-mref-vinculacion) -->
 
-3. [Metodología de Actualización](#sec-metodologia)  
-   3.1. [Cálculo de Indicadores](#sec-metodologia-calculo)  
-       3.1.1. [Tipos de variables utilizadas](#sec-metodologia-calculo-tipos)  
-       3.1.2. [Estructura del cálculo](#sec-metodologia-calculo-estructura)  
-       3.1.3. [Consideraciones técnicas](#sec-metodologia-calculo-consideraciones)  
-       3.1.4. [Ejemplo aplicado](#sec-metodologia-calculo-ejemplo)  
-       
-   3.2. [Normalización](#sec-metodologia-normalizacion)  
-       3.2.1. [Objetivo de la normalización](#sec-metodologia-normalizacion-objetivo)  
-       3.2.2. [Criterios de la normalización](#sec-metodologia-normalizacion-criterios)  
-       3.2.3. [Método utilizado](#sec-metodologia-normalizacion-metodo)  
-       3.2.4. [Consideraciones metodológicas](#sec-metodologia-normalizacion-consideraciones)  
-       3.2.5. [Ejemplo aplicado](#sec-metodologia-normalizacion-ejemplo)  
-   
-   3.3. [Ponderación](#sec-metodologia-ponderacion)  
-       3.3.1. [Objetivo de la ponderación](#sec-metodologia-ponderacion-objetivo)  
-       3.3.2. [Criterios de ponderación](#sec-metodologia-ponderacion-criterios)  
-       3.3.3. [Métodos utilizados](#sec-metodologia-ponderacion-metodos)  
-       3.3.4. [Consideraciones metodológicas](#sec-metodologia-ponderacion-consideraciones)  
-       3.3.5. [Ejemplo aplicado](#sec-metodologia-ponderacion-ejemplo)  
-   
-   3.4. [Protocolos de Control de Calidad (QA/QC)](#sec-metodologia-qa)  
-       3.4.1. [Objetivos del control de calidad](#sec-metodologia-qa-objetivos)  
-       3.4.2. [Protocolos QA/QC aplicados](#sec-metodologia-qa-protocolos)  
-       3.4.3. [Herramientas utilizadas](#sec-metodologia-qa-herramientas)  
-       3.4.4. [Ejemplo aplicado](#sec-metodologia-qa-ejemplo)  
-       
-   3.5. [Validación Cruzada](#sec-metodologia-validacion)  
-       3.5.1. [Objetivos de la validación cruzada](#sec-metodologia-validacion-objetivos)  
-       3.5.2. [Tipos de validación cruzada](#sec-metodologia-validacion-tipos)  
-       3.5.3. [Procedimientos aplicados](#sec-metodologia-validacion-procedimientos)  
-       3.5.4. [Resultados esperados](#sec-metodologia-validacion-resultados)  
-       3.5.5. [Ejemplo aplicado](#sec-metodologia-validacion-ejemplo)  
-       
-   3.6. [Georreferenciación](#sec-metodologia-georef)  
-       3.6.1. [Objetivos de la georreferenciación](#sec-metodologia-georef-objetivos)  
-       3.6.2. [Unidades espaciales utilizadas](#sec-metodologia-georef-unidades)  
-       3.6.3. [Sistemas de referencia y formatos](#sec-metodologia-georef-sistemas)  
-       3.6.4. [Fuentes de datos georreferenciados](#sec-metodologia-georef-fuentes)  
-       3.6.5. [Procedimientos aplicados](#sec-metodologia-georef-procedimientos)  
-       3.6.6. [Resultados esperados](#sec-metodologia-georef-resultados)  
-       3.6.7. [Ejemplo aplicado](#sec-metodologia-georef-ejemplo)  
+<!-- 3. [Metodología de Actualización](#sec-metodologia)   -->
+<!--    3.1. [Cálculo de Indicadores](#sec-metodologia-calculo)   -->
+<!--        3.1.1. [Tipos de variables utilizadas](#sec-metodologia-calculo-tipos)   -->
+<!--        3.1.2. [Estructura del cálculo](#sec-metodologia-calculo-estructura)   -->
+<!--        3.1.3. [Consideraciones técnicas](#sec-metodologia-calculo-consideraciones)   -->
+<!--        3.1.4. [Ejemplo aplicado](#sec-metodologia-calculo-ejemplo)   -->
 
-4. [Proyectos de Actualización](#sec-proyectos)  
-   4.1. [Proyecto 1: Actualización de la Dimensión Accesibilidad](#sec-proyectos-1)  
-       4.1.1. [Fases y Actividades](#sec-proyectos-1-fases)  
-       4.1.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-1-riesgos)  
-       4.1.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-1-recomendaciones)  
-   4.2. [Proyecto 2](#sec-proyectos-2)  
-       4.2.1. [Fases y Actividades](#sec-proyectos-2-fases)  
-       4.2.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-2-riesgos)  
-       4.2.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-2-recomendaciones)  
-   4.3. [Proyecto 3](#sec-proyectos-3)  
-       4.3.1. [Fases y Actividades](#sec-proyectos-3-fases)  
-       4.3.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-3-riesgos)  
-       4.3.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-3-recomendaciones)  
-   4.4. [Proyecto 4](#sec-proyectos-4)  
-       4.4.1. [Fases y Actividades](#sec-proyectos-4-fases)  
-       4.4.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-4-riesgos)  
-       4.4.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-4-recomendaciones)  
-   4.5. [Proyecto 5: Solicitud de Información por Transparencia](#sec-proyectos-5)  
-       4.5.1. [Fases y Actividades](#sec-proyectos-5-fases)  
-       4.5.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-5-riesgos)  
-       4.5.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-5-recomendaciones)  
-   4.6. [Proyecto 6: Actualización de la Dimensión Seguridad](#sec-proyectos-6)  
-       4.6.1. [Fases y Actividades](#sec-proyectos-6-fases)  
-       4.6.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-6-riesgos)  
-       4.6.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-6-recomendaciones)
+<!--    3.2. [Normalización](#sec-metodologia-normalizacion)   -->
+<!--        3.2.1. [Objetivo de la normalización](#sec-metodologia-normalizacion-objetivo)   -->
+<!--        3.2.2. [Criterios de la normalización](#sec-metodologia-normalizacion-criterios)   -->
+<!--        3.2.3. [Método utilizado](#sec-metodologia-normalizacion-metodo)   -->
+<!--        3.2.4. [Consideraciones metodológicas](#sec-metodologia-normalizacion-consideraciones)   -->
+<!--        3.2.5. [Ejemplo aplicado](#sec-metodologia-normalizacion-ejemplo)   -->
 
-5. [Recomendaciones Operativas para la Actualización de la MBHT 2025–2026](#sec-recomendaciones)  
-   5.1. [Coordinación Interinstitucional](#sec-recomendaciones-coordinacion)  
-   5.2. [Levantamiento de Información Territorial](#sec-recomendaciones-levantamiento)  
-   5.3. [Validación y Control de Calidad](#sec-recomendaciones-validacion)  
-   5.4. [Interoperabilidad y Estandarización](#sec-recomendaciones-interoperabilidad)  
-   5.5. [Participación Local y Validación Territorial](#sec-recomendaciones-participacion)  
-   5.6. [Sostenibilidad del Sistema MBHT](#sec-recomendaciones-sostenibilidad)
-   
-6. [Bibliografía](#bibliografia)
+<!--    3.3. [Ponderación](#sec-metodologia-ponderacion)   -->
+<!--        3.3.1. [Objetivo de la ponderación](#sec-metodologia-ponderacion-objetivo)   -->
+<!--        3.3.2. [Criterios de ponderación](#sec-metodologia-ponderacion-criterios)   -->
+<!--        3.3.3. [Métodos utilizados](#sec-metodologia-ponderacion-metodos)   -->
+<!--        3.3.4. [Consideraciones metodológicas](#sec-metodologia-ponderacion-consideraciones)   -->
+<!--        3.3.5. [Ejemplo aplicado](#sec-metodologia-ponderacion-ejemplo)   -->
 
-7. [Anexos](#sec-anexos)  
-   7.1. [Fichas](#sec-anexos-fichas)
+<!--    3.4. [Protocolos de Control de Calidad (QA/QC)](#sec-metodologia-qa)   -->
+<!--        3.4.1. [Objetivos del control de calidad](#sec-metodologia-qa-objetivos)   -->
+<!--        3.4.2. [Protocolos QA/QC aplicados](#sec-metodologia-qa-protocolos)   -->
+<!--        3.4.3. [Herramientas utilizadas](#sec-metodologia-qa-herramientas)   -->
+<!--        3.4.4. [Ejemplo aplicado](#sec-metodologia-qa-ejemplo)   -->
 
-## Índice de Tablas
-## Glosario de Siglas
+<!--    3.5. [Validación Cruzada](#sec-metodologia-validacion)   -->
+<!--        3.5.1. [Objetivos de la validación cruzada](#sec-metodologia-validacion-objetivos)   -->
+<!--        3.5.2. [Tipos de validación cruzada](#sec-metodologia-validacion-tipos)   -->
+<!--        3.5.3. [Procedimientos aplicados](#sec-metodologia-validacion-procedimientos)   -->
+<!--        3.5.4. [Resultados esperados](#sec-metodologia-validacion-resultados)   -->
+<!--        3.5.5. [Ejemplo aplicado](#sec-metodologia-validacion-ejemplo)   -->
 
-{{< var mbht.sigla >}}: {{< var mbht.name >}}.\
-{{< var cit.sigla >}}: {{< var cit.name >}}.\
-{{< var uai.sigla >}}: {{< var uai.name >}}.\
-{{< var ine.sigla >}}: {{< var ine.name >}}.  \
-{{< var mineduc.sigla >}}: {{< var mineduc.name >}}.  \
-{{< var minvu.sigla >}}: {{< var minvu.name >}}.  \
-{{< var mop.sigla >}}: {{< var mop.name >}}.  \
-{{< var minsal.sigla >}}: {{< var minsal.name >}}.  \
-{{< var spd.sigla >}}: {{< var spd.name >}}.  \
-{{< var stop.sigla >}}: {{< var stop.name >}}.  \
-{{< var enusc.sigla >}}: {{< var enusc.name >}}.  \
+<!--    3.6. [Georreferenciación](#sec-metodologia-georef)   -->
+<!--        3.6.1. [Objetivos de la georreferenciación](#sec-metodologia-georef-objetivos)   -->
+<!--        3.6.2. [Unidades espaciales utilizadas](#sec-metodologia-georef-unidades)   -->
+<!--        3.6.3. [Sistemas de referencia y formatos](#sec-metodologia-georef-sistemas)   -->
+<!--        3.6.4. [Fuentes de datos georreferenciados](#sec-metodologia-georef-fuentes)   -->
+<!--        3.6.5. [Procedimientos aplicados](#sec-metodologia-georef-procedimientos)   -->
+<!--        3.6.6. [Resultados esperados](#sec-metodologia-georef-resultados)   -->
+<!--        3.6.7. [Ejemplo aplicado](#sec-metodologia-georef-ejemplo)   -->
+
+<!-- 4. [Proyectos de Actualización](#sec-proyectos)   -->
+<!--    4.1. [Proyecto 1: Actualización de la Dimensión Accesibilidad](#sec-proyectos-1)   -->
+<!--        4.1.1. [Fases y Actividades](#sec-proyectos-1-fases)   -->
+<!--        4.1.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-1-riesgos)   -->
+<!--        4.1.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-1-recomendaciones)   -->
+<!--    4.2. [Proyecto 2](#sec-proyectos-2)   -->
+<!--        4.2.1. [Fases y Actividades](#sec-proyectos-2-fases)   -->
+<!--        4.2.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-2-riesgos)   -->
+<!--        4.2.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-2-recomendaciones)   -->
+<!--    4.3. [Proyecto 3](#sec-proyectos-3)   -->
+<!--        4.3.1. [Fases y Actividades](#sec-proyectos-3-fases)   -->
+<!--        4.3.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-3-riesgos)   -->
+<!--        4.3.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-3-recomendaciones)   -->
+<!--    4.4. [Proyecto 4](#sec-proyectos-4)   -->
+<!--        4.4.1. [Fases y Actividades](#sec-proyectos-4-fases)   -->
+<!--        4.4.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-4-riesgos)   -->
+<!--        4.4.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-4-recomendaciones)   -->
+<!--    4.5. [Proyecto 5: Solicitud de Información por Transparencia](#sec-proyectos-5)   -->
+<!--        4.5.1. [Fases y Actividades](#sec-proyectos-5-fases)   -->
+<!--        4.5.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-5-riesgos)   -->
+<!--        4.5.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-5-recomendaciones)   -->
+<!--    4.6. [Proyecto 6: Actualización de la Dimensión Seguridad](#sec-proyectos-6)   -->
+<!--        4.6.1. [Fases y Actividades](#sec-proyectos-6-fases)   -->
+<!--        4.6.2. [Riesgos y Estrategias de Mitigación](#sec-proyectos-6-riesgos)   -->
+<!--        4.6.3. [Recomendaciones Técnicas y Operativas](#sec-proyectos-6-recomendaciones) -->
+
+<!-- 5. [Recomendaciones Operativas para la Actualización de la MBHT 2025–2026](#sec-recomendaciones)   -->
+<!--    5.1. [Coordinación Interinstitucional](#sec-recomendaciones-coordinacion)   -->
+<!--    5.2. [Levantamiento de Información Territorial](#sec-recomendaciones-levantamiento)   -->
+<!--    5.3. [Validación y Control de Calidad](#sec-recomendaciones-validacion)   -->
+<!--    5.4. [Interoperabilidad y Estandarización](#sec-recomendaciones-interoperabilidad)   -->
+<!--    5.5. [Participación Local y Validación Territorial](#sec-recomendaciones-participacion)   -->
+<!--    5.6. [Sostenibilidad del Sistema MBHT](#sec-recomendaciones-sostenibilidad) -->
+
+<!-- 6. [Bibliografía](#bibliografia) -->
+
+<!-- 7. [Anexos](#sec-anexos)   -->
+<!--    7.1. [Fichas](#sec-anexos-fichas) -->
+
+<!-- ## Índice de Tablas -->
+<!-- ## Glosario de Siglas -->
+
+<!-- {{< var mbht.sigla >}}: {{< var mbht.name >}}.\ -->
+<!-- {{< var cit.sigla >}}: {{< var cit.name >}}.\ -->
+<!-- {{< var uai.sigla >}}: {{< var uai.name >}}.\ -->
+<!-- {{< var ine.sigla >}}: {{< var ine.name >}}.  \ -->
+<!-- {{< var mineduc.sigla >}}: {{< var mineduc.name >}}.  \ -->
+<!-- {{< var minvu.sigla >}}: {{< var minvu.name >}}.  \ -->
+<!-- {{< var mop.sigla >}}: {{< var mop.name >}}.  \ -->
+<!-- {{< var minsal.sigla >}}: {{< var minsal.name >}}.  \ -->
+<!-- {{< var spd.sigla >}}: {{< var spd.name >}}.  \ -->
+<!-- {{< var stop.sigla >}}: {{< var stop.name >}}.  \ -->
+<!-- {{< var enusc.sigla >}}: {{< var enusc.name >}}.  \ -->
 
 
 
