@@ -1,0 +1,6 @@
+---
+title: "Dimensión Socioeconómica"
+subtitle: "Corrección geométrica y redistribución proporcional de atributos"
+author:  ["{{< var dberroeta.name >}}"]
+date:  "2026-02-24"
+---

@@ -21,6 +21,10 @@ book:
     # - marco_ref.qmd
     # - met_actualizacion.qmd
     - c_geometric.qmd
+    - part: dimensiones.qmd
+      chapters: 
+      - dim_soc.qmd
+      - dim_amb.qmd
     # - proyectos.qmd
     # - recomendaciones.qmd
     # - part: "Marco de Referencia"

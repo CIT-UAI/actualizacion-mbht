@@ -1,0 +1,6 @@
+---
+title: "Dimensiones MBHT"
+subtite: "Introducción a las Dimensiones MBHT"
+author:  ["{{< var dberroeta.name >}}"]
+date:  "2026-02-24"
+---

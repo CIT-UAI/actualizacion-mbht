@@ -1,0 +1,6 @@
+---
+title: "Dimensión Ambiental"
+subtitle: "Explicación general de metodología de Cálculo"
+author:  ["{{< var dberroeta.name >}}"]
+date:  "2026-02-24"
+---

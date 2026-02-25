@@ -1,6 +1,6 @@
 ---
 title: "Corrección Geométrica"
-subtite: "Corrección geométrica y redistribución proporcional de atributos"
+subtitle: "Corrección geométrica y redistribución proporcional de atributos"
 author:  ["{{< var dberroeta.name >}}"]
 date:  "2026-02-24"
 ---
@@ -82,7 +82,10 @@ Como resultado, se construye un maestro de partes geométricas (donde cada parte
   
 ### Construcción de una caché de edificaciones para las zonas relevantes {.unnumbered}
   
-Una vez identificadas las geometrías que requieren validación, se extraen únicamente las edificaciones relevantes desde el archivo nacional de buildings.
+Una vez identificadas las geometrías que requieren validación, se extraen únicamente las edificaciones relevantes desde el archivo nacional de buildings pero dentro de un hexágono h3 específico, quedándose con edificaciones necesarias.
+
+![Ejemplo de selección de solo puntos de edificaciones dentro del hexágono h3 de interés es decir las manzanas con mismo ID.](images/h3-pol.png)
+
 
 **Qué se hace**
 
@@ -98,6 +101,8 @@ Esta información se almacena en Parquet particionado, lo que reduce de forma im
 ###  Cálculo intensivo de estadísticas por polígono {.unnumbered}
   
 Esta es la etapa de cálculo intensivo, donde se determina cuántas edificaciones (y/o cuánta superficie construida) corresponden a cada parte de un ID dividido.
+
+
 
 **Qué se hace en términos generales**
 
@@ -123,8 +128,11 @@ Porque el cruce geométrico a gran escala (millones de edificios vs. miles de po
 
 Una vez obtenidas las estadísticas de edificaciones, se calcula el peso de redistribución para cada parte geométrica. La regla principal consiste en asignar pesos proporcionales a la evidencia construida observada dentro de cada parte de un mismo ID original. En términos generales, esto se expresa como la razón entre la medida de edificaciones de una parte en este caso por **área construida** (podría ser por conteo o área construida, según configuración) y el total de esa misma medida en todas las partes del ID original. 
   
-Una forma general de expresarlo es:
+
+
+![Ejemplo de distribución por conteo de edificaciones](images/distribucion-w.png)
   
+Una forma general de expresarlo es:
 
 $$w_i = \frac{\text{medida de edificaciones en la parte } i}{\sum \text{medida de edificaciones de todas las partes del mismo ID}}$$
   
@@ -141,4 +149,6 @@ El resultado de esta etapa es un dataset consolidado en el que cada parte queda 
   
 ### Generación de salidas para análisis y uso posterior {.unnumbered}
   
-Generación de salidas para análisis, validación e integración. Finalmente, los resultados se exportan en varios formatos para facilitar su uso en distintas etapas del trabajo. Se genera una salida en Parquet para análisis rápido en R/Python y procesamiento masivo, una salida en GeoPackage (GPKG) para revisión cartográfica en software SIG, y tablas en DuckDB para reintegrar el resultado al repositorio central y al pipeline de indicadores.  Mantener estas tres salidas en paralelo permite combinar rendimiento analítico, control visual y continuidad operativa dentro del proceso general de actualización de la matriz MBHT
+Generación de salidas para análisis, validación e integración. Finalmente, los resultados se exportan en varios formatos para facilitar su uso en distintas etapas del trabajo. Se genera una salida en Parquet para análisis rápido en R/Python y procesamiento masivo, una salida en GeoPackage (GPKG) para revisión cartográfica en software SIG, y tablas en DuckDB para reintegrar el resultado al repositorio central y al pipeline de indicadores.  Mantener estas tres salidas en paralelo permite combinar rendimiento analítico, control visual y continuidad operativa dentro del proceso general de actualización de la matriz MBHT.
+
+![Tipos de formatos de salidas.](images/out-format.png)
