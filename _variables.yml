@@ -36,6 +36,7 @@ ine:
   censo_2017: "[Censo de Población y Vivienda 2017](http://resultados.censo2017.cl/)"
   censo_2017s: "[Censo 2017](http://resultados.censo2017.cl/)"
   censo_2024: "[Censo de Población y Vivienda 2024](https://censo2024.ine.gob.cl/)"
+  censo_2024s: "[Censo 2024](https://censo2024.ine.gob.cl/)"
 
 mbht:
   name: "[Matriz de Bienestar Humano Territorial](https://matrizbht.cl/)"

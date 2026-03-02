@@ -72,6 +72,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -168,8 +211,33 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">Contenidos</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">3.1</span> Introducción</a>
+  <ul class="collapse">
+  <li><a href="#cómo-leer-cada-indicador" id="toc-cómo-leer-cada-indicador" class="nav-link" data-scroll-target="#cómo-leer-cada-indicador"><span class="header-section-number">3.1.1</span> Cómo leer cada indicador</a></li>
+  </ul></li>
+  <li><a href="#catálogo-de-indicadores-comparables" id="toc-catálogo-de-indicadores-comparables" class="nav-link" data-scroll-target="#catálogo-de-indicadores-comparables"><span class="header-section-number">3.2</span> Catálogo de indicadores Comparables</a>
+  <ul class="collapse">
+  <li><a href="#iem-indicador-de-empleo" id="toc-iem-indicador-de-empleo" class="nav-link" data-scroll-target="#iem-indicador-de-empleo">IEM — Indicador de Empleo</a></li>
+  <li><a href="#ivi-indicador-de-calidad-de-la-vivienda" id="toc-ivi-indicador-de-calidad-de-la-vivienda" class="nav-link" data-scroll-target="#ivi-indicador-de-calidad-de-la-vivienda">IVI — Indicador de Calidad de la Vivienda</a></li>
+  </ul></li>
+  <li><a href="#indicadores-proxies" id="toc-indicadores-proxies" class="nav-link" data-scroll-target="#indicadores-proxies"><span class="header-section-number">3.3</span> Indicadores Proxies</a>
+  <ul class="collapse">
+  <li><a href="#isv-indicador-de-suficiencia-de-vivienda" id="toc-isv-indicador-de-suficiencia-de-vivienda" class="nav-link" data-scroll-target="#isv-indicador-de-suficiencia-de-vivienda">ISV — Indicador de Suficiencia de Vivienda</a></li>
+  <li><a href="#iej-indicador-de-escolaridad" id="toc-iej-indicador-de-escolaridad" class="nav-link" data-scroll-target="#iej-indicador-de-escolaridad">IEJ — Indicador de Escolaridad</a></li>
+  <li><a href="#irh-indicador-de-resiliencia-de-hogares" id="toc-irh-indicador-de-resiliencia-de-hogares" class="nav-link" data-scroll-target="#irh-indicador-de-resiliencia-de-hogares">IRH — Indicador de Resiliencia de Hogares</a></li>
+  <li><a href="#ipj-indicador-de-participación-juvenil" id="toc-ipj-indicador-de-participación-juvenil" class="nav-link" data-scroll-target="#ipj-indicador-de-participación-juvenil">IPJ — Indicador de Participación Juvenil</a></li>
+  </ul></li>
+  <li><a href="#interpretación-intertemporal" id="toc-interpretación-intertemporal" class="nav-link" data-scroll-target="#interpretación-intertemporal"><span class="header-section-number">3.4</span> Interpretación intertemporal</a>
+  <ul class="collapse">
+  <li><a href="#recomendación-de-lectura-intertemporal" id="toc-recomendación-de-lectura-intertemporal" class="nav-link" data-scroll-target="#recomendación-de-lectura-intertemporal"><span class="header-section-number">3.4.1</span> Recomendación de lectura intertemporal</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -177,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dimensiones.html">Dimensiones MBHT</a></li><li class="breadcrumb-item"><a href="./dim_soc.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dimensión Socioeconómica</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dimensión Socioeconómica</span></h1>
-<p class="subtitle lead">Corrección geométrica y redistribución proporcional de atributos</p>
+<p class="subtitle lead">Descripción de Indicadores Socioeconómicos para el Censo 2024</p>
 </div>
 
 
@@ -206,8 +274,380 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="introducción" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">3.1</span> Introducción</h2>
+<p>Este capítulo documenta la actualización de un conjunto de <strong>indicadores socioeconómicos territoriales</strong> del MBHT usando tabulados agregados del <a href="https://censo2024.ine.gob.cl/">Censo 2024</a>, manteniendo como referencia la versión anterior (MBHT 2022, basada en <a href="http://resultados.censo2017.cl/">Censo 2017</a>). El foco está en describir <strong>cómo se calcula cada indicador en 2024</strong> y, especialmente, <strong>qué cambió respecto de la versión anterior</strong>.</p>
+<p>La actualización tiene dos tipos de casos:</p>
+<ul>
+<li><strong>Indicadores comparables</strong>: mantienen la lógica original y utilizan variables disponibles en 2024 que son equivalentes o muy cercanas a las usadas anteriormente.</li>
+<li><strong>Indicadores con proxies</strong>: el Censo 2024 (en su forma agregada disponible para el proyecto) no contiene la tabulación exacta que requería el indicador original. En estos casos se implementa una aproximación (“proxy”) basada en señales sustitutas.</li>
+</ul>
+<section id="cómo-leer-cada-indicador" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="cómo-leer-cada-indicador"><span class="header-section-number">3.1.1</span> Cómo leer cada indicador</h3>
+<p>Cada indicador se presenta en un formato uniforme, pensado para lectura rápida y comparabilidad:</p>
+<ol type="1">
+<li><strong>Versión 2024 (actual)</strong>: qué mide, variables disponibles, fórmula operacional y decisiones metodológicas.</li>
+<li><strong>Versión anterior (MBHT 2022 / Censo 2017)</strong>: variables originales y fórmula de referencia.</li>
+<li><strong>Diferencias clave</strong>: qué cambió, por qué cambió y qué implica para interpretación.</li>
+<li><strong>Comparabilidad</strong>: alta, media o baja, explicitando cuando corresponde la etiqueta <strong>PROXY</strong>.</li>
+</ol>
+</section>
+</section>
+<section id="catálogo-de-indicadores-comparables" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="catálogo-de-indicadores-comparables"><span class="header-section-number">3.2</span> Catálogo de indicadores Comparables</h2>
+<p>Se comenzará con los <strong>Indicadores comparables</strong>: mantienen la lógica original y utilizan variables disponibles en 2024 que son equivalentes o muy cercanas a las usadas anteriormente. En cada uno se incluyen dos pestañas: <strong>Versión 2024 (actual)</strong> y <strong>Versión anterior (MBHT 2022 / Censo 2017)</strong>.</p>
+<section id="iem-indicador-de-empleo" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="iem-indicador-de-empleo">IEM — Indicador de Empleo</h3>
+<p>Para este indicador se usó la proporción de población activa sin empleo que es la fracción de las personas que no tienen empleo y están buscando uno, respecto al total de personas en condiciones y con deseo de trabajar en cada manzana.</p>
+<p>Esta variable es similar al cálculo de desempleo, pero calculada a escala de manzanas y en un tiempo específico, por lo que representa las brechas potenciales que existen para acceder al empleo en barrios específicos (MDS, 2019).</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Versión 2024 (actual)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Versión anterior (MBHT 2022 / Censo 2017)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><strong>Qué mide</strong></p>
+<p>El indicador resume la condición de empleo como el complemento de la <strong>densidad de cesantía</strong>: a mayor proporción de personas desocupadas dentro de la población activa, menor es el indicador.</p>
+<p><strong>Variables 2024</strong></p>
+<ul>
+<li>Personas desocupadas.</li>
+<li>Personas ocupadas.</li>
+</ul>
+<p><strong>Fórmula 2024</strong></p>
+<ul>
+<li>Cesantía (densidad):</li>
+</ul>
+<p><span class="math display">
+CESA = \frac{\,n_{desocupado}\,}{\,n_{desocupado} + n_{ocupado}\,}
+</span></p>
+<ul>
+<li>Indicador de empleo:</li>
+</ul>
+<p><span class="math display">
+IEM = 1 - CESA
+</span></p>
+<p><strong>Decisiones metodológicas 2024</strong></p>
+<ul>
+<li>Si la población activa es cero (denominador igual a 0), el indicador se considera indefinido y se trata como valor faltante.</li>
+</ul>
+<p><strong>Comparabilidad</strong></p>
+<ul>
+<li><strong>Alta</strong>. La lógica del indicador se mantiene y las variables 2024 permiten reconstruir una medida equivalente.</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>Variables originales</strong></p>
+<ul>
+<li>Personas buscando empleo.</li>
+<li>Total de población activa.</li>
+</ul>
+<p><strong>Fórmula original</strong></p>
+<p><span class="math display">
+IEM = 1- \left(\frac{\,P17\_4\,}{\,P17\_ACT\,} \right)
+</span></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="ivi-indicador-de-calidad-de-la-vivienda" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="ivi-indicador-de-calidad-de-la-vivienda">IVI — Indicador de Calidad de la Vivienda</h3>
+<p>El indicador de calidad de vivienda es una variable sintética de todas las materialidades de la vivienda. Inicialmente, se construyó como un indicador de mala calidad, tomando un valor más alto cuando la calidad de la vivienda es peor y es más bajo cuando es mejor. Fue elaborado como un promedio lineal del 3 sub-indicadores de paredes, suelo y techo. Cada uno de estos sub-indicadores registra el porcentaje de viviendas de la manzana que tienen paredes, suelo o techo considerado insuficiente.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Versión 2024 (actual)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Versión anterior (MBHT 2022 / Censo 2017)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p><strong>Qué mide</strong></p>
+<p>El indicador captura carencias de materialidad en tres componentes de la vivienda: <strong>paredes, techo y piso</strong>. Para cada componente se calcula una proporción de materialidad insuficiente sobre el total de viviendas; luego se promedia y se invierte para que valores mayores representen mejor condición.</p>
+<p><strong>Variables 2024</strong></p>
+<ul>
+<li>Viviendas con paredes insuficientes (categorías precarias y equivalentes).</li>
+<li>Viviendas con techo insuficiente.</li>
+<li>Viviendas con piso insuficiente.</li>
+<li>Total de viviendas (denominador).</li>
+</ul>
+<p><strong>Fórmula 2024</strong></p>
+<ul>
+<li>Paredes:</li>
+</ul>
+<p><span class="math display">
+paredes = \frac{\,tabique\_sin\_forro + artesanal + precarios\,}{\,n_{vp}\,}
+</span></p>
+<ul>
+<li>Techo:</li>
+</ul>
+<p><span class="math display">
+techo = \frac{\,fonolita + techo\_precario + sin\_cubierta\,}{\,n_{vp}\,}
+</span></p>
+<ul>
+<li>Piso:</li>
+</ul>
+<p><span class="math display">
+suelo = \frac{\,capa\_cemento + tierra\,}{\,n_{vp}\,}
+</span></p>
+<ul>
+<li>Indicador:</li>
+</ul>
+<p><span class="math display">
+IVI = 1 - \frac{\,paredes + techo + suelo\,}{3}
+</span></p>
+<p><strong>Decisiones metodológicas 2024</strong></p>
+<ul>
+<li>Se aplica un <strong>límite superior</strong> a cada componente para evitar proporciones mayores a 1 en casos puntuales derivados de la distribución y agregación de datos:</li>
+</ul>
+<p><span class="math display">
+paredes = \min(paredes, 1) \quad (\text{análogamente para } techo, suelo)
+</span></p>
+<p><strong>Comparabilidad</strong></p>
+<ul>
+<li><strong>Alta–Media</strong>. La estructura del indicador se mantiene, pero requiere reglas operacionales adicionales para garantizar consistencia numérica.</li>
+</ul>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p><strong>Variables originales</strong></p>
+<ul>
+<li>Paredes insuficientes (tabique sin forro, adobe/barro, materiales precarios).</li>
+<li>Techo insuficiente (fonolita, precarios, sin cubierta).</li>
+<li>Piso insuficiente (cemento sobre tierra, tierra).</li>
+<li>Total de viviendas.</li>
+</ul>
+<p><strong>Fórmula original</strong></p>
+<p><span class="math display">
+IVI= 1 - \left(\frac{\,paredes+ suelo+ techo\,}{3}\right)
+</span></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="indicadores-proxies" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="indicadores-proxies"><span class="header-section-number">3.3</span> Indicadores Proxies</h2>
+<p>Ahora se los indicadores que para la versión del Censo-2024 no cuenta con las variables exactas que requería el indicador original. En estos casos se implementa una aproximación (“proxy”) basada en señales sustitutas.</p>
+<section id="isv-indicador-de-suficiencia-de-vivienda" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="isv-indicador-de-suficiencia-de-vivienda">ISV — Indicador de Suficiencia de Vivienda</h3>
+<p>El indicador de Suficiencia de Viviendas se construyó inicialmente como un indicador de hacinamiento. Se realizó a partir de 2 variables que indican el número de viviendas que se encuentran en situación de hacinamiento y el número de viviendas que se encuentran en situación de hacinamiento severo.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Versión 2024 (actual)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Versión anterior (MBHT 2022 / Censo 2017)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p><strong>Qué mide</strong></p>
+<p>El indicador aproxima la suficiencia de vivienda a partir de señales asociadas a <strong>hacinamiento</strong>. En la versión anterior existían niveles de severidad del hacinamiento; en 2024 se dispone de un conteo de viviendas hacinadas, pero sin la misma desagregación de severidad. Por ello, se implementa un <strong>proxy</strong> que intenta reintroducir criticidad combinando dos señales.</p>
+<p><strong>Variables 2024</strong></p>
+<ul>
+<li>Viviendas hacinadas.</li>
+<li>Viviendas ocupadas.</li>
+<li>Núcleos hacinados y/o allegados.</li>
+<li>Total de hogares.</li>
+</ul>
+<p><strong>Proxy y fórmula 2024</strong></p>
+<p>Se construye un <strong>puntaje de criticidad</strong>:</p>
+<p><span class="math display">
+score = \frac{\,n_{viv\_hacinadas}\,}{\,n_{vp\_ocupada}\,} + w_{hac}\cdot\frac{\,n_{nucleos\_hacinados\_allegados}\,}{\,n_{hog}\,}
+</span></p>
+<p>con un peso de severidad operacional (w_{hac}=2). Luego el indicador se expresa como el complemento de una normalización min–max:</p>
+<p><span class="math display">
+ISV = 1 - minmax(score)
+</span></p>
+<p><strong>Decisiones metodológicas 2024</strong></p>
+<ul>
+<li>La normalización (minmax) se aplica de forma consistente dentro del universo de cálculo definido para el indicador.</li>
+<li>El peso (w_{hac}) representa una decisión operacional para reflejar mayor criticidad asociada a núcleos hacinados/allegados.</li>
+</ul>
+<p><strong>Comparabilidad</strong></p>
+<ul>
+<li><strong>Baja (PROXY)</strong>. Se mantiene el concepto general (hacinamiento) pero no la misma medición de severidad que en la versión anterior.</li>
+</ul>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p><strong>Variables originales</strong></p>
+<ul>
+<li>Hacinamiento medio.</li>
+<li>Hacinamiento severo.</li>
+</ul>
+<p><strong>Fórmula original</strong></p>
+<p><span class="math display">
+ISV = 1 - minmax(NIV\_HAC2 + (2 \times NIV\_HAC3))
+</span></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="iej-indicador-de-escolaridad" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="iej-indicador-de-escolaridad">IEJ — Indicador de Escolaridad</h3>
+<p>Para la construcción de este indicador se utilizó el promedio de años de estudio de jefes de hogar (EJH), que es una variable censal numérica que registra el nivel del curso más alto aprobado, medida en años sucesivos desde la enseñanza básica hasta estudios de postgrado.</p>
+<p>Se calcula el promedio de esta variable para todos los jefes de hogar en cada manzana. Esta variable es representativa del capital cultural de cada hogar y está altamente correlacionada con el nivel de ingresos en Chile (Agostini et al, 2016).</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Versión 2024 (actual)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Versión anterior (MBHT 2022 / Censo 2017)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p><strong>Qué mide</strong></p>
+<p>En la versión anterior, el indicador representaba escolaridad asociada a la <strong>jefatura de hogar</strong>. En 2024, el diccionario agregado disponible no contiene una tabulación equivalente por jefatura, por lo que se usa como proxy el <strong>promedio de escolaridad en población de 18 años o más</strong>.</p>
+<p><strong>Variables 2024</strong></p>
+<ul>
+<li>Promedio de escolaridad (18+).</li>
+<li>Población total (para control de casos vacíos).</li>
+</ul>
+<p><strong>Fórmula 2024</strong></p>
+<p><span class="math display">
+IEJ = prom_{escolaridad18} \quad \text{si } n_{per} &gt; 0
+</span></p>
+<p><strong>Decisiones metodológicas 2024</strong></p>
+<ul>
+<li>Si la población es cero, se asigna valor faltante.</li>
+</ul>
+<p><strong>Comparabilidad</strong></p>
+<ul>
+<li><strong>Baja (PROXY)</strong>. El indicador deja de representar escolaridad de jefatura y pasa a representar escolaridad promedio 18+.</li>
+</ul>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p><strong>Variables originales</strong></p>
+<ul>
+<li>Promedio de años de estudio del jefe/a de hogar.</li>
+</ul>
+<p><strong>Fórmula original</strong></p>
+<p><span class="math display">
+IEJ = ESCOLAR
+</span></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="irh-indicador-de-resiliencia-de-hogares" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="irh-indicador-de-resiliencia-de-hogares">IRH — Indicador de Resiliencia de Hogares</h3>
+<p>En particular, la monoparentalidad es ampliamente reconocida en la literatura internacional como una situación familiar frágil, que puede afectar las trayectorias de vida de los hijos, en términos de un mayor riesgo de mortalidad (Amato &amp; Patterson, 2017), inestabilidad psicológica (Theodoritsi, Daliana &amp; Antoniou, 2018), problemas de salud (Duriancik &amp; Goff, 2019) y otros.</p>
+<p>En suma, el Indicador de Resiliencia de Hogares (en base a la monoparentalidad), en complemento a otras variables, es conceptualmente relevante para evaluar riesgos no monetarios de condiciones sociales.</p>
+<p>Este indicador es el inverso aditivo de la proporción de hogares monoparentales dentro de una manzana. Los hogares monoparentales son aquellos con hijos que viven con un solo progenitor, lo que se asocia en diversas formas a la condición social, que abarcan desde un menor ingreso, problemas de salud y delincuencia, entre otros (MDS, 2019).</p>
+<p>Al contrario, los hogares biparentales permiten el apoyo entre progenitores y los hogares sin hijos tienen menores exigencias de gasto y tiempo relacionadas con la paternidad, por lo que se considera que en general son más resilientes.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Versión 2024 (actual)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Versión anterior (MBHT 2022 / Censo 2017)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<p><strong>Qué mide</strong></p>
+<p>El indicador anterior apuntaba a monoparentalidad como señal de vulnerabilidad y menor resiliencia. En 2024, al no contar con una tipología explícita comparable de monoparentalidad, se aproxima mediante un proxy que combina dos señales: <strong>jefatura femenina</strong> y <strong>hogares con menores</strong>.</p>
+<p><strong>Variables 2024</strong></p>
+<ul>
+<li>Hogares con jefatura femenina.</li>
+<li>Hogares con menores.</li>
+<li>Total de hogares.</li>
+</ul>
+<p><strong>Proxy y fórmula 2024</strong></p>
+<p>Se construye un puntaje compuesto:</p>
+<p><span class="math display">
+score = \frac{\,n_{jefatura\_mujer}\,}{\,n_{hog}\,} + \frac{\,n_{hog\_menores}\,}{\,n_{hog}\,}
+</span></p>
+<p>Luego se normaliza:</p>
+<p><span class="math display">
+IRH = minmax(score)
+</span></p>
+<p><strong>Decisiones metodológicas 2024</strong></p>
+<ul>
+<li>La combinación de señales y su normalización definen una medida relativa dentro del universo de cálculo.</li>
+</ul>
+<p><strong>Comparabilidad</strong></p>
+<ul>
+<li><strong>Baja (PROXY)</strong>. Se aproxima el constructo original con señales correlacionadas, pero no equivalentes.</li>
+</ul>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<p><strong>Variables originales</strong></p>
+<ul>
+<li>Hogares monoparentales.</li>
+<li>Total de hogares.</li>
+</ul>
+<p><strong>Fórmula original</strong></p>
+<p><span class="math display">
+IRH = 1 - \left(\frac{\,MONOPAR\,}{\,HOG\_N\,} \right)
+</span></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="ipj-indicador-de-participación-juvenil" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="ipj-indicador-de-participación-juvenil">IPJ — Indicador de Participación Juvenil</h3>
+<p>Esta variable representa un riesgo de exclusión socioeconómica en el período de transición entre el ambiente educativo y el laboral, siendo característico de trayectorias de deserción escolar que conducen al desempleo y que podrían incrementar el riesgo de adopción de comportamientos delictivos (MDS, 2019).</p>
+<p>El indicador IPJ (participación juvenil) estaba diseñado para capturar la proporción de jóvenes (típicamente 15–24 años) que se encontraban en condición NINI (ni estudia ni trabaja), combinando simultáneamente tres dimensiones:</p>
+<ul>
+<li>Edad (pertenecer al grupo 15–24),</li>
+<li>Participación educativa (asistencia escolar/educación),</li>
+<li>Participación laboral (ocupación o búsqueda activa).</li>
+</ul>
+<p><span class="math display">J\_NINI = \text{edad 15-24 } \cap \text{No Asiste (ed)} \cap \text{No Trabaja / No busca}</span></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Versión 2024 (NO fue posible recostruir)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Versión anterior (MBHT 2022 / Censo 2017)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<p><strong>Problema</strong>:</p>
+<p>En el <a href="https://censo2024.ine.gob.cl/">Censo 2024</a> base para la actualización de los indicadores de esta dimensión, se cuenta con variables agregadas del tipo:</p>
+<ul>
+<li>Marginales etarios (por tramos): por ejemplo <code>n_edad_14_17</code>, <code>n_edad_18_24.</code></li>
+<li>Marginales educativos: por ejemplo <code>n_asistencia_media</code>, <code>n_asistencia_superior</code> (y otras asistencias).</li>
+<li>Marginales laborales: <code>n_ocupado</code>, <code>n_desocupado</code>, <code>n_fuera_fuerza_trabajo.</code></li>
+</ul>
+<p>Sin embargo, el cálculo NINI no puede derivarse desde marginales independientes porque requiere la <strong>intersección</strong> (cruce) de variables a nivel individual (o una tabulación agregada que ya venga cruzada). En términos prácticos:</p>
+<p>Con marginales se puede saber cuántos jóvenes hay y cuántas personas asisten o trabajan, pero no cuántos jóvenes son simultáneamente “no asisten” y “no trabajan”.</p>
+<p>Este es un caso clásico de identificabilidad estadística: sin el cruce explícito, el numerador es indeterminado. Por ello, la limitación observada no corresponde a una falta de consistencia de datos, sino a que el set de insumos 2024 no incluye la tabulación requerida.</p>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<p>De forma conceptual, el numerador requiere contar jóvenes que cumplan a la vez:</p>
+<p><strong>Variables originales</strong></p>
+<ul>
+<li>J_NINI: Jóvenes que no trabajan ni estudian</li>
+<li>P17 E15A24: Jóvenes entre 15 y 24 años de edad</li>
+</ul>
+<p><strong>Fórmula original</strong></p>
+<p><span class="math display">
+IPJ = 1 - \left(\frac{\,J\_NINI\,}{\,E15A24\,} \right)
+</span></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="interpretación-intertemporal" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="interpretación-intertemporal"><span class="header-section-number">3.4</span> Interpretación intertemporal</h2>
+<p>La comparación 2017–2024 debe interpretarse diferenciando claramente dos planos: (i) comparabilidad conceptual del indicador, (ii) comparabilidad espacial de las unidades y (iii) evidencia cuantitativa.</p>
+<p><strong>i) Comparabilidad conceptual: comparables vs PROXY</strong></p>
+<p>Para indicadores comparables (p.&nbsp;ej. IEM; y IVI con reglas operacionales), el delta puede interpretarse como un cambio más cercano a un cambio real en el fenómeno, sujeto a diferencias de medición y proceso.</p>
+<p>Para indicadores PROXY (ISV, IEJ, IRH), el delta debe interpretarse principalmente como cambio en una señal relacionada con el constructo original. En estos casos es recomendable enfatizar:</p>
+<ul>
+<li>Consistencia de ranking relativo y patrones espaciales,</li>
+<li>Coherencia interna con otras variables (triangulación),</li>
+<li>Sensibilidad a decisiones operacionales (p.&nbsp;ej. , reglas de normalización).</li>
+</ul>
+<p><strong>ii) Comparabilidad espacial: unidades no idénticas entre censos</strong></p>
+<p>Dado que las manzanas 2017 y 2024 no comparten un identificador único consistente, la comparación se construye mediante un crosswalk por máximo solapamiento espacial.</p>
+<p>Implicancias:</p>
+<ul>
+<li>El panel compara unidades que son la mejor correspondencia espacial disponible, no necesariamente la misma entidad administrativa exacta si existieron redelineaciones.</li>
+<li>La calidad del match debe auditarse con métricas de solapamiento (share_17, share_24).</li>
+</ul>
+<p><strong>iii) Evidencia cuantitativa: métricas directas y estructura espacial</strong></p>
+<p>Para interpretar cambios entre versiones se recomienda usar conjuntamente:</p>
+<ul>
+<li><p><em>Métricas directas por indicador</em> (correlación, RMSE, distribución del delta): informan sobre estabilidad global, sesgos de escala (shift de medias) y presencia de colas/outliers.</p></li>
+<li><p><em>Estructura espacial</em> Moran global en 2017, 2024 y delta):</p>
+<ul>
+<li>Si Moran es alto en 2017 y 2024, sugiere persistencia de clusters espaciales del fenómeno;</li>
+<li>Si Moran del delta es alto, sugiere que el cambio está espacialmente concentrado (no aleatorio).</li>
+</ul></li>
+</ul>
+<section id="recomendación-de-lectura-intertemporal" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="recomendación-de-lectura-intertemporal"><span class="header-section-number">3.4.1</span> Recomendación de lectura intertemporal</h3>
+<p>En aplicaciones operativas y de política pública, para indicadores PROXY se recomienda priorizar:</p>
+<ol type="1">
+<li><p>Cambios relativos (quiénes mejoran/empeoran en ranking) y patrones espaciales (clusters),</p></li>
+<li><p>Señales consistentes en múltiples indicadores (triangulación),</p></li>
+<li><p>Interpretación del cambio como evidencia de reconfiguración de condiciones más que como equivalencia exacta de magnitudes.</p></li>
+</ol>
+<p>En suma, el empalme 2017–2024 es metodológicamente válido como comparación territorial si se explicitan: (a) el tipo de indicador (comparable vs proxy), (b) el método de crosswalk espacial, y (c) el soporte empírico basado en métricas directas y autocorrelación espacial.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -625,7 +1065,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Copyright 2025, <a href="https://cit.uai.cl/">Centro de Inteligencia Territorial</a></p>
+<p>Copyright 2026, <a href="https://cit.uai.cl/">Centro de Inteligencia Territorial</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
