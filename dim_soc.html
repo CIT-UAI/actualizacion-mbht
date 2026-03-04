@@ -555,7 +555,7 @@ IEJ = ESCOLAR
 <div class="tab-content">
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <p><strong>Qué mide</strong></p>
-<p>El indicador anterior apuntaba a monoparentalidad como señal de vulnerabilidad y menor resiliencia. En 2024, al no contar con una tipología explícita comparable de monoparentalidad, se aproxima mediante un proxy que combina dos señales: <strong>jefatura femenina</strong> y <strong>hogares con menores</strong>.</p>
+<p>El indicador anterior apuntaba a monoparentalidad como señal de vulnerabilidad y menor resiliencia. En 2024, al no contar con una tipología explícita comparable de monoparentalidad, se aproxima mediante un proxy basado en la <strong>co-ocurrencia esperada</strong> entre dos señales: <strong>jefatura femenina</strong> y <strong>hogares con menores</strong>.</p>
 <p><strong>Variables 2024</strong></p>
 <ul>
 <li>Hogares con jefatura femenina.</li>
@@ -563,17 +563,21 @@ IEJ = ESCOLAR
 <li>Total de hogares.</li>
 </ul>
 <p><strong>Proxy y fórmula 2024</strong></p>
-<p>Se construye un puntaje compuesto:</p>
+<p>Se construye primero un puntaje de vulnerabilidad proxy:</p>
 <p><span class="math display">
-score = \frac{\,n_{jefatura\_mujer}\,}{\,n_{hog}\,} + \frac{\,n_{hog\_menores}\,}{\,n_{hog}\,}
+V_{fam}=
+\left(\frac{\,n_{jefatura\_mujer}\,}{\,n_{hog}\,}\right)\cdot
+\left(\frac{\,n_{hog\_menores}\,}{\,n_{hog}\,}\right)
 </span></p>
-<p>Luego se normaliza:</p>
+<p>Luego, para mantener interpretación de <strong>bienestar</strong> (valor alto = mejor), se invierte:</p>
 <p><span class="math display">
-IRH = minmax(score)
+IRH = 1 - V_{fam}
 </span></p>
 <p><strong>Decisiones metodológicas 2024</strong></p>
 <ul>
-<li>La combinación de señales y su normalización definen una medida relativa dentro del universo de cálculo.</li>
+<li>La forma multiplicativa evita sumar señales con significado no necesariamente aditivo y aproxima una intersección esperada entre ambas condiciones.</li>
+<li>Se evita normalización min-max para conservar comparabilidad de escala entre cortes temporales.</li>
+<li>Si <span class="math inline">n_{hog}=0</span>, el indicador se considera indefinido y se trata como valor faltante.</li>
 </ul>
 <p><strong>Comparabilidad</strong></p>
 <ul>
@@ -597,7 +601,7 @@ IRH = 1 - \left(\frac{\,MONOPAR\,}{\,HOG\_N\,} \right)
 <ul>
 <li><strong>Tipo</strong>: <strong>PROXY (baja comparabilidad)</strong>.</li>
 <li>En 2017 el núcleo era directo: proporción de hogares monoparentales sobre total de hogares (invertido).</li>
-<li>En 2024 no existe un equivalente directo de monoparentalidad en el set agregado empleado; se aproxima con un índice compuesto de jefatura femenina y presencia de menores, luego normalizado.</li>
+<li>En 2024 no existe un equivalente directo de monoparentalidad en el set agregado empleado; se aproxima mediante el producto entre proporción de jefatura femenina y proporción de hogares con menores, y luego se invierte para mantener orientación de bienestar.</li>
 <li>La diferencia principal es de <strong>validez de constructo</strong>: las señales proxy están correlacionadas con vulnerabilidad familiar, pero no identifican en forma unívoca monoparentalidad.</li>
 <li>Implicancia: el indicador 2024 captura un riesgo familiar afín, pero su comparación con 2017 debe tratarse como empalme conceptual aproximado y no como continuidad exacta del mismo atributo.</li>
 </ul>
