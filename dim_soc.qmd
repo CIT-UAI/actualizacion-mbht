@@ -348,7 +348,7 @@ Al contrario, los hogares biparentales permiten el apoyo entre progenitores y lo
 
 **Qué mide**
 
-El indicador anterior apuntaba a monoparentalidad como señal de vulnerabilidad y menor resiliencia. En 2024, al no contar con una tipología explícita comparable de monoparentalidad, se aproxima mediante un proxy que combina dos señales: **jefatura femenina** y **hogares con menores**.
+El indicador anterior apuntaba a monoparentalidad como señal de vulnerabilidad y menor resiliencia. En 2024, al no contar con una tipología explícita comparable de monoparentalidad, se aproxima mediante un proxy basado en la **co-ocurrencia esperada** entre dos señales: **jefatura femenina** y **hogares con menores**.
 
 **Variables 2024**
 
@@ -358,21 +358,25 @@ El indicador anterior apuntaba a monoparentalidad como señal de vulnerabilidad 
 
 **Proxy y fórmula 2024**
 
-Se construye un puntaje compuesto:
+Se construye primero un puntaje de vulnerabilidad proxy:
 
 $$
-score = \frac{\,n_{jefatura\_mujer}\,}{\,n_{hog}\,} + \frac{\,n_{hog\_menores}\,}{\,n_{hog}\,}
+V_{fam}=
+\left(\frac{\,n_{jefatura\_mujer}\,}{\,n_{hog}\,}\right)\cdot
+\left(\frac{\,n_{hog\_menores}\,}{\,n_{hog}\,}\right)
 $$
 
-Luego se normaliza:
+Luego, para mantener interpretación de **bienestar** (valor alto = mejor), se invierte:
 
 $$
-IRH = minmax(score)
+IRH = 1 - V_{fam}
 $$
 
 **Decisiones metodológicas 2024**
 
-- La combinación de señales y su normalización definen una medida relativa dentro del universo de cálculo.
+- La forma multiplicativa evita sumar señales con significado no necesariamente aditivo y aproxima una intersección esperada entre ambas condiciones.
+- Se evita normalización min-max para conservar comparabilidad de escala entre cortes temporales.
+- Si $n_{hog}=0$, el indicador se considera indefinido y se trata como valor faltante.
 
 **Comparabilidad**
 
@@ -397,7 +401,7 @@ $$
 
 - **Tipo**: **PROXY (baja comparabilidad)**.
 - En 2017 el núcleo era directo: proporción de hogares monoparentales sobre total de hogares (invertido).
-- En 2024 no existe un equivalente directo de monoparentalidad en el set agregado empleado; se aproxima con un índice compuesto de jefatura femenina y presencia de menores, luego normalizado.
+- En 2024 no existe un equivalente directo de monoparentalidad en el set agregado empleado; se aproxima mediante el producto entre proporción de jefatura femenina y proporción de hogares con menores, y luego se invierte para mantener orientación de bienestar.
 - La diferencia principal es de **validez de constructo**: las señales proxy están correlacionadas con vulnerabilidad familiar, pero no identifican en forma unívoca monoparentalidad.
 - Implicancia: el indicador 2024 captura un riesgo familiar afín, pero su comparación con 2017 debe tratarse como empalme conceptual aproximado y no como continuidad exacta del mismo atributo.
 
