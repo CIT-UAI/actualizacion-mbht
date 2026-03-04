@@ -89,6 +89,13 @@ $$
 
 :::
 
+**Diferencias Censo 2024 vs Censo 2017 (IEM)**
+
+- **Tipo**: **Comparable**.
+- En 2017 la razón se expresaba como `P17_4 / P17_ACT` (buscando empleo sobre población activa). En 2024 se operacionaliza como `desocupados / (desocupados + ocupados)`.
+- La diferencia central es **de nomenclatura y disponibilidad de tabulados**, no de constructo: en ambos casos se mide desempleo dentro de población activa y luego se invierte.
+- Implicancia: la lectura intertemporal del cambio es directa, con resguardo estándar por eventuales diferencias de levantamiento/operacionalización censal.
+
 
 ---
 
@@ -171,6 +178,13 @@ $$
 
 :::
 
+**Diferencias Censo 2024 vs Censo 2017 (IVI)**
+
+- **Tipo**: **Comparable (alta-media)**.
+- La estructura se mantiene: promedio de carencias en paredes, techo y piso, con inversión final (`1 - promedio`).
+- En 2024 se incorporan reglas operacionales explícitas (tope en 1 por componente) para evitar inconsistencias numéricas por agregación.
+- Implicancia: el constructo es el mismo, pero la versión 2024 agrega control técnico que puede generar diferencias menores de escala frente a 2017.
+
 ---
 
 
@@ -237,6 +251,14 @@ $$
 
 :::
 
+**Diferencias Censo 2024 vs Censo 2017 (ISV)**
+
+- **Tipo**: **PROXY (baja comparabilidad)**.
+- En 2017 el indicador combinaba explícitamente **hacinamiento medio** y **hacinamiento severo** (`NIV_HAC2` y `NIV_HAC3`), preservando gradientes de severidad originales.
+- En 2024 no se dispone de la misma desagregación de severidad; se reemplaza por un puntaje proxy con dos señales: proporción de viviendas hacinadas y proporción de núcleos hacinados/allegados, aplicando un peso operacional (`w_hac = 2`) y normalización min-max.
+- La diferencia no es solo de variable, sino de **arquitectura de medición**: se pasa de una clasificación censal directa de severidad a una reconstrucción indirecta de criticidad.
+- Implicancia: el cambio 2017–2024 debe leerse como variación en una señal relacionada con suficiencia/hacinamiento, no como equivalencia estricta de magnitudes.
+
 ---
 
 
@@ -295,6 +317,14 @@ IEJ = ESCOLAR
 $$
 
 :::
+
+**Diferencias Censo 2024 vs Censo 2017 (IEJ)**
+
+- **Tipo**: **PROXY (baja comparabilidad)**.
+- En 2017 se medía escolaridad de **jefatura de hogar** (capital educacional del hogar vía jefe/a).
+- En 2024 esa tabulación no está disponible en el agregado utilizado y se reemplaza por **promedio de escolaridad de población de 18+**.
+- El cambio altera la unidad conceptual del indicador: de una característica de jefatura/hogar a una medida poblacional adulta del territorio.
+- Implicancia: los niveles no son estrictamente equivalentes; se recomienda usarlo para lectura relativa territorial (ranking/patrones) más que para comparar magnitudes absolutas con 2017.
 
 ---
 
@@ -363,6 +393,14 @@ $$
 
 :::
 
+**Diferencias Censo 2024 vs Censo 2017 (IRH)**
+
+- **Tipo**: **PROXY (baja comparabilidad)**.
+- En 2017 el núcleo era directo: proporción de hogares monoparentales sobre total de hogares (invertido).
+- En 2024 no existe un equivalente directo de monoparentalidad en el set agregado empleado; se aproxima con un índice compuesto de jefatura femenina y presencia de menores, luego normalizado.
+- La diferencia principal es de **validez de constructo**: las señales proxy están correlacionadas con vulnerabilidad familiar, pero no identifican en forma unívoca monoparentalidad.
+- Implicancia: el indicador 2024 captura un riesgo familiar afín, pero su comparación con 2017 debe tratarse como empalme conceptual aproximado y no como continuidad exacta del mismo atributo.
+
 ---
 
 
@@ -416,6 +454,13 @@ $$
 
 :::
 
+**Diferencias Censo 2024 vs Censo 2017 (IPJ)**
+
+- **Tipo**: **No comparable / no reconstruible con los tabulados 2024 disponibles**.
+- En 2017 el indicador requería el cruce individual de condiciones para identificar NINI (edad 15–24, no estudio, no trabajo).
+- En 2024 solo se cuenta con marginales separadas (edad, educación, trabajo), sin intersecciones conjuntas; por ello el numerador NINI no es identificable.
+- Implicancia: no corresponde clasificarlo como comparable ni como proxy robusto con los insumos actuales; para recuperar comparabilidad se requiere tabulación cruzada explícita o microdato armonizable.
+
 ---
 
 
@@ -465,4 +510,3 @@ En aplicaciones operativas y de política pública, para indicadores PROXY se re
 3. Interpretación del cambio como evidencia de reconfiguración de condiciones más que como equivalencia exacta de magnitudes.
 
 En suma, el empalme 2017–2024 es metodológicamente válido como comparación territorial si se explicitan: (a) el tipo de indicador (comparable vs proxy), (b) el método de crosswalk espacial, y (c) el soporte empírico basado en métricas directas y autocorrelación espacial.
-
