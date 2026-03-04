@@ -346,6 +346,13 @@ IEM = 1- \left(\frac{\,P17\_4\,}{\,P17\_ACT\,} \right)
 </div>
 </div>
 </div>
+<p><strong>Diferencias Censo 2024 vs Censo 2017 (IEM)</strong></p>
+<ul>
+<li><strong>Tipo</strong>: <strong>Comparable</strong>.</li>
+<li>En 2017 la razón se expresaba como <code>P17_4 / P17_ACT</code> (buscando empleo sobre población activa). En 2024 se operacionaliza como <code>desocupados / (desocupados + ocupados)</code>.</li>
+<li>La diferencia central es <strong>de nomenclatura y disponibilidad de tabulados</strong>, no de constructo: en ambos casos se mide desempleo dentro de población activa y luego se invierte.</li>
+<li>Implicancia: la lectura intertemporal del cambio es directa, con resguardo estándar por eventuales diferencias de levantamiento/operacionalización censal.</li>
+</ul>
 <hr>
 </section>
 <section id="ivi-indicador-de-calidad-de-la-vivienda" class="level3 unnumbered">
@@ -416,6 +423,13 @@ IVI= 1 - \left(\frac{\,paredes+ suelo+ techo\,}{3}\right)
 </div>
 </div>
 </div>
+<p><strong>Diferencias Censo 2024 vs Censo 2017 (IVI)</strong></p>
+<ul>
+<li><strong>Tipo</strong>: <strong>Comparable (alta-media)</strong>.</li>
+<li>La estructura se mantiene: promedio de carencias en paredes, techo y piso, con inversión final (<code>1 - promedio</code>).</li>
+<li>En 2024 se incorporan reglas operacionales explícitas (tope en 1 por componente) para evitar inconsistencias numéricas por agregación.</li>
+<li>Implicancia: el constructo es el mismo, pero la versión 2024 agrega control técnico que puede generar diferencias menores de escala frente a 2017.</li>
+</ul>
 <hr>
 </section>
 </section>
@@ -470,6 +484,14 @@ ISV = 1 - minmax(NIV\_HAC2 + (2 \times NIV\_HAC3))
 </div>
 </div>
 </div>
+<p><strong>Diferencias Censo 2024 vs Censo 2017 (ISV)</strong></p>
+<ul>
+<li><strong>Tipo</strong>: <strong>PROXY (baja comparabilidad)</strong>.</li>
+<li>En 2017 el indicador combinaba explícitamente <strong>hacinamiento medio</strong> y <strong>hacinamiento severo</strong> (<code>NIV_HAC2</code> y <code>NIV_HAC3</code>), preservando gradientes de severidad originales.</li>
+<li>En 2024 no se dispone de la misma desagregación de severidad; se reemplaza por un puntaje proxy con dos señales: proporción de viviendas hacinadas y proporción de núcleos hacinados/allegados, aplicando un peso operacional (<code>w_hac = 2</code>) y normalización min-max.</li>
+<li>La diferencia no es solo de variable, sino de <strong>arquitectura de medición</strong>: se pasa de una clasificación censal directa de severidad a una reconstrucción indirecta de criticidad.</li>
+<li>Implicancia: el cambio 2017–2024 debe leerse como variación en una señal relacionada con suficiencia/hacinamiento, no como equivalencia estricta de magnitudes.</li>
+</ul>
 <hr>
 </section>
 <section id="iej-indicador-de-escolaridad" class="level3 unnumbered">
@@ -512,6 +534,14 @@ IEJ = ESCOLAR
 </div>
 </div>
 </div>
+<p><strong>Diferencias Censo 2024 vs Censo 2017 (IEJ)</strong></p>
+<ul>
+<li><strong>Tipo</strong>: <strong>PROXY (baja comparabilidad)</strong>.</li>
+<li>En 2017 se medía escolaridad de <strong>jefatura de hogar</strong> (capital educacional del hogar vía jefe/a).</li>
+<li>En 2024 esa tabulación no está disponible en el agregado utilizado y se reemplaza por <strong>promedio de escolaridad de población de 18+</strong>.</li>
+<li>El cambio altera la unidad conceptual del indicador: de una característica de jefatura/hogar a una medida poblacional adulta del territorio.</li>
+<li>Implicancia: los niveles no son estrictamente equivalentes; se recomienda usarlo para lectura relativa territorial (ranking/patrones) más que para comparar magnitudes absolutas con 2017.</li>
+</ul>
 <hr>
 </section>
 <section id="irh-indicador-de-resiliencia-de-hogares" class="level3 unnumbered">
@@ -563,6 +593,14 @@ IRH = 1 - \left(\frac{\,MONOPAR\,}{\,HOG\_N\,} \right)
 </div>
 </div>
 </div>
+<p><strong>Diferencias Censo 2024 vs Censo 2017 (IRH)</strong></p>
+<ul>
+<li><strong>Tipo</strong>: <strong>PROXY (baja comparabilidad)</strong>.</li>
+<li>En 2017 el núcleo era directo: proporción de hogares monoparentales sobre total de hogares (invertido).</li>
+<li>En 2024 no existe un equivalente directo de monoparentalidad en el set agregado empleado; se aproxima con un índice compuesto de jefatura femenina y presencia de menores, luego normalizado.</li>
+<li>La diferencia principal es de <strong>validez de constructo</strong>: las señales proxy están correlacionadas con vulnerabilidad familiar, pero no identifican en forma unívoca monoparentalidad.</li>
+<li>Implicancia: el indicador 2024 captura un riesgo familiar afín, pero su comparación con 2017 debe tratarse como empalme conceptual aproximado y no como continuidad exacta del mismo atributo.</li>
+</ul>
 <hr>
 </section>
 <section id="ipj-indicador-de-participación-juvenil" class="level3 unnumbered">
@@ -604,6 +642,13 @@ IPJ = 1 - \left(\frac{\,J\_NINI\,}{\,E15A24\,} \right)
 </div>
 </div>
 </div>
+<p><strong>Diferencias Censo 2024 vs Censo 2017 (IPJ)</strong></p>
+<ul>
+<li><strong>Tipo</strong>: <strong>No comparable / no reconstruible con los tabulados 2024 disponibles</strong>.</li>
+<li>En 2017 el indicador requería el cruce individual de condiciones para identificar NINI (edad 15–24, no estudio, no trabajo).</li>
+<li>En 2024 solo se cuenta con marginales separadas (edad, educación, trabajo), sin intersecciones conjuntas; por ello el numerador NINI no es identificable.</li>
+<li>Implicancia: no corresponde clasificarlo como comparable ni como proxy robusto con los insumos actuales; para recuperar comparabilidad se requiere tabulación cruzada explícita o microdato armonizable.</li>
+</ul>
 <hr>
 </section>
 </section>
