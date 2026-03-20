@@ -125,13 +125,112 @@
     ]
   },
   {
+    "objectID": "dim_seg.html",
+    "href": "dim_seg.html",
+    "title": "5  Dimensión de Seguridad",
+    "section": "",
+    "text": "5.1 Presentación\nEste capítulo describe la dimensión de seguridad que forma parte del sistema de indicadores territoriales del centro. La dimensión está compuesta por cuatro indicadores que permiten caracterizar, a nivel de manzana censal, la intensidad y el tipo de actividad delictual que ocurre en cada sector de la ciudad. El objetivo no es simplemente contar cuántos delitos ocurren en un lugar, sino construir una medida de densidad del fenómeno delictual que capture dónde se concentra el problema y con qué gravedad se manifiesta.\nLos indicadores se actualizan cada vez que se dispone de nueva información oficial de delitos. El proceso que se describe a continuación aplica a cada actualización.",
+    "crumbs": [
+      "Dimensiones MBHT",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dimensión de Seguridad</span>"
+    ]
+  },
+  {
+    "objectID": "dim_seg.html#fuente-de-datos",
+    "href": "dim_seg.html#fuente-de-datos",
+    "title": "5  Dimensión de Seguridad",
+    "section": "5.2 Fuente de Datos",
+    "text": "5.2 Fuente de Datos\nLos delitos utilizados para construir los indicadores fueron proporcionados por la Subsecretaría de Prevención del Delito (SPD) del Ministerio del Interior y Seguridad Pública, y corresponden a todos los casos policiales ocurridos durante el año 2025 en el territorio nacional.\nUn caso policial puede originarse de tres formas distintas:\n\nDenuncia: una persona reporta ante Carabineros o PDI un hecho que considera delito.\nFlagrancia: un funcionario policial interviene al sorprender a alguien en la comisión de un delito.\nOrden de detención: se ejecuta una detención en cumplimiento de una orden judicial vigente.\n\nCada caso incluye información sobre el tipo de delito, la fecha y la ubicación georreferenciada donde ocurrió el hecho.",
+    "crumbs": [
+      "Dimensiones MBHT",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dimensión de Seguridad</span>"
+    ]
+  },
+  {
+    "objectID": "dim_seg.html#anonimización-espacial-de-los-datos",
+    "href": "dim_seg.html#anonimización-espacial-de-los-datos",
+    "title": "5  Dimensión de Seguridad",
+    "section": "5.3 Anonimización Espacial de los Datos",
+    "text": "5.3 Anonimización Espacial de los Datos\nLos registros originales de delitos contienen la ubicación exacta donde ocurrió cada caso. Para proteger la identidad de víctimas e imputados y cumplir con los estándares de privacidad exigidos para el uso de esta información, todos los puntos fueron sometidos a un proceso de distorsión espacial aleatoria antes de ser utilizados en el cálculo de los indicadores.\n\n5.3.1 ¿En qué consiste la distorsión espacial?\nEl procedimiento consiste en desplazar la ubicación original de cada delito a una posición aleatoria dentro de un radio determinado. En términos simples: en vez de mostrar exactamente en qué dirección o predio ocurrió el hecho, el punto se mueve a un lugar cercano pero distinto, elegido al azar.\nEl desplazamiento se realizó con los siguientes parámetros:\n\nRadio mínimo: 50 metros desde la ubicación original.\nRadio máximo: 100 metros desde la ubicación original.\nLa dirección del desplazamiento es completamente aleatoria: el punto puede moverse hacia cualquier ángulo.\n\nEsto significa que cada punto de delito puede encontrarse a entre 50 y 100 metros de donde realmente ocurrió el hecho, en una dirección que no es posible predecir. Esta técnica, conocida como spatial jittering, es ampliamente utilizada en criminología y epidemiología espacial para preservar la privacidad sin perder la utilidad analítica de los datos, ya que a escalas de análisis como la manzana o el barrio, la distorsión es suficientemente pequeña como para no afectar los patrones territoriales de interés.",
+    "crumbs": [
+      "Dimensiones MBHT",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dimensión de Seguridad</span>"
+    ]
+  },
+  {
+    "objectID": "dim_seg.html#las-cuatro-categorías-delictuales",
+    "href": "dim_seg.html#las-cuatro-categorías-delictuales",
+    "title": "5  Dimensión de Seguridad",
+    "section": "5.4 Las Cuatro Categorías Delictuales",
+    "text": "5.4 Las Cuatro Categorías Delictuales\nPara construir los indicadores, los delitos no se analizan todos juntos. En cambio, se clasifican en cuatro categorías que combinan dos dimensiones: la gravedad del delito y el tipo de bien afectado.\nLa gravedad se divide en:\n\nGraves: delitos que implican violencia física, amenaza directa a la integridad de las personas, o un daño patrimonial severo mediante el uso de la fuerza.\nLeves: delitos de menor impacto o faltas, que aunque afectan la convivencia no alcanzan la intensidad de los anteriores.\n\nEl tipo de bien afectado se divide en:\n\nPersonas: el daño recae principalmente sobre la integridad física, psíquica o la libertad de una persona.\nPropiedad: el daño recae principalmente sobre bienes materiales o patrimonio.\n\nLa combinación de estas dos dimensiones genera las cuatro categorías:\n\n\n\nTable 5.1: Las cuatro categorías de indicadores de seguridad\n\n\n\n\n\n\n\n\n\n\nIndicador\nCódigo\nDescripción general\n\n\n\n\nGraves Personas\nIGPE\nDelitos violentos contra la integridad física o libertad\n\n\nLeves Personas\nILPE\nFaltas y delitos menores contra las personas\n\n\nGraves Propiedad\nIGPR\nRobos con fuerza o violencia sobre bienes\n\n\nLeves Propiedad\nILPR\nHurtos y delitos menores contra la propiedad\n\n\n\n\n\n\n\n5.4.1 ¿Qué delitos componen cada categoría?\nLa asignación de cada tipo de delito a una de las cuatro categorías fue definida en base a criterios jurídicos y de política pública, y se materializó en una tabla de clasificación elaborada por el equipo técnico. A continuación se describen los principales grupos delictuales que integran cada categoría.\n\n5.4.1.1 Graves Personas (IGPE)\nAgrupa los delitos más severos en términos de daño a las personas. Incluye 66 tipos de delitos, organizados en los siguientes grupos principales:\n\nHomicidios y muertes: homicidios, femicidios, hallazgo de cadáver.\nAgresiones físicas graves: lesiones graves, lesiones gravísimas, lesiones con arma de fuego o arma blanca.\nDelitos sexuales: violaciones, abusos sexuales, otros delitos sexuales contra menores y adultos.\nRobos violentos: robo con violencia o intimidación, robo violento de vehículo motorizado (incluye encerronas y portonazos).\nViolencia intrafamiliar con lesiones físicas: casos en que la violencia doméstica genera lesiones de carácter grave.\nDrogas y armas: tráfico ilícito de drogas, microtráfico, infracción a ley de armas, porte ilegal de armas.\nOtros: extorsión, secuestros, trata de personas, incendios.\n\n\n\n5.4.1.2 Leves Personas (ILPE)\nAgrupa faltas y delitos de menor gravedad que afectan a las personas o la convivencia. Incluye 39 tipos de delitos, entre los que se encuentran:\n\nLesiones leves: peleas con lesiones menores que no requieren hospitalización.\nViolencia intrafamiliar sin lesiones físicas graves: conflictos domésticos con lesiones psicológicas o de baja intensidad.\nIncivilidades contra personas: ebriedad en vía pública, consumo de alcohol o drogas en espacios públicos, desórdenes, mala conducta menor, daños a bienes.\nPorte de drogas: tenencia de drogas para consumo personal.\nVulneración de derechos: situaciones que afectan derechos de personas, especialmente niños, niñas y adolescentes.\nRobo por sorpresa: robo sin uso de violencia directa (arrebato), que afecta a la persona aunque el bien sustraído sea material.\nReceptación: compra o recepción de bienes robados.\n\n\n\n5.4.1.3 Graves Propiedad (IGPR)\nAgrupa delitos contra la propiedad que implican el uso de la fuerza o la violación de espacios privados. Incluye 5 tipos de delitos:\n\nRobo en lugar habitado: robo en casas o departamentos donde hay personas o donde alguien podría encontrarse.\nRobo en lugar no habitado con fuerza: robo en establecimientos, bodegas o lugares cerrados sin moradores.\nRobo de vehículo motorizado (modalidad con fuerza directa sobre el vehículo).\nRobo frustrado: intento de robo que no se consuma, pero que implicó fuerza o violencia.\n\n\n\n5.4.1.4 Leves Propiedad (ILPR)\nAgrupa delitos y faltas contra bienes materiales de menor gravedad. Incluye 17 tipos de delitos:\n\nHurtos: sustracción sin violencia ni fuerza (en tiendas, en la calle, en transporte público).\nRobo de objeto desde vehículo: sustracción de pertenencias desde el interior de un automóvil.\nRobo en lugar no habitado (modalidades menores): infracciones a recintos cerrados con poco valor sustraído.\nComercio ilegal: venta ambulante no autorizada u otras infracciones comerciales menores.\nOtros robos con fuerza menores: modalidades de robo con fuerza que no alcanzan la categoría grave.\n\n\n\n\n\n\n\nNote\n\n\n\nNota sobre los delitos sin categoría: La tabla de clasificación incluye todos los tipos de delitos registrados por la SPD. Aquellos que no tienen asignada una de las cuatro categorías corresponden a delitos que, por su naturaleza (por ejemplo: infracciones de tránsito, delitos económicos, delitos informáticos, hallazgo de vehículos) o por ambigüedad en su clasificación, fueron excluidos del cálculo de los indicadores de seguridad. Esto no significa que no sean importantes, sino que su inclusión podría distorsionar la medición de los fenómenos de seguridad pública que estos indicadores buscan capturar.",
+    "crumbs": [
+      "Dimensiones MBHT",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dimensión de Seguridad</span>"
+    ]
+  },
+  {
+    "objectID": "dim_seg.html#proceso-de-cálculo-de-los-indicadores",
+    "href": "dim_seg.html#proceso-de-cálculo-de-los-indicadores",
+    "title": "5  Dimensión de Seguridad",
+    "section": "5.5 Proceso de Cálculo de los Indicadores",
+    "text": "5.5 Proceso de Cálculo de los Indicadores\nUna vez que los delitos están clasificados en las cuatro categorías, el proceso de cálculo sigue los pasos que se describen a continuación. El objetivo de este proceso es transformar los puntos de delitos en un valor de densidad para cada manzana censal, que refleje qué tan intensa es la actividad delictual en ese entorno.\n\n5.5.1 Paso 1: Preparación de los datos\nAntes de cualquier cálculo, todos los datos —tanto los puntos de delitos como los límites de las manzanas censales— se estandarizan en un sistema de coordenadas común (EPSG:32719, proyección UTM zona 19 Sur). Esto garantiza que las distancias se calculen en metros reales, lo que es fundamental para el siguiente paso.\nLos datos de la Región de Valparaíso merecen una mención especial: por su particularidad geográfica, Isla de Pascua y el Archipiélago Juan Fernández se procesan de forma separada al continente, evitando distorsiones al calcular densidades en territorios insulares muy alejados del continente.\n\n\n5.5.2 Paso 2: Cálculo de densidad espacial (KDE)\nEl corazón del proceso es el cálculo de una superficie de densidad de puntos, conocida como Kernel Density Estimation o KDE. Esta técnica permite, a partir de una nube de puntos (los delitos), construir una superficie continua que muestra en qué zonas se concentra la actividad.\nLa idea intuitiva es la siguiente: imagina que en cada delito enciendes una “llamarada” de calor. El calor es más intenso justo donde ocurrió el delito, y se va apagando a medida que te alejas. Al superponer todas las llamaradas, las zonas donde se concentran muchos delitos cercanos entre sí quedan muy calientes, mientras que los sectores sin delitos quedan fríos. El resultado es un mapa de temperatura que representa la intensidad del fenómeno en el espacio.\nLos parámetros técnicos del cálculo son:\n\nTamaño de celda: 100 metros. El territorio se divide en celdas cuadradas de 100 × 100 metros, y para cada una se calcula un valor de densidad.\nAncho de banda: 500 metros. Esta es la distancia hasta la que la influencia de cada delito se propaga. Un delito afecta con fuerza a su entorno inmediato y con menor fuerza a zonas que están hasta 500 metros de distancia.\nTipo de kernel: cuártico (quartic). Define la forma matemática con que se distribuye la influencia de cada punto: cae rápidamente desde el centro hacia los bordes.\n\nEl cálculo se realiza por separado para cada región y para cada una de las cuatro categorías. Esto significa que, por ejemplo, la densidad de Graves Personas en la Región Metropolitana se calcula de forma independiente a la densidad de Leves Propiedad en la misma región, y ambas son independientes de lo que ocurra en otras regiones.\nLos mapas a continuación muestran la superficie de densidad KDE resultante para cada uno de los cuatro indicadores. Las zonas más cálidas (colores intensos) concentran mayor actividad delictual; las zonas más frías (colores tenues o transparentes) presentan baja o nula presencia del fenómeno.\n\nGraves PersonasLeves PersonasGraves PropiedadLeves Propiedad\n\n\n\n\n\nSuperficie KDE — Graves Personas (IGPE). Cada punto del mapa representa la densidad estimada de delitos graves contra las personas, calculada con un kernel cuártico de 500 m de ancho de banda y celdas de 100 × 100 m.\n\n\n\n\n\n\n\nSuperficie KDE — Leves Personas (ILPE). Muestra la concentración espacial de faltas y delitos menores que afectan directamente a las personas en su integridad o convivencia cotidiana.\n\n\n\n\n\n\n\nSuperficie KDE — Graves Propiedad (IGPR). Refleja la densidad de robos con fuerza o violencia sobre bienes materiales, incluyendo robo en lugar habitado y robo violento de vehículos.\n\n\n\n\n\n\n\nSuperficie KDE — Leves Propiedad (ILPR). Muestra la distribución espacial de hurtos y otros delitos menores contra bienes materiales, que tienden a concentrarse en zonas comerciales y de alta afluencia pública.\n\n\n\n\n\n\n\n5.5.3 Paso 3: Estrategias de cálculo según el territorio\nNo todas las regiones tienen la misma forma ni la misma densidad de delitos. Para que el cálculo sea eficiente y produzca resultados de calidad, se aplican distintas estrategias según las características de cada zona:\nModo directo: Se usa cuando la región tiene un tamaño manejable. Los puntos de delitos se usan directamente para construir la superficie de densidad.\nModo H3 con parches contiguos: Se usa en regiones muy extensas o con zonas rurales dispersas, donde calcular una cuadrícula sobre toda la región resultaría en una superficie con mucho espacio vacío e inútil. En este caso, el territorio se divide en hexágonos regulares (usando el sistema H3 de Uber) y el cálculo se realiza solo sobre los hexágonos que efectivamente contienen delitos, agrupándolos en parches de hexágonos contiguos. Así se evita desperdiciar capacidad de cómputo en áreas donde no ocurrió nada relevante.\nModo mixto urbano-rural: Algunas regiones tienen tanto zonas urbanas densas como extensas áreas rurales. En esos casos, la parte urbana se calcula en modo directo y la parte rural en modo H3, y luego ambas superficies se combinan en un único resultado regional.\n\n\n5.5.4 Paso 4: Resumen a nivel de manzana\nLa superficie KDE es un raster continuo: tiene un valor en cada celda de 100 × 100 metros. Sin embargo, los indicadores del sistema deben expresarse a nivel de manzana censal (la unidad territorial mínima del Censo). Para obtener un valor por manzana, se calcula el promedio de los valores del raster dentro de cada manzana. Esto se hace con un método de promediado ponderado por área, lo que garantiza que las celdas del raster que caen parcialmente dentro de una manzana se cuenten en proporción a la fracción que efectivamente se superpone.\nEl resultado de este paso es una tabla con una fila por manzana y una columna por cada una de las cuatro categorías, con el valor bruto de densidad KDE que le corresponde a cada una.\n\n\n5.5.5 Paso 5: Normalización a escala de seguridad\nLos valores brutos de densidad KDE no tienen una escala intuitiva. Para que los indicadores sean comparables entre categorías y entre versiones del sistema, los valores se normalizan para que queden expresados en una escala común. Esta escala permite identificar manzanas con valores muy altos (zonas de alta concentración delictual) y manzanas con valores bajos o nulos (zonas sin presencia significativa del fenómeno).\nEl resultado final es un conjunto de cuatro indicadores por manzana —IGPE, IGPR, ILPE, ILPR— que pueden leerse, mapearse y compararse de forma directa.",
+    "crumbs": [
+      "Dimensiones MBHT",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dimensión de Seguridad</span>"
+    ]
+  },
+  {
+    "objectID": "dim_seg.html#resultados-por-indicador",
+    "href": "dim_seg.html#resultados-por-indicador",
+    "title": "5  Dimensión de Seguridad",
+    "section": "5.6 Resultados por Indicador",
+    "text": "5.6 Resultados por Indicador\nUna vez que los valores de densidad KDE han sido resumidos y normalizados a nivel de manzana, el resultado se puede visualizar como una capa de polígonos donde cada manzana censal queda coloreada según la intensidad del indicador correspondiente. Esta representación facilita la lectura territorial del fenómeno: permite identificar de manera directa qué manzanas concentran mayor actividad delictual y cuáles presentan niveles bajos o nulos.\nLos mapas a continuación muestran el indicador final expresado sobre las manzanas censales para cada una de las cuatro categorías.\n\nIGPEILPEIGPRILPR\n\n\n\n\n\nIndicador IGPE por manzana censal. Cada polígono representa una manzana y su color refleja el valor normalizado del indicador de Graves Personas: colores más intensos indican mayor concentración de delitos graves contra las personas en ese sector.\n\n\n\n\n\n\n\nIndicador ILPE por manzana censal. Muestra la distribución espacial de faltas y delitos menores contra las personas, expresada como valor normalizado para cada manzana del territorio.\n\n\n\n\n\n\n\nIndicador IGPR por manzana censal. Refleja la intensidad territorial de los delitos graves contra la propiedad —robos con fuerza, robo en lugar habitado, robo violento de vehículos— a nivel de manzana.\n\n\n\n\n\n\n\nIndicador ILPR por manzana censal. Muestra la concentración territorial de hurtos y delitos menores contra la propiedad en cada manzana censal del área analizada.",
+    "crumbs": [
+      "Dimensiones MBHT",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dimensión de Seguridad</span>"
+    ]
+  },
+  {
+    "objectID": "dim_seg.html#formatos-de-salida",
+    "href": "dim_seg.html#formatos-de-salida",
+    "title": "5  Dimensión de Seguridad",
+    "section": "5.7 Formatos de Salida",
+    "text": "5.7 Formatos de Salida\nEl proceso produce los siguientes resultados para cada región del país:\n\nCapa geoespacial (GeoPackage): contiene la geometría de cada manzana censal con los cuatro indicadores como atributos. Permite su uso en cualquier sistema de información geográfica (QGIS, ArcGIS, etc.).\nRaster de densidad (GeoTIFF): la superficie KDE continua por categoría, útil para visualización y análisis espacial avanzado.\nMapas temáticos (PNG): visualizaciones rápidas del indicador sobre el territorio regional.\n\nAl finalizar el procesamiento de todas las regiones, se genera además una capa nacional consolidada que integra los resultados de todas las regiones en un único archivo.",
+    "crumbs": [
+      "Dimensiones MBHT",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dimensión de Seguridad</span>"
+    ]
+  },
+  {
+    "objectID": "dim_seg.html#resumen-del-proceso",
+    "href": "dim_seg.html#resumen-del-proceso",
+    "title": "5  Dimensión de Seguridad",
+    "section": "5.8 Resumen del Proceso",
+    "text": "5.8 Resumen del Proceso\nEl siguiente esquema resume el flujo completo de trabajo, desde los datos originales hasta los indicadores finales:\nDatos SPD (casos policiales 2025)\n       ↓\nDistorsión espacial aleatoria (50–100 m)\n       ↓\nClasificación en 4 categorías (IGPE / IGPR / ILPE / ILPR)\n       ↓\nSeparación por región geográfica\n       ↓\nCálculo de densidad KDE por categoría y región\n  (modo directo / H3 parches / mixto según territorio)\n       ↓\nResumen del raster a nivel de manzana censal (promedio)\n       ↓\nNormalización a escala de seguridad\n       ↓\nExportación: GeoPackage · GeoTIFF · PNG · consolidado nacional",
+    "crumbs": [
+      "Dimensiones MBHT",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dimensión de Seguridad</span>"
+    ]
+  },
+  {
+    "objectID": "dim_seg.html#consideraciones-y-limitaciones",
+    "href": "dim_seg.html#consideraciones-y-limitaciones",
+    "title": "5  Dimensión de Seguridad",
+    "section": "5.9 Consideraciones y Limitaciones",
+    "text": "5.9 Consideraciones y Limitaciones\n\nLos indicadores reflejan casos policiales registrados, no la totalidad del fenómeno delictual. Los delitos no denunciados (cifra negra) no están representados.\nLa distorsión espacial de 50–100 metros introduce una imprecisión tolerable a escala de manzana o superior, pero no es recomendable usar los datos desagregados a nivel de predio o punto exacto.\nLa categorización de delitos es una decisión metodológica: algunos delitos aparecen en más de un grupo delictual dependiendo de la modalidad, y su asignación a una categoría puede revisarse en futuras actualizaciones.\nEl cálculo KDE es sensible al ancho de banda elegido (500 metros). Un ancho mayor suaviza más el mapa; uno menor produce superficies más localizadas. El valor utilizado fue definido como el más adecuado para el nivel de análisis de manzana.\nLos resultados de distintas regiones no son comparables directamente en términos de valores absolutos, ya que la normalización se realiza de forma independiente por región. La comparación entre regiones debe realizarse con cautela.",
+    "crumbs": [
+      "Dimensiones MBHT",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dimensión de Seguridad</span>"
+    ]
+  },
+  {
     "objectID": "anexos.html",
     "href": "anexos.html",
-    "title": "6  Anexos",
+    "title": "7  Anexos",
     "section": "",
-    "text": "6.1 Fichas",
+    "text": "7.1 Fichas",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Anexos</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Anexos</span>"
     ]
   }
 ]
