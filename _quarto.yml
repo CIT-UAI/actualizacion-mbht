@@ -25,6 +25,7 @@ book:
       chapters: 
       - dim_soc.qmd
       - dim_amb.qmd
+      - dim_seg.qmd
     # - proyectos.qmd
     # - recomendaciones.qmd
     # - part: "Marco de Referencia"
