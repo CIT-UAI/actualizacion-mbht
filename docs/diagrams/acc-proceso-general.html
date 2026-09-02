@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proceso general de la dimensión de accesibilidad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&amp;family=Roboto:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #fafaf7; }
+    body { font-family: Roboto, Arial, sans-serif; color: #313135; }
+    svg { display: block; width: 100%; height: auto; }
+    .title { font: 700 32px Roboto, Arial, sans-serif; fill: #313135; }
+    .subtitle { font: 400 16px Roboto, Arial, sans-serif; fill: #4c4c4d; }
+    .eyebrow { font: 600 12px 'Geist Mono', monospace; letter-spacing: .12em; fill: #4c4c4d; }
+    .step { fill: #ffffff; stroke: rgba(49,49,53,.28); stroke-width: 1.2; }
+    .step-input { fill: #f4f4f4; stroke: #6c6c6e; stroke-width: 1.2; }
+    .step-focal { fill: rgba(255,204,0,.18); stroke: #876a00; stroke-width: 2; }
+    .step-number { font: 600 12px 'Geist Mono', monospace; letter-spacing: .06em; fill: #6c6c6e; }
+    .step-number-focal { fill: #876a00; }
+    .node-title { font: 600 20px Roboto, Arial, sans-serif; fill: #313135; }
+    .node-sub { font: 400 16px Roboto, Arial, sans-serif; fill: #4c4c4d; }
+    .node-tech { font: 500 12px 'Geist Mono', monospace; fill: #6c6c6e; letter-spacing: .02em; }
+    .arrow { fill: none; stroke: #4c4c4d; stroke-width: 2; marker-end: url(#acc-general-arrow); }
+    .arrow-focal { fill: none; stroke: #876a00; stroke-width: 2.4; marker-end: url(#acc-general-arrow-focal); }
+    .legend { font: 500 16px Roboto, Arial, sans-serif; fill: #4c4c4d; }
+  </style>
+</head>
+<body>
+  <main>
+    <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="acc-general-title acc-general-desc">
+      <title id="acc-general-title">Proceso general de la dimensión de accesibilidad</title>
+      <desc id="acc-general-desc">Flujo de siete etapas que transforma población y equipamientos en seis indicadores territoriales y en la dimensión sintética de accesibilidad.</desc>
+      <defs>
+        <marker id="acc-general-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#4c4c4d"/>
+        </marker>
+        <marker id="acc-general-arrow-focal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#876a00"/>
+        </marker>
+      </defs>
+
+      <rect width="1280" height="720" fill="#fafaf7"/>
+      <text x="48" y="52" class="eyebrow">DIMENSIÓN DE ACCESIBILIDAD · MBHT</text>
+      <text x="48" y="92" class="title">Del territorio al indicador</text>
+      <text x="48" y="124" class="subtitle">Siete operaciones conectan la demanda, la oferta y el tiempo de viaje.</text>
+      <line x1="48" y1="148" x2="1232" y2="148" stroke="rgba(49,49,53,.14)" stroke-width="1"/>
+
+      <!-- Connectors are painted before nodes. -->
+      <line x1="288" y1="256" x2="328" y2="256" class="arrow"/>
+      <line x1="568" y1="256" x2="608" y2="256" class="arrow"/>
+      <line x1="848" y1="256" x2="888" y2="256" class="arrow"/>
+      <line x1="1008" y1="304" x2="1008" y2="400" class="arrow-focal"/>
+      <line x1="888" y1="448" x2="848" y2="448" class="arrow-focal"/>
+      <line x1="608" y1="448" x2="568" y2="448" class="arrow"/>
+
+      <!-- Top row -->
+      <g>
+        <rect x="48" y="208" width="240" height="96" rx="8" class="step-input"/>
+        <text x="68" y="232" class="step-number">01 · INSUMOS</text>
+        <text x="168" y="260" text-anchor="middle" class="node-title">Población y oferta</text>
+        <text x="168" y="284" text-anchor="middle" class="node-sub">demanda + equipamientos</text>
+      </g>
+      <g>
+        <rect x="328" y="208" width="240" height="96" rx="8" class="step"/>
+        <text x="348" y="232" class="step-number">02 · UBICACIÓN</text>
+        <text x="448" y="260" text-anchor="middle" class="node-title">Georreferenciar</text>
+        <text x="448" y="284" text-anchor="middle" class="node-sub">EPSG:32719</text>
+      </g>
+      <g>
+        <rect x="608" y="208" width="240" height="96" rx="8" class="step"/>
+        <text x="628" y="232" class="step-number">03 · CONEXIÓN</text>
+        <text x="728" y="260" text-anchor="middle" class="node-title">Ajustar a la red vial</text>
+        <text x="728" y="284" text-anchor="middle" class="node-sub">snapping al nodo más cercano</text>
+      </g>
+      <g>
+        <rect x="888" y="208" width="240" height="96" rx="8" class="step"/>
+        <text x="908" y="232" class="step-number">04 · MOVILIDAD</text>
+        <text x="1008" y="260" text-anchor="middle" class="node-title">Calcular tiempos</text>
+        <text x="1008" y="284" text-anchor="middle" class="node-sub">red vial + pendiente</text>
+      </g>
+
+      <!-- Bottom row, read right to left. -->
+      <g>
+        <rect x="888" y="400" width="240" height="96" rx="8" class="step-focal"/>
+        <text x="908" y="424" class="step-number step-number-focal">05 · E2SFCA</text>
+        <text x="1008" y="448" text-anchor="middle" class="node-title">Estimar disponibilidad</text>
+        <text x="1008" y="476" text-anchor="middle" class="node-tech">R_j · OFERTA / DEMANDA</text>
+      </g>
+      <g>
+        <rect x="608" y="400" width="240" height="96" rx="8" class="step"/>
+        <text x="628" y="424" class="step-number">06 · ACCESO</text>
+        <text x="728" y="448" text-anchor="middle" class="node-title">Calcular accesibilidad</text>
+        <text x="728" y="476" text-anchor="middle" class="node-tech">A_i · SUMA PONDERADA</text>
+      </g>
+      <g>
+        <rect x="328" y="400" width="240" height="96" rx="8" class="step"/>
+        <text x="348" y="424" class="step-number">07 · RESULTADO</text>
+        <text x="448" y="448" text-anchor="middle" class="node-title">Integrar indicadores</text>
+        <text x="448" y="472" text-anchor="middle" class="node-tech">ISAL · ISE · IAV</text>
+        <text x="448" y="488" text-anchor="middle" class="node-tech">IDEP · ICUL · ISER</text>
+      </g>
+
+      <line x1="48" y1="624" x2="1232" y2="624" stroke="rgba(49,49,53,.14)" stroke-width="1"/>
+      <rect x="48" y="652" width="20" height="20" rx="4" fill="rgba(255,204,0,.18)" stroke="#876a00" stroke-width="1.2"/>
+      <text x="84" y="668" class="legend">Núcleo analítico E2SFCA</text>
+      <line x1="336" y1="662" x2="376" y2="662" class="arrow"/>
+      <text x="396" y="668" class="legend">Secuencia de transformación</text>
+    </svg>
+  </main>
+</body>
+</html>

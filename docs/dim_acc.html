@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="John Treimun">
+<meta name="dcterms.date" content="2026-09-02">
+
+<title>3&nbsp; Dimensión de Accesibilidad – Guía Técnica MBHT</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./dim_soc.html" rel="next">
+<link href="./dimensiones.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-485d01fc63b59abcd3ee1bf1e8e2748d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="nav-sidebar floating slimcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dimensiones.html">Dimensiones MBHT</a></li><li class="breadcrumb-item"><a href="./dim_acc.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dimensión de Accesibilidad</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Guía Técnica MBHT</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./c_geometric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Corrección Geométrica</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./dimensiones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dimensiones MBHT</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dim_acc.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dimensión de Accesibilidad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dim_soc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dimensión Socioeconómica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dim_amb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Dimensión Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dim_seg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Dimensión de Seguridad</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mbht.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Construcción de MBHT</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Bibliografía</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anexos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Anexos</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">Contenidos</h2>
+   
+  <ul>
+  <li><a href="#presentación" id="toc-presentación" class="nav-link active" data-scroll-target="#presentación"><span class="header-section-number">3.1</span> Presentación</a></li>
+  <li><a href="#marco-conceptual" id="toc-marco-conceptual" class="nav-link" data-scroll-target="#marco-conceptual"><span class="header-section-number">3.2</span> Marco Conceptual</a></li>
+  <li><a href="#preparación-de-la-oferta-de-equipamientos" id="toc-preparación-de-la-oferta-de-equipamientos" class="nav-link" data-scroll-target="#preparación-de-la-oferta-de-equipamientos"><span class="header-section-number">3.3</span> Preparación de la Oferta de Equipamientos</a>
+  <ul class="collapse">
+  <li><a href="#requisitos-para-incorporar-un-equipamiento" id="toc-requisitos-para-incorporar-un-equipamiento" class="nav-link" data-scroll-target="#requisitos-para-incorporar-un-equipamiento"><span class="header-section-number">3.3.1</span> Requisitos para incorporar un equipamiento</a></li>
+  <li><a href="#jerarquía-local-e-intercomunal" id="toc-jerarquía-local-e-intercomunal" class="nav-link" data-scroll-target="#jerarquía-local-e-intercomunal"><span class="header-section-number">3.3.2</span> Jerarquía local e intercomunal</a></li>
+  <li><a href="#tratamiento-urbano-y-rural" id="toc-tratamiento-urbano-y-rural" class="nav-link" data-scroll-target="#tratamiento-urbano-y-rural"><span class="header-section-number">3.3.3</span> Tratamiento urbano y rural</a></li>
+  <li><a href="#medidas-de-capacidad" id="toc-medidas-de-capacidad" class="nav-link" data-scroll-target="#medidas-de-capacidad"><span class="header-section-number">3.3.4</span> Medidas de capacidad</a></li>
+  <li><a href="#composición-del-catastro" id="toc-composición-del-catastro" class="nav-link" data-scroll-target="#composición-del-catastro"><span class="header-section-number">3.3.5</span> Composición del catastro</a></li>
+  </ul></li>
+  <li><a href="#cálculo-de-los-tiempos-de-viaje" id="toc-cálculo-de-los-tiempos-de-viaje" class="nav-link" data-scroll-target="#cálculo-de-los-tiempos-de-viaje"><span class="header-section-number">3.4</span> Cálculo de los Tiempos de Viaje</a></li>
+  <li><a href="#cálculo-de-la-accesibilidad-con-e2sfca" id="toc-cálculo-de-la-accesibilidad-con-e2sfca" class="nav-link" data-scroll-target="#cálculo-de-la-accesibilidad-con-e2sfca"><span class="header-section-number">3.5</span> Cálculo de la Accesibilidad con E2SFCA</a>
+  <ul class="collapse">
+  <li><a href="#qué-significa-e2sfca" id="toc-qué-significa-e2sfca" class="nav-link" data-scroll-target="#qué-significa-e2sfca"><span class="header-section-number">3.5.1</span> ¿Qué significa E2SFCA?</a></li>
+  <li><a href="#paso-1-disponibilidad-de-cada-equipamiento" id="toc-paso-1-disponibilidad-de-cada-equipamiento" class="nav-link" data-scroll-target="#paso-1-disponibilidad-de-cada-equipamiento"><span class="header-section-number">3.5.2</span> Paso 1: Disponibilidad de cada equipamiento</a></li>
+  <li><a href="#paso-2-accesibilidad-de-cada-unidad-territorial" id="toc-paso-2-accesibilidad-de-cada-unidad-territorial" class="nav-link" data-scroll-target="#paso-2-accesibilidad-de-cada-unidad-territorial"><span class="header-section-number">3.5.3</span> Paso 2: Accesibilidad de cada unidad territorial</a></li>
+  <li><a href="#decaimiento-por-tiempo-de-viaje" id="toc-decaimiento-por-tiempo-de-viaje" class="nav-link" data-scroll-target="#decaimiento-por-tiempo-de-viaje"><span class="header-section-number">3.5.4</span> Decaimiento por tiempo de viaje</a></li>
+  </ul></li>
+  <li><a href="#fuentes-primarias-de-datos" id="toc-fuentes-primarias-de-datos" class="nav-link" data-scroll-target="#fuentes-primarias-de-datos"><span class="header-section-number">3.6</span> Fuentes Primarias de Datos</a></li>
+  <li><a href="#resumen-del-proceso" id="toc-resumen-del-proceso" class="nav-link" data-scroll-target="#resumen-del-proceso"><span class="header-section-number">3.7</span> Resumen del Proceso</a></li>
+  <li><a href="#consideraciones-y-limitaciones" id="toc-consideraciones-y-limitaciones" class="nav-link" data-scroll-target="#consideraciones-y-limitaciones"><span class="header-section-number">3.8</span> Consideraciones y Limitaciones</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dimensiones.html">Dimensiones MBHT</a></li><li class="breadcrumb-item"><a href="./dim_acc.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dimensión de Accesibilidad</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-accesibilidad" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dimensión de Accesibilidad</span></span></h1>
+<p class="subtitle lead">Descripción Metodológica de los Indicadores de la Dimensión de Accesibilidad</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://cit.uai.cl/john-treimun-rios/">John Treimun</a> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 2, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="presentación" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="presentación"><span class="header-section-number">3.1</span> Presentación</h2>
+<p>Este capítulo describe la metodología utilizada para calcular la dimensión de <strong>accesibilidad</strong> de la Matriz de Bienestar Humano Territorial (MBHT). Su objetivo es establecer cuánto acceso efectivo tiene la población a servicios esenciales desde su lugar de residencia <span class="citation" data-cites="cit_treimun_mbht2024">(<a href="references.html#ref-cit_treimun_mbht2024" role="doc-biblioref">Centro de Inteligencia Territorial (CIT-UAI) and Treimun Ríos 2024</a>)</span>.</p>
+<p>La metodología combina cuatro elementos: población, oferta de equipamientos, tiempos de viaje y competencia por los servicios. Por lo tanto, el resultado no representa solamente cercanía: también considera la capacidad de cada equipamiento y la cantidad de personas que puede demandarlo.</p>
+<p>El proceso se desarrolla en una secuencia de cuatro etapas generales: primero se identifican la población y los equipamientos; luego se calculan los tiempos de viaje por la red vial; después se estima la relación entre oferta y demanda; y, por último, se obtiene un valor de accesibilidad para cada unidad territorial.</p>
+</section>
+<section id="marco-conceptual" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="marco-conceptual"><span class="header-section-number">3.2</span> Marco Conceptual</h2>
+<p>El Bienestar Humano Territorial (BHT) parte de una idea central: la calidad de vida depende tanto de las condiciones de las personas como de las oportunidades disponibles en el lugar donde viven <span class="citation" data-cites="hansen1959 geertman_vaneck1995">(<a href="references.html#ref-hansen1959" role="doc-biblioref">Hansen 1959</a>; <a href="references.html#ref-geertman_vaneck1995" role="doc-biblioref">Geertman and Eck 1995</a>)</span>.</p>
+<p>Una vivienda puede tener buenas condiciones internas y, al mismo tiempo, estar lejos de servicios básicos. Esa distancia genera costos de transporte, mayor tiempo de viaje, desgaste físico y dificultades para participar de la vida urbana o rural.</p>
+<p>Por esta razón, la dimensión de accesibilidad mide la relación espacial entre la población y seis tipos de equipamientos esenciales. Esta perspectiva recoge aportes de la planificación urbana centrada en las oportunidades cotidianas y de los enfoques de movilidad del cuidado <span class="citation" data-cites="urban95_2019 cndu_estandares2019 mdsf_chile_cuida2023 muxi2018 sanchez_madariaga2013">(<a href="references.html#ref-urban95_2019" role="doc-biblioref">Bernard van Leer Foundation and UNICEF 2019</a>; <a href="references.html#ref-cndu_estandares2019" role="doc-biblioref">Consejo Nacional de Desarrollo Urbano (CNDU) 2019</a>; <a href="references.html#ref-mdsf_chile_cuida2023" role="doc-biblioref">Ministerio de Desarrollo Social y Familia (MDSF) 2023</a>; <a href="references.html#ref-muxi2018" role="doc-biblioref">Muxí Martínez 2018</a>; <a href="references.html#ref-sanchez_madariaga2013" role="doc-biblioref">Sánchez de Madariaga 2013</a>)</span>. Cada indicador se calcula por separado, lo que permite reconocer qué tipo de servicio presenta mayores ventajas o carencias en cada territorio.</p>
+<div id="tbl-acc-indicadores" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acc-indicadores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.1: Indicadores que componen la dimensión de accesibilidad
+</figcaption>
+<div aria-describedby="tbl-acc-indicadores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 35%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicador</th>
+<th>Componente evaluado</th>
+<th>Equipamientos principales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISAL</td>
+<td>Salud pública</td>
+<td>Postas rurales, CESFAM, CECOSF, consultorios y hospitales</td>
+</tr>
+<tr class="even">
+<td>ISE</td>
+<td>Educación escolar</td>
+<td>Salas cuna, jardines infantiles, escuelas y liceos</td>
+</tr>
+<tr class="odd">
+<td>IAV</td>
+<td>Áreas verdes públicas</td>
+<td>Parques, plazas y plazoletas</td>
+</tr>
+<tr class="even">
+<td>IDEP</td>
+<td>Deporte y recreación</td>
+<td>Multicanchas, gimnasios y complejos deportivos</td>
+</tr>
+<tr class="odd">
+<td>ICUL</td>
+<td>Cultura y espacio cívico</td>
+<td>Bibliotecas, museos, teatros y centros culturales</td>
+</tr>
+<tr class="even">
+<td>ISER</td>
+<td>Servicios públicos y abastecimiento</td>
+<td>Registro Civil, ChileAtiende, servicios financieros y ferias libres</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="preparación-de-la-oferta-de-equipamientos" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="preparación-de-la-oferta-de-equipamientos"><span class="header-section-number">3.3</span> Preparación de la Oferta de Equipamientos</h2>
+<p>En el modelo, un equipamiento es una instalación fija que presta un servicio a la comunidad. Para incluirlo en el cálculo se requieren, como mínimo, una ubicación precisa y una medida de su capacidad.</p>
+<section id="requisitos-para-incorporar-un-equipamiento" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="requisitos-para-incorporar-un-equipamiento"><span class="header-section-number">3.3.1</span> Requisitos para incorporar un equipamiento</h3>
+<div id="tbl-acc-requisitos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acc-requisitos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.2: Requisitos mínimos para incorporar un equipamiento al modelo
+</figcaption>
+<div aria-describedby="tbl-acc-requisitos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Requisito</th>
+<th>Contenido</th>
+<th>Función en el modelo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Localización física</td>
+<td>Coordenadas en UTM 19 Sur (EPSG:32719)</td>
+<td>Conectar el equipamiento con la red vial y calcular los tiempos de viaje</td>
+</tr>
+<tr class="even">
+<td>Capacidad instalada (<span class="math inline">S_j</span>)</td>
+<td>Medida física o funcional de la oferta</td>
+<td>Actuar como numerador del indicador de disponibilidad <span class="math inline">R_j</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Cada equipamiento se enlaza al cruce de calles más cercano mediante un procedimiento de ajuste espacial o <em>snapping</em>. Esta búsqueda se realiza con árboles espaciales <span class="math inline">k</span>-d, implementados mediante <code>cKDTree</code>.</p>
+</section>
+<section id="jerarquía-local-e-intercomunal" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="jerarquía-local-e-intercomunal"><span class="header-section-number">3.3.2</span> Jerarquía local e intercomunal</h3>
+<p>La jerarquía define la escala de atención y el modo de viaje usado en el cálculo.</p>
+<div id="tbl-acc-jerarquia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acc-jerarquia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.3: Jerarquía de los equipamientos y tratamiento en el modelo
+</figcaption>
+<div aria-describedby="tbl-acc-jerarquia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 11%">
+<col style="width: 41%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Jerarquía</th>
+<th>Alcance</th>
+<th>Equipamientos representativos</th>
+<th>Tratamiento en el modelo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Local</td>
+<td>Barrio o vecindario; servicios de uso frecuente</td>
+<td>Postas rurales, CECOSF, CESFAM, consultorios, SAPU, SAR, salas cuna, jardines infantiles, escuelas básicas, plazas, plazoletas, multicanchas, bibliotecas de barrio, Registro Civil, ChileAtiende, servicios financieros y ferias libres</td>
+<td>Viajes a pie sobre la red vial, con tiempos ajustados por pendiente</td>
+</tr>
+<tr class="even">
+<td>Intercomunal</td>
+<td>Ciudad o área metropolitana; servicios de mayor complejidad</td>
+<td>Hospitales, centros especializados, liceos, parques urbanos mayores de 2 ha, estadios, polideportivos, museos, teatros y centros culturales de escala metropolitana</td>
+<td>Combinación ponderada de viajes peatonales y motorizados</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Para los equipamientos intercomunales se utilizan dos combinaciones modales, basadas en antecedentes de uso del tiempo y movilidad <span class="citation" data-cites="ine_enut2015">(<a href="references.html#ref-ine_enut2015" role="doc-biblioref">Instituto Nacional de Estadísticas (INE) 2015</a>)</span>. En los viajes con propósito <strong>HACER</strong>, se asigna un 30,71 % al modo peatonal y un 69,29 % al modo motorizado. En los viajes con propósito <strong>LIBRE</strong>, se asigna un 46 % al modo peatonal y un 54 % al modo motorizado.</p>
+</section>
+<section id="tratamiento-urbano-y-rural" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="tratamiento-urbano-y-rural"><span class="header-section-number">3.3.3</span> Tratamiento urbano y rural</h3>
+<p>El procedimiento se adapta a la forma de poblamiento y a la estructura vial de cada territorio.</p>
+<div id="tbl-acc-urbano-rural" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acc-urbano-rural-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.4: Tratamiento diferenciado de las áreas urbanas y rurales
+</figcaption>
+<div aria-describedby="tbl-acc-urbano-rural-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 37%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criterio</th>
+<th>Área urbana</th>
+<th>Área rural</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unidad territorial</td>
+<td>Manzana censal</td>
+<td>Entidad o aldea censal</td>
+</tr>
+<tr class="even">
+<td>Red de desplazamiento</td>
+<td>Calles y pasajes con alta conectividad</td>
+<td>Caminos rurales, senderos vecinales y vías estructurantes del INE</td>
+</tr>
+<tr class="odd">
+<td>Oferta predominante</td>
+<td>CESFAM, establecimientos educacionales completos, plazas barriales y servicios urbanos</td>
+<td>Postas rurales, escuelas multigrado e internados rurales</td>
+</tr>
+<tr class="even">
+<td>Umbral informado</td>
+<td>Cuencas peatonales de 5 a 20 minutos</td>
+<td>Límite de 120 minutos o 9.000 metros</td>
+</tr>
+<tr class="odd">
+<td>Demanda</td>
+<td>Población censal total (<code>PERSONAS2</code>) y población escolar (<code>E4A18</code>)</td>
+<td>Población dispersa asignada al centroide de la entidad censal</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>La población demandante cambia según el servicio. El modelo usa la población total para los servicios generales y la población de 4 a 18 años para la demanda escolar, de acuerdo con las variables censales definidas en el documento metodológico de base. La versión actual emplea información del Censo 2024 y mantiene el Censo 2017 como antecedente metodológico <span class="citation" data-cites="ine_censo2024 ine_censo2017">(<a href="references.html#ref-ine_censo2024" role="doc-biblioref">Instituto Nacional de Estadísticas (INE) 2024</a>, <a href="references.html#ref-ine_censo2017" role="doc-biblioref">2017</a>)</span>.</p>
+</section>
+<section id="medidas-de-capacidad" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="medidas-de-capacidad"><span class="header-section-number">3.3.4</span> Medidas de capacidad</h3>
+<p>La capacidad <span class="math inline">S_j</span> debe representar la cantidad de servicio que puede ofrecer cada equipamiento. Como los servicios son distintos, en esta etapa no se utiliza una unidad común.</p>
+<div id="tbl-acc-capacidad" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acc-capacidad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.5: Medidas de capacidad utilizadas por indicador
+</figcaption>
+<div aria-describedby="tbl-acc-capacidad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 35%">
+<col style="width: 9%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicador</th>
+<th>Componente</th>
+<th>Medida de capacidad (<span class="math inline">S_j</span>)</th>
+<th>Unidad</th>
+<th>Sentido de la medida</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISAL</td>
+<td>Salud pública</td>
+<td>Superficie construida de atención</td>
+<td>m² construidos</td>
+<td>Aproxima la infraestructura disponible para atención, boxes y camas</td>
+</tr>
+<tr class="even">
+<td>ISE</td>
+<td>Educación escolar</td>
+<td>Matrículas y cupos autorizados</td>
+<td>Estudiantes o cupos</td>
+<td>Representa la capacidad de absorción frente a la demanda escolar</td>
+</tr>
+<tr class="odd">
+<td>IAV</td>
+<td>Áreas verdes</td>
+<td>Superficie verde pública efectiva</td>
+<td>m² de área verde</td>
+<td>Mide la cantidad de parque o plaza disponible</td>
+</tr>
+<tr class="even">
+<td>IDEP</td>
+<td>Deporte y recreación</td>
+<td>Superficie deportiva útil</td>
+<td>m² deportivos</td>
+<td>Mide el espacio habilitado para actividad física</td>
+</tr>
+<tr class="odd">
+<td>ICUL</td>
+<td>Cultura y patrimonio</td>
+<td>Superficie construida cultural</td>
+<td>m² culturales</td>
+<td>Representa la infraestructura de museos, teatros y bibliotecas</td>
+</tr>
+<tr class="even">
+<td>ISER</td>
+<td>Servicios públicos y comercio</td>
+<td>Conteo de servicios y dependencias</td>
+<td>Unidades de servicio</td>
+<td>Mide la presencia de trámites, servicios financieros y abastecimiento</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="composición-del-catastro" class="level3" data-number="3.3.5">
+<h3 data-number="3.3.5" class="anchored" data-anchor-id="composición-del-catastro"><span class="header-section-number">3.3.5</span> Composición del catastro</h3>
+<p>El catastro reúne distintos tipos de oferta dentro de cada indicador. Esta desagregación es importante porque determina la jerarquía y la capacidad asignada a cada registro.</p>
+<div id="tbl-acc-catastro" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acc-catastro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.6: Composición informada del catastro de equipamientos
+</figcaption>
+<div aria-describedby="tbl-acc-catastro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 33%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicador</th>
+<th style="text-align: right;">Total informado</th>
+<th>Composición informada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ISAL</td>
+<td style="text-align: right;">2.867</td>
+<td>1.240 postas rurales; 380 CECOSF; 650 CESFAM, consultorios, SAPU o SAR; 412 hospitales; 185 centros de rehabilitación</td>
+</tr>
+<tr class="even">
+<td>ISE</td>
+<td style="text-align: right;">8.645</td>
+<td>3.412 salas cuna o jardines infantiles; 3.650 escuelas básicas; 1.583 liceos o establecimientos de enseñanza media</td>
+</tr>
+<tr class="odd">
+<td>IAV</td>
+<td style="text-align: right;">49.976</td>
+<td>3.420 parques urbanos; 31.240 plazas de barrio; 15.316 plazoletas comunitarias</td>
+</tr>
+<tr class="even">
+<td>IDEP</td>
+<td style="text-align: right;">14.242</td>
+<td>10.850 multicanchas; 1.820 estadios o complejos deportivos; 1.572 gimnasios o piscinas públicas</td>
+</tr>
+<tr class="odd">
+<td>ICUL</td>
+<td style="text-align: right;">2.902</td>
+<td>940 bibliotecas; 1.150 museos o centros culturales; 812 teatros o auditorios</td>
+</tr>
+<tr class="even">
+<td>ISER</td>
+<td style="text-align: right;">5.713</td>
+<td>620 oficinas del Registro Civil; 540 centros ChileAtiende; 1.850 puntos de BancoEstado o CajaVecina; 2.703 ferias o mercados</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Validación pendiente de las cifras del catastro:</strong> el documento metodológico de base informa un total nacional de 84.395 equipamientos. Sin embargo, los subtotales por familia suman 84.345 y los totales regionales publicados suman 93.136. Por esta razón, la matriz regional no se reproduce en este capítulo y las cifras deben validarse antes de la publicación definitiva.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="cálculo-de-los-tiempos-de-viaje" class="level2 page-columns page-full" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="cálculo-de-los-tiempos-de-viaje"><span class="header-section-number">3.4</span> Cálculo de los Tiempos de Viaje</h2>
+<p>La accesibilidad se calcula sobre una red de desplazamiento. No se utiliza la distancia en línea recta, porque las personas se mueven por calles, caminos, pasajes y senderos.</p>
+<p>La red proviene de la cartografía censal del Instituto Nacional de Estadísticas (INE). De acuerdo con el documento metodológico de base, contiene más de 3,5 millones de tramos transitables y se encuentra proyectada en EPSG:32719.</p>
+<p>La dificultad de caminar cambia con la pendiente. Para representar este efecto, la red vial se combina con el modelo digital de elevación ALOS PALSAR, con resolución de 12,5 metros.</p>
+<p>La pendiente de cada tramo se calcula a partir de la diferencia de altura entre sus extremos:</p>
+<p><span class="math display">
+S = \frac{Z_v-Z_u}{L_{\text{plana}}}
+</span></p>
+<p>donde <span class="math inline">Z_u</span> y <span class="math inline">Z_v</span> son las alturas inicial y final, y <span class="math inline">L_{\text{plana}}</span> es la longitud horizontal del tramo.</p>
+<p>Luego se estima la velocidad de marcha mediante la función de Tobler <span class="citation" data-cites="tobler1993">(<a href="references.html#ref-tobler1993" role="doc-biblioref">Tobler 1993</a>)</span>:</p>
+<p><span class="math display">
+V(S)=6\exp\left(-3{,}5\lvert S+0{,}05\rvert\right)
+</span></p>
+<p>La velocidad <span class="math inline">V(S)</span> se expresa en kilómetros por hora. En terreno plano, el modelo estima una velocidad cercana a 5,04 km/h; las pendientes pronunciadas aumentan el tiempo necesario para recorrer un tramo.</p>
+<p>El tiempo de viaje se obtiene a partir de la longitud tridimensional del tramo y la velocidad estimada:</p>
+<p><span class="math display">
+T_{\text{Tobler}}=\frac{L_{\text{3D}}}{V(S)}\times 3600
+</span></p>
+<p>Con estos costos se calculan las rutas de menor tiempo entre las unidades de población y los equipamientos. El resultado es una matriz de tiempos de viaje, representada por <span class="math inline">d_{ij}</span> o <span class="math inline">t_{ij}</span> según la notación empleada.</p>
+<p>La <a href="#fig-acc-tiempos-viaje" class="quarto-xref">Figura&nbsp;<span>3.1</span></a> sintetiza la integración de los insumos y las operaciones necesarias para construir esta matriz.</p>
+<div id="fig-acc-tiempos-viaje" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-acc-tiempos-viaje-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="diagram-embed">
+<iframe class="diagram-frame" src="diagrams/acc-tiempos-viaje.html" title="Construcción de la matriz de tiempos de viaje" loading="lazy" tabindex="-1">
+</iframe>
+<button class="diagram-open" type="button" data-diagram-src="diagrams/acc-tiempos-viaje.html" data-diagram-title="Construcción de la matriz de tiempos de viaje">
+<span class="diagram-open__label">Ampliar el diagrama de construcción de la matriz de tiempos de viaje</span>
+</button>
+</div>
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-acc-tiempos-viaje-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Construcción de la matriz de tiempos de viaje a partir de la localización de la población y los equipamientos, la red vial y la altimetría.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="cálculo-de-la-accesibilidad-con-e2sfca" class="level2 page-columns page-full" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="cálculo-de-la-accesibilidad-con-e2sfca"><span class="header-section-number">3.5</span> Cálculo de la Accesibilidad con E2SFCA</h2>
+<p>La MBHT utiliza el método E2SFCA (<em>Enhanced Two-Step Floating Catchment Area</em>) <span class="citation" data-cites="luo_wang2003 luo_qi2009">(<a href="references.html#ref-luo_wang2003" role="doc-biblioref">Luo and Wang 2003</a>; <a href="references.html#ref-luo_qi2009" role="doc-biblioref">Luo and Qi 2009</a>)</span>. Este método evita depender de promedios comunales y permite que las áreas de acceso atraviesen límites administrativos.</p>
+<section id="qué-significa-e2sfca" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="qué-significa-e2sfca"><span class="header-section-number">3.5.1</span> ¿Qué significa E2SFCA?</h3>
+<div id="tbl-acc-e2sfca" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acc-e2sfca-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.7: Componentes del método E2SFCA
+</figcaption>
+<div aria-describedby="tbl-acc-e2sfca-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Significado en el modelo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Enhanced (Mejorado)</strong></td>
+<td>Reemplaza el criterio binario «dentro o fuera» por una función de decaimiento continuo. Así, el aporte de un equipamiento disminuye a medida que aumenta la distancia o el tiempo de viaje.</td>
+</tr>
+<tr class="even">
+<td><strong>Two-Step (Dos pasos)</strong></td>
+<td>Calcula primero la presión de demanda sobre cada equipamiento (<span class="math inline">R_j</span>) y luego suma la oferta disponible para cada unidad territorial (<span class="math inline">A_i</span>). De este modo incorpora la competencia entre la población usuaria.</td>
+</tr>
+<tr class="odd">
+<td><strong>Floating Catchment (Área flotante)</strong></td>
+<td>La cuenca de acceso se centra sucesivamente en cada equipamiento y unidad territorial. Puede atravesar límites comunales y reduce el sesgo producido por áreas administrativas fijas, conocido como problema MAUP <span class="citation" data-cites="openshaw1984">(<a href="references.html#ref-openshaw1984" role="doc-biblioref">Openshaw 1984</a>)</span>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="paso-1-disponibilidad-de-cada-equipamiento" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="paso-1-disponibilidad-de-cada-equipamiento"><span class="header-section-number">3.5.2</span> Paso 1: Disponibilidad de cada equipamiento</h3>
+<p>Para cada equipamiento <span class="math inline">j</span>, se calcula la relación entre su capacidad <span class="math inline">S_j</span> y la demanda ubicada dentro de un umbral de acceso <span class="math inline">d_0</span>:</p>
+<p><span class="math display">
+R_j=
+\frac{S_j}
+{\displaystyle\sum_{k\,:\,d_{kj}\leq d_0}D_k\,f(d_{kj})}
+</span></p>
+<p><span class="math inline">D_k</span> es la población de la unidad territorial <span class="math inline">k</span>. La función <span class="math inline">f(d_{kj})</span> reduce el peso de la población que se encuentra más lejos del equipamiento.</p>
+<p>El valor <span class="math inline">R_j</span> expresa la oferta disponible por habitante potencial. Disminuye cuando muchas personas compiten por un equipamiento y aumenta cuando existe más capacidad para una demanda menor.</p>
+</section>
+<section id="paso-2-accesibilidad-de-cada-unidad-territorial" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="paso-2-accesibilidad-de-cada-unidad-territorial"><span class="header-section-number">3.5.3</span> Paso 2: Accesibilidad de cada unidad territorial</h3>
+<p>Para cada unidad territorial <span class="math inline">i</span>, se identifican los equipamientos ubicados dentro del umbral <span class="math inline">d_0</span>. Luego se suman sus valores de disponibilidad, ponderados por el tiempo de viaje:</p>
+<p><span class="math display">
+A_i=
+\sum_{j\,:\,d_{ij}\leq d_0}R_j\,f(d_{ij})
+</span></p>
+<p><span class="math inline">A_i</span> es el puntaje de accesibilidad de la unidad territorial <span class="math inline">i</span>. Un valor alto indica mayor oferta disponible, menor presión de demanda o una mejor ubicación respecto de los equipamientos.</p>
+</section>
+<section id="decaimiento-por-tiempo-de-viaje" class="level3 page-columns page-full" data-number="3.5.4">
+<h3 data-number="3.5.4" class="anchored" data-anchor-id="decaimiento-por-tiempo-de-viaje"><span class="header-section-number">3.5.4</span> Decaimiento por tiempo de viaje</h3>
+<p>La ponderación disminuye de manera continua hasta el umbral máximo de acceso:</p>
+<p><span class="math display">
+f(d)=
+\begin{cases}
+\exp\left[-\dfrac{1}{2}\left(\dfrac{d}{d_0}\right)^2\right], &amp; d\leq d_0,\\[6pt]
+0, &amp; d&gt;d_0.
+\end{cases}
+</span></p>
+<p>Así, dos equipamientos con igual capacidad no aportan lo mismo si se encuentran a tiempos de viaje diferentes. Fuera del umbral <span class="math inline">d_0</span>, su aporte es cero.</p>
+<p>La <a href="#fig-acc-e2sfca" class="quarto-xref">Figura&nbsp;<span>3.2</span></a> muestra la relación entre los dos pasos del método: la disponibilidad calculada para cada equipamiento se convierte en el insumo central para estimar la accesibilidad de cada unidad territorial.</p>
+<div id="fig-acc-e2sfca" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-acc-e2sfca-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="diagram-embed">
+<iframe class="diagram-frame" src="diagrams/acc-e2sfca.html" title="Los dos pasos del método E2SFCA" loading="lazy" tabindex="-1">
+</iframe>
+<button class="diagram-open" type="button" data-diagram-src="diagrams/acc-e2sfca.html" data-diagram-title="Los dos pasos del método E2SFCA">
+<span class="diagram-open__label">Ampliar el diagrama de los dos pasos del método E2SFCA</span>
+</button>
+</div>
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-acc-e2sfca-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: Relación entre la disponibilidad de los equipamientos (<span class="math inline">R_j</span>) y la accesibilidad de las unidades territoriales (<span class="math inline">A_i</span>) en el método E2SFCA.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="fuentes-primarias-de-datos" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="fuentes-primarias-de-datos"><span class="header-section-number">3.6</span> Fuentes Primarias de Datos</h2>
+<p>El cálculo utiliza información censal, cartografía vial, datos de elevación y catastros sectoriales. La siguiente tabla resume las fuentes señaladas en el documento metodológico de base.</p>
+<div id="tbl-acc-fuentes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acc-fuentes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.8: Fuentes primarias utilizadas en el cálculo de la accesibilidad
+</figcaption>
+<div aria-describedby="tbl-acc-fuentes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 28%">
+<col style="width: 32%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Capa o insumo</th>
+<th>Institución responsable</th>
+<th>Versión o volumen informado</th>
+<th>Uso en el cálculo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Manzanas censales</td>
+<td>Instituto Nacional de Estadísticas (INE)</td>
+<td>Censo 2024; 254.268 polígonos</td>
+<td>Localización de la demanda demográfica (<span class="math inline">D_k</span>) y variables <code>PERSONAS2</code> y <code>E4A18</code></td>
+</tr>
+<tr class="even">
+<td>Red vial oficial peatonal</td>
+<td>Instituto Nacional de Estadísticas (INE)</td>
+<td>Más de 3,5 millones de arcos</td>
+<td>Construcción del grafo de desplazamiento y cálculo de rutas</td>
+</tr>
+<tr class="odd">
+<td>Altimetría</td>
+<td>IDE Chile; DEM ALOS PALSAR <span class="citation" data-cites="ide_alos2024">(<a href="references.html#ref-ide_alos2024" role="doc-biblioref">Infraestructura de Datos Espaciales de Chile (IDE Chile) 2024</a>)</span></td>
+<td>Resolución de 12,5 metros</td>
+<td>Cálculo de pendientes y velocidades de marcha</td>
+</tr>
+<tr class="even">
+<td>Salud pública</td>
+<td>Departamento de Estadística e Información de Salud (DEIS); Ministerio de Salud <span class="citation" data-cites="deis_catastro2025">(<a href="references.html#ref-deis_catastro2025" role="doc-biblioref">Departamento de Estadística e Información de Salud (DEIS) 2025</a>)</span></td>
+<td>Catastro 2025; 2.867 recintos</td>
+<td>Localización y capacidad de los establecimientos de salud</td>
+</tr>
+<tr class="odd">
+<td>Educación escolar y parvularia</td>
+<td>Ministerio de Educación; JUNJI; Fundación Integra <span class="citation" data-cites="mineduc_rbd2024">(<a href="references.html#ref-mineduc_rbd2024" role="doc-biblioref">Ministerio de Educación (MINEDUC) 2024</a>)</span></td>
+<td>RBD 2024; 8.645 recintos</td>
+<td>Matrículas y cupos autorizados</td>
+</tr>
+<tr class="even">
+<td>Áreas verdes públicas</td>
+<td>Observatorio Urbano del MINVU; municipios <span class="citation" data-cites="minvu_areas_verdes2024">(<a href="references.html#ref-minvu_areas_verdes2024" role="doc-biblioref">Ministerio de Vivienda y Urbanismo (MINVU) 2024</a>)</span></td>
+<td>49.976 espacios públicos</td>
+<td>Superficie de parques, plazas y plazoletas</td>
+</tr>
+<tr class="odd">
+<td>Deporte y recreación</td>
+<td>Instituto Nacional de Deportes (IND) <span class="citation" data-cites="ind_catastro2024">(<a href="references.html#ref-ind_catastro2024" role="doc-biblioref">Instituto Nacional de Deportes (IND) 2024</a>)</span></td>
+<td>14.242 recintos</td>
+<td>Superficie útil para actividades deportivas</td>
+</tr>
+<tr class="even">
+<td>Cultura y patrimonio</td>
+<td>Ministerio de las Culturas, las Artes y el Patrimonio; SICLAC; Sistema Nacional de Bibliotecas Públicas <span class="citation" data-cites="mincap_catastro2024">(<a href="references.html#ref-mincap_catastro2024" role="doc-biblioref">Ministerio de las Culturas, las Artes y el Patrimonio (MINCAP) 2024</a>)</span></td>
+<td>2.902 espacios</td>
+<td>Superficie de museos, teatros, bibliotecas y centros culturales</td>
+</tr>
+<tr class="odd">
+<td>Servicios públicos y comercio</td>
+<td>SUBDERE; Registro Civil; BancoEstado <span class="citation" data-cites="subdere_dpa2024">(<a href="references.html#ref-subdere_dpa2024" role="doc-biblioref">Subsecretaría de Desarrollo Regional y Administrativo (SUBDERE) 2024</a>)</span></td>
+<td>5.713 dependencias</td>
+<td>Presencia de servicios cívicos, financieros y de atención ciudadana</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Las cantidades corresponden a lo informado en el documento metodológico de base. Deben revisarse junto con la diferencia entre el total nacional, los subtotales por familia y los totales regionales señalada en la sección sobre la composición del catastro.</p>
+</section>
+<section id="resumen-del-proceso" class="level2 page-columns page-full" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="resumen-del-proceso"><span class="header-section-number">3.7</span> Resumen del Proceso</h2>
+<p>La <a href="#fig-acc-proceso-general" class="quarto-xref">Figura&nbsp;<span>3.3</span></a> resume el flujo completo de trabajo, desde los datos originales hasta los indicadores de accesibilidad.</p>
+<div id="fig-acc-proceso-general" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-acc-proceso-general-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="diagram-embed">
+<iframe class="diagram-frame" src="diagrams/acc-proceso-general.html" title="Proceso general de la dimensión de accesibilidad" loading="lazy" tabindex="-1">
+</iframe>
+<button class="diagram-open" type="button" data-diagram-src="diagrams/acc-proceso-general.html" data-diagram-title="Proceso general de la dimensión de accesibilidad">
+<span class="diagram-open__label">Ampliar el diagrama del proceso general de la dimensión de accesibilidad</span>
+</button>
+</div>
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-acc-proceso-general-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Proceso general de construcción de los indicadores que componen la dimensión de accesibilidad.
+</figcaption>
+</figure>
+</div>
+<p>El resultado de esta metodología es un valor continuo de accesibilidad para cada indicador y unidad territorial. La normalización de los seis indicadores y su integración en el índice sintético <code>DIM_ACC</code> corresponden a la etapa siguiente de la metodología y no forman parte del cálculo descrito en este capítulo.</p>
+</section>
+<section id="consideraciones-y-limitaciones" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="consideraciones-y-limitaciones"><span class="header-section-number">3.8</span> Consideraciones y Limitaciones</h2>
+<ul>
+<li>Los indicadores representan <strong>acceso potencial</strong>, calculado a partir de la ubicación, la capacidad disponible, los tiempos de viaje y la demanda estimada; no miden el uso efectivo ni la calidad percibida de los servicios.</li>
+<li>Los resultados dependen de la cobertura, actualización y consistencia de los catastros sectoriales. Las diferencias detectadas entre los totales de equipamientos deben resolverse antes de la publicación definitiva.</li>
+<li>La asignación de la población rural al centroide de cada entidad censal simplifica su distribución espacial y puede ocultar variaciones internas en territorios extensos o de poblamiento disperso.</li>
+<li>Los umbrales de viaje, las ponderaciones modales y la función de decaimiento influyen en los valores obtenidos. Estos parámetros deben mantenerse estables para asegurar la comparabilidad entre actualizaciones.</li>
+<li>El ajuste por pendiente mejora la estimación de los viajes peatonales, pero no incorpora todas las condiciones que afectan el desplazamiento real, como el estado de las vías, las barreras físicas, la frecuencia del transporte público o las restricciones horarias de los servicios.</li>
+<li>El método E2SFCA permite atravesar límites administrativos y reduce el efecto del problema MAUP, aunque los resultados continúan dependiendo de la unidad territorial utilizada para representar la demanda.</li>
+</ul>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-urban95_2019" class="csl-entry" role="listitem">
+Bernard van Leer Foundation, and UNICEF. 2019. <em>Urban95: Guía para la planificación y diseño urbano con foco en la primera infancia</em>. Fundación Bernard van Leer.
+</div>
+<div id="ref-cit_treimun_mbht2024" class="csl-entry" role="listitem">
+Centro de Inteligencia Territorial (CIT-UAI), and John Treimun Ríos. 2024. <span>“Matriz de Bienestar Humano Territorial (MBHT 2024): Metodología y modelos de accesibilidad espacial para asentamientos humanos en Chile.”</span> Universidad Adolfo Ibáñez.
+</div>
+<div id="ref-cndu_estandares2019" class="csl-entry" role="listitem">
+Consejo Nacional de Desarrollo Urbano (CNDU). 2019. <span>“Propuesta de estándares urbanos para ciudades chilenas: Hacia un desarrollo urbano con equidad territorial.”</span> Ministerio de Vivienda y Urbanismo de Chile.
+</div>
+<div id="ref-deis_catastro2025" class="csl-entry" role="listitem">
+Departamento de Estadística e Información de Salud (DEIS). 2025. <span>“Catastro oficial de establecimientos asistenciales de salud en Chile.”</span> Ministerio de Salud de Chile.
+</div>
+<div id="ref-geertman_vaneck1995" class="csl-entry" role="listitem">
+Geertman, Stan C. M., and Jan R. R. van Eck. 1995. <span>“GIS and Models of Accessibility Potential: An Application in Planning.”</span> <em>International Journal of Geographical Information Systems</em> 9 (1): 67–80. <a href="https://doi.org/10.1080/02693799508902025">https://doi.org/10.1080/02693799508902025</a>.
+</div>
+<div id="ref-hansen1959" class="csl-entry" role="listitem">
+Hansen, Walter G. 1959. <span>“How Accessibility Shapes Land Use.”</span> <em>Journal of the American Institute of Planners</em> 25 (2): 73–76. <a href="https://doi.org/10.1080/01944365908978307">https://doi.org/10.1080/01944365908978307</a>.
+</div>
+<div id="ref-ide_alos2024" class="csl-entry" role="listitem">
+Infraestructura de Datos Espaciales de Chile (IDE Chile). 2024. <span>“Modelo Digital de Elevación ALOS PALSAR 12.5 m: Cobertura altimétrica nacional.”</span> Ministerio de Bienes Nacionales de Chile.
+</div>
+<div id="ref-ind_catastro2024" class="csl-entry" role="listitem">
+Instituto Nacional de Deportes (IND). 2024. <span>“Catastro nacional de infraestructura deportiva y recintos públicos.”</span> Ministerio del Deporte de Chile.
+</div>
+<div id="ref-ine_enut2015" class="csl-entry" role="listitem">
+Instituto Nacional de Estadísticas (INE). 2015. <span>“Encuesta Nacional sobre Uso del Tiempo (ENUT 2015): Documento metodológico y principales resultados.”</span> Instituto Nacional de Estadísticas.
+</div>
+<div id="ref-ine_censo2017" class="csl-entry" role="listitem">
+———. 2017. <span>“Censo de Población y Vivienda 2017: Base de datos de manzanas y entidades censales.”</span> Instituto Nacional de Estadísticas.
+</div>
+<div id="ref-ine_censo2024" class="csl-entry" role="listitem">
+———. 2024. <span>“Censo de Población y Vivienda 2024: Cartografía digital de ejes de calles y precenso nacional.”</span> Instituto Nacional de Estadísticas.
+</div>
+<div id="ref-luo_qi2009" class="csl-entry" role="listitem">
+Luo, Wei, and Yi Qi. 2009. <span>“An Enhanced Two-Step Floating Catchment Area (E2SFCA) Method for Measuring Spatial Accessibility to Primary Care Physicians.”</span> <em>Health &amp; Place</em> 15 (4): 1100–1107. <a href="https://doi.org/10.1016/j.healthplace.2009.06.001">https://doi.org/10.1016/j.healthplace.2009.06.001</a>.
+</div>
+<div id="ref-luo_wang2003" class="csl-entry" role="listitem">
+Luo, Wei, and Fahui Wang. 2003. <span>“Measures of Spatial Accessibility to Health Care in a GIS Environment: Synthesis of a Kernel Density Method and the Two-Step Floating Catchment Area Method.”</span> <em>Environment and Planning B: Planning and Design</em> 30 (6): 865–84. <a href="https://doi.org/10.1068/b29120">https://doi.org/10.1068/b29120</a>.
+</div>
+<div id="ref-mdsf_chile_cuida2023" class="csl-entry" role="listitem">
+Ministerio de Desarrollo Social y Familia (MDSF). 2023. <span>“Bases operativas del Sistema Nacional de Apoyos y Cuidados <span>‘Chile Cuida’</span>.”</span> Gobierno de Chile.
+</div>
+<div id="ref-mineduc_rbd2024" class="csl-entry" role="listitem">
+Ministerio de Educación (MINEDUC). 2024. <span>“Directorio oficial de establecimientos educacionales de Chile (Base RBD 2024).”</span> Centro de Estudios MINEDUC.
+</div>
+<div id="ref-mincap_catastro2024" class="csl-entry" role="listitem">
+Ministerio de las Culturas, las Artes y el Patrimonio (MINCAP). 2024. <span>“Catastro nacional de infraestructura y espacios culturales (SICLAC / SNBP).”</span> Departamento de Estudios y Estadísticas Culturales.
+</div>
+<div id="ref-minvu_areas_verdes2024" class="csl-entry" role="listitem">
+Ministerio de Vivienda y Urbanismo (MINVU). 2024. <span>“Catastro nacional de parques y plazas públicas urbanas.”</span> Observatorio Urbano, MINVU.
+</div>
+<div id="ref-muxi2018" class="csl-entry" role="listitem">
+Muxí Martínez, Zaida. 2018. <em>Mujeres, casas y ciudades: Más allá del umbral</em>. DPR-Barcelona.
+</div>
+<div id="ref-openshaw1984" class="csl-entry" role="listitem">
+Openshaw, Stan. 1984. <em>The Modifiable Areal Unit Problem</em>. Concepts and Techniques in Modern Geography (CATMOG) 38. Geo Books.
+</div>
+<div id="ref-sanchez_madariaga2013" class="csl-entry" role="listitem">
+Sánchez de Madariaga, Inés. 2013. <span>“Mobility of Care: Introducing New Concepts in Urban Transport.”</span> In <em>Fair Shared Cities: The Impact of Gender in Urban Planning</em>, edited by Inés Sánchez de Madariaga and Marion Roberts, 33–48. Ashgate Publishing.
+</div>
+<div id="ref-subdere_dpa2024" class="csl-entry" role="listitem">
+Subsecretaría de Desarrollo Regional y Administrativo (SUBDERE). 2024. <span>“División Político-Administrativa de Chile (DPA) e infraestructura cívica comunal.”</span> Ministerio del Interior y Seguridad Pública.
+</div>
+<div id="ref-tobler1993" class="csl-entry" role="listitem">
+Tobler, Waldo R. 1993. <span>“Three Presentations on Geographical Analysis and Modeling: Non-Isotropic Geographic Modeling; Speculations on the Geometry of Geography; Global Spatial Analysis.”</span> 93-1. National Center for Geographic Information; Analysis, University of California, Santa Barbara.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<dialog id="diagram-modal" class="diagram-modal" aria-labelledby="diagram-modal-title">
+  <div class="diagram-modal__panel">
+    <header class="diagram-modal__header">
+      <h2 id="diagram-modal-title" class="diagram-modal__title">Diagrama ampliado</h2>
+      <div class="diagram-modal__actions">
+        <a id="diagram-modal-link" class="diagram-modal__link" href="#" target="_blank" rel="noopener">Abrir en página completa</a>
+        <button class="diagram-modal__close" type="button" data-diagram-close="" aria-label="Cerrar diagrama ampliado">Cerrar ×</button>
+      </div>
+    </header>
+    <iframe id="diagram-modal-frame" class="diagram-modal__frame" title="Diagrama ampliado"></iframe>
+  </div>
+</dialog>
+
+<script>
+(() => {
+  const dialog = document.getElementById("diagram-modal");
+  const frame = document.getElementById("diagram-modal-frame");
+  const title = document.getElementById("diagram-modal-title");
+  const fullPageLink = document.getElementById("diagram-modal-link");
+  let opener = null;
+
+  if (!dialog || !frame || !title || !fullPageLink) return;
+
+  const closeDialog = () => {
+    if (dialog.open) dialog.close();
+  };
+
+  document.addEventListener("click", (event) => {
+    const openButton = event.target.closest(".diagram-open");
+    if (openButton) {
+      const source = openButton.dataset.diagramSrc;
+      const diagramTitle = openButton.dataset.diagramTitle || "Diagrama ampliado";
+
+      if (typeof dialog.showModal !== "function") {
+        window.open(source, "_blank", "noopener");
+        return;
+      }
+
+      opener = openButton;
+      title.textContent = diagramTitle;
+      frame.title = diagramTitle;
+      frame.src = source;
+      fullPageLink.href = source;
+      dialog.showModal();
+      return;
+    }
+
+    if (event.target.closest("[data-diagram-close]") || event.target === dialog) {
+      closeDialog();
+    }
+  });
+
+  dialog.addEventListener("close", () => {
+    frame.src = "about:blank";
+    if (opener) opener.focus();
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./dimensiones.html" class="pagination-link" aria-label="Dimensiones MBHT">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Dimensiones MBHT</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./dim_soc.html" class="pagination-link" aria-label="Dimensión Socioeconómica">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dimensión Socioeconómica</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2026, <a href="https://cit.uai.cl/">Centro de Inteligencia Territorial</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

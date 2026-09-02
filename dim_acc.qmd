@@ -1,0 +1,273 @@
+---
+subtitle: "Descripción Metodológica de los Indicadores de la Dimensión de Accesibilidad"
+author:  ["{{< var jtreimun.name >}}"]
+date:  "2026-09-02"
+format:
+  html:
+    include-after-body: _diagram-modal.html
+---
+
+# Dimensión de Accesibilidad {#sec-accesibilidad}
+
+## Presentación
+
+Este capítulo describe la metodología utilizada para calcular la dimensión de **accesibilidad** de la Matriz de Bienestar Humano Territorial (MBHT). Su objetivo es establecer cuánto acceso efectivo tiene la población a servicios esenciales desde su lugar de residencia [@cit_treimun_mbht2024].
+
+La metodología combina cuatro elementos: población, oferta de equipamientos, tiempos de viaje y competencia por los servicios. Por lo tanto, el resultado no representa solamente cercanía: también considera la capacidad de cada equipamiento y la cantidad de personas que puede demandarlo.
+
+El proceso se desarrolla en una secuencia de cuatro etapas generales: primero se identifican la población y los equipamientos; luego se calculan los tiempos de viaje por la red vial; después se estima la relación entre oferta y demanda; y, por último, se obtiene un valor de accesibilidad para cada unidad territorial.
+
+
+## Marco Conceptual
+
+El Bienestar Humano Territorial (BHT) parte de una idea central: la calidad de vida depende tanto de las condiciones de las personas como de las oportunidades disponibles en el lugar donde viven [@hansen1959; @geertman_vaneck1995].
+
+Una vivienda puede tener buenas condiciones internas y, al mismo tiempo, estar lejos de servicios básicos. Esa distancia genera costos de transporte, mayor tiempo de viaje, desgaste físico y dificultades para participar de la vida urbana o rural.
+
+Por esta razón, la dimensión de accesibilidad mide la relación espacial entre la población y seis tipos de equipamientos esenciales. Esta perspectiva recoge aportes de la planificación urbana centrada en las oportunidades cotidianas y de los enfoques de movilidad del cuidado [@urban95_2019; @cndu_estandares2019; @mdsf_chile_cuida2023; @muxi2018; @sanchez_madariaga2013]. Cada indicador se calcula por separado, lo que permite reconocer qué tipo de servicio presenta mayores ventajas o carencias en cada territorio.
+
+| Indicador | Componente evaluado | Equipamientos principales |
+|-----------|---------------------|---------------------------|
+| ISAL | Salud pública | Postas rurales, CESFAM, CECOSF, consultorios y hospitales |
+| ISE | Educación escolar | Salas cuna, jardines infantiles, escuelas y liceos |
+| IAV | Áreas verdes públicas | Parques, plazas y plazoletas |
+| IDEP | Deporte y recreación | Multicanchas, gimnasios y complejos deportivos |
+| ICUL | Cultura y espacio cívico | Bibliotecas, museos, teatros y centros culturales |
+| ISER | Servicios públicos y abastecimiento | Registro Civil, ChileAtiende, servicios financieros y ferias libres |
+
+: Indicadores que componen la dimensión de accesibilidad {#tbl-acc-indicadores}
+
+
+## Preparación de la Oferta de Equipamientos
+
+En el modelo, un equipamiento es una instalación fija que presta un servicio a la comunidad. Para incluirlo en el cálculo se requieren, como mínimo, una ubicación precisa y una medida de su capacidad.
+
+### Requisitos para incorporar un equipamiento
+
+| Requisito | Contenido | Función en el modelo |
+|-----------|-----------|----------------------|
+| Localización física | Coordenadas en UTM 19 Sur (EPSG:32719) | Conectar el equipamiento con la red vial y calcular los tiempos de viaje |
+| Capacidad instalada ($S_j$) | Medida física o funcional de la oferta | Actuar como numerador del indicador de disponibilidad $R_j$ |
+
+: Requisitos mínimos para incorporar un equipamiento al modelo {#tbl-acc-requisitos}
+
+Cada equipamiento se enlaza al cruce de calles más cercano mediante un procedimiento de ajuste espacial o *snapping*. Esta búsqueda se realiza con árboles espaciales $k$-d, implementados mediante `cKDTree`.
+
+### Jerarquía local e intercomunal
+
+La jerarquía define la escala de atención y el modo de viaje usado en el cálculo.
+
+| Jerarquía | Alcance | Equipamientos representativos | Tratamiento en el modelo |
+|-----------|---------|--------------------------------|--------------------------|
+| Local | Barrio o vecindario; servicios de uso frecuente | Postas rurales, CECOSF, CESFAM, consultorios, SAPU, SAR, salas cuna, jardines infantiles, escuelas básicas, plazas, plazoletas, multicanchas, bibliotecas de barrio, Registro Civil, ChileAtiende, servicios financieros y ferias libres | Viajes a pie sobre la red vial, con tiempos ajustados por pendiente |
+| Intercomunal | Ciudad o área metropolitana; servicios de mayor complejidad | Hospitales, centros especializados, liceos, parques urbanos mayores de 2 ha, estadios, polideportivos, museos, teatros y centros culturales de escala metropolitana | Combinación ponderada de viajes peatonales y motorizados |
+
+: Jerarquía de los equipamientos y tratamiento en el modelo {#tbl-acc-jerarquia}
+
+Para los equipamientos intercomunales se utilizan dos combinaciones modales, basadas en antecedentes de uso del tiempo y movilidad [@ine_enut2015]. En los viajes con propósito **HACER**, se asigna un 30,71 % al modo peatonal y un 69,29 % al modo motorizado. En los viajes con propósito **LIBRE**, se asigna un 46 % al modo peatonal y un 54 % al modo motorizado.
+
+### Tratamiento urbano y rural
+
+El procedimiento se adapta a la forma de poblamiento y a la estructura vial de cada territorio.
+
+| Criterio | Área urbana | Área rural |
+|----------|-------------|------------|
+| Unidad territorial | Manzana censal | Entidad o aldea censal |
+| Red de desplazamiento | Calles y pasajes con alta conectividad | Caminos rurales, senderos vecinales y vías estructurantes del INE |
+| Oferta predominante | CESFAM, establecimientos educacionales completos, plazas barriales y servicios urbanos | Postas rurales, escuelas multigrado e internados rurales |
+| Umbral informado | Cuencas peatonales de 5 a 20 minutos | Límite de 120 minutos o 9.000 metros |
+| Demanda | Población censal total (`PERSONAS2`) y población escolar (`E4A18`) | Población dispersa asignada al centroide de la entidad censal |
+
+: Tratamiento diferenciado de las áreas urbanas y rurales {#tbl-acc-urbano-rural}
+
+La población demandante cambia según el servicio. El modelo usa la población total para los servicios generales y la población de 4 a 18 años para la demanda escolar, de acuerdo con las variables censales definidas en el documento metodológico de base. La versión actual emplea información del Censo 2024 y mantiene el Censo 2017 como antecedente metodológico [@ine_censo2024; @ine_censo2017].
+
+### Medidas de capacidad
+
+La capacidad $S_j$ debe representar la cantidad de servicio que puede ofrecer cada equipamiento. Como los servicios son distintos, en esta etapa no se utiliza una unidad común.
+
+| Indicador | Componente | Medida de capacidad ($S_j$) | Unidad | Sentido de la medida |
+|-----------|------------|-----------------------------|--------|----------------------|
+| ISAL | Salud pública | Superficie construida de atención | m² construidos | Aproxima la infraestructura disponible para atención, boxes y camas |
+| ISE | Educación escolar | Matrículas y cupos autorizados | Estudiantes o cupos | Representa la capacidad de absorción frente a la demanda escolar |
+| IAV | Áreas verdes | Superficie verde pública efectiva | m² de área verde | Mide la cantidad de parque o plaza disponible |
+| IDEP | Deporte y recreación | Superficie deportiva útil | m² deportivos | Mide el espacio habilitado para actividad física |
+| ICUL | Cultura y patrimonio | Superficie construida cultural | m² culturales | Representa la infraestructura de museos, teatros y bibliotecas |
+| ISER | Servicios públicos y comercio | Conteo de servicios y dependencias | Unidades de servicio | Mide la presencia de trámites, servicios financieros y abastecimiento |
+
+: Medidas de capacidad utilizadas por indicador {#tbl-acc-capacidad}
+
+### Composición del catastro
+
+El catastro reúne distintos tipos de oferta dentro de cada indicador. Esta desagregación es importante porque determina la jerarquía y la capacidad asignada a cada registro.
+
+| Indicador | Total informado | Composición informada |
+|-----------|----------------:|-----------------------|
+| ISAL | 2.867 | 1.240 postas rurales; 380 CECOSF; 650 CESFAM, consultorios, SAPU o SAR; 412 hospitales; 185 centros de rehabilitación |
+| ISE | 8.645 | 3.412 salas cuna o jardines infantiles; 3.650 escuelas básicas; 1.583 liceos o establecimientos de enseñanza media |
+| IAV | 49.976 | 3.420 parques urbanos; 31.240 plazas de barrio; 15.316 plazoletas comunitarias |
+| IDEP | 14.242 | 10.850 multicanchas; 1.820 estadios o complejos deportivos; 1.572 gimnasios o piscinas públicas |
+| ICUL | 2.902 | 940 bibliotecas; 1.150 museos o centros culturales; 812 teatros o auditorios |
+| ISER | 5.713 | 620 oficinas del Registro Civil; 540 centros ChileAtiende; 1.850 puntos de BancoEstado o CajaVecina; 2.703 ferias o mercados |
+
+: Composición informada del catastro de equipamientos {#tbl-acc-catastro}
+
+::: {.callout-warning}
+**Validación pendiente de las cifras del catastro:** el documento metodológico de base informa un total nacional de 84.395 equipamientos. Sin embargo, los subtotales por familia suman 84.345 y los totales regionales publicados suman 93.136. Por esta razón, la matriz regional no se reproduce en este capítulo y las cifras deben validarse antes de la publicación definitiva.
+:::
+
+
+## Cálculo de los Tiempos de Viaje
+
+La accesibilidad se calcula sobre una red de desplazamiento. No se utiliza la distancia en línea recta, porque las personas se mueven por calles, caminos, pasajes y senderos.
+
+La red proviene de la cartografía censal del Instituto Nacional de Estadísticas (INE). De acuerdo con el documento metodológico de base, contiene más de 3,5 millones de tramos transitables y se encuentra proyectada en EPSG:32719.
+
+La dificultad de caminar cambia con la pendiente. Para representar este efecto, la red vial se combina con el modelo digital de elevación ALOS PALSAR, con resolución de 12,5 metros.
+
+La pendiente de cada tramo se calcula a partir de la diferencia de altura entre sus extremos:
+
+$$
+S = \frac{Z_v-Z_u}{L_{\text{plana}}}
+$$
+
+donde $Z_u$ y $Z_v$ son las alturas inicial y final, y $L_{\text{plana}}$ es la longitud horizontal del tramo.
+
+Luego se estima la velocidad de marcha mediante la función de Tobler [@tobler1993]:
+
+$$
+V(S)=6\exp\left(-3{,}5\lvert S+0{,}05\rvert\right)
+$$
+
+La velocidad $V(S)$ se expresa en kilómetros por hora. En terreno plano, el modelo estima una velocidad cercana a 5,04 km/h; las pendientes pronunciadas aumentan el tiempo necesario para recorrer un tramo.
+
+El tiempo de viaje se obtiene a partir de la longitud tridimensional del tramo y la velocidad estimada:
+
+$$
+T_{\text{Tobler}}=\frac{L_{\text{3D}}}{V(S)}\times 3600
+$$
+
+Con estos costos se calculan las rutas de menor tiempo entre las unidades de población y los equipamientos. El resultado es una matriz de tiempos de viaje, representada por $d_{ij}$ o $t_{ij}$ según la notación empleada.
+
+La @fig-acc-tiempos-viaje sintetiza la integración de los insumos y las operaciones necesarias para construir esta matriz.
+
+::: {#fig-acc-tiempos-viaje}
+<div class="diagram-embed">
+<iframe class="diagram-frame" src="diagrams/acc-tiempos-viaje.html" title="Construcción de la matriz de tiempos de viaje" loading="lazy" tabindex="-1"></iframe>
+<button class="diagram-open" type="button" data-diagram-src="diagrams/acc-tiempos-viaje.html" data-diagram-title="Construcción de la matriz de tiempos de viaje"><span class="diagram-open__label">Ampliar el diagrama de construcción de la matriz de tiempos de viaje</span></button>
+</div>
+
+Construcción de la matriz de tiempos de viaje a partir de la localización de la población y los equipamientos, la red vial y la altimetría.
+:::
+
+
+## Cálculo de la Accesibilidad con E2SFCA
+
+La MBHT utiliza el método E2SFCA (*Enhanced Two-Step Floating Catchment Area*) [@luo_wang2003; @luo_qi2009]. Este método evita depender de promedios comunales y permite que las áreas de acceso atraviesen límites administrativos.
+
+### ¿Qué significa E2SFCA?
+
+| Componente | Significado en el modelo |
+|------------|--------------------------|
+| **Enhanced (Mejorado)** | Reemplaza el criterio binario «dentro o fuera» por una función de decaimiento continuo. Así, el aporte de un equipamiento disminuye a medida que aumenta la distancia o el tiempo de viaje. |
+| **Two-Step (Dos pasos)** | Calcula primero la presión de demanda sobre cada equipamiento ($R_j$) y luego suma la oferta disponible para cada unidad territorial ($A_i$). De este modo incorpora la competencia entre la población usuaria. |
+| **Floating Catchment (Área flotante)** | La cuenca de acceso se centra sucesivamente en cada equipamiento y unidad territorial. Puede atravesar límites comunales y reduce el sesgo producido por áreas administrativas fijas, conocido como problema MAUP [@openshaw1984]. |
+
+: Componentes del método E2SFCA {#tbl-acc-e2sfca}
+
+### Paso 1: Disponibilidad de cada equipamiento
+
+Para cada equipamiento $j$, se calcula la relación entre su capacidad $S_j$ y la demanda ubicada dentro de un umbral de acceso $d_0$:
+
+$$
+R_j=
+\frac{S_j}
+{\displaystyle\sum_{k\,:\,d_{kj}\leq d_0}D_k\,f(d_{kj})}
+$$
+
+$D_k$ es la población de la unidad territorial $k$. La función $f(d_{kj})$ reduce el peso de la población que se encuentra más lejos del equipamiento.
+
+El valor $R_j$ expresa la oferta disponible por habitante potencial. Disminuye cuando muchas personas compiten por un equipamiento y aumenta cuando existe más capacidad para una demanda menor.
+
+### Paso 2: Accesibilidad de cada unidad territorial
+
+Para cada unidad territorial $i$, se identifican los equipamientos ubicados dentro del umbral $d_0$. Luego se suman sus valores de disponibilidad, ponderados por el tiempo de viaje:
+
+$$
+A_i=
+\sum_{j\,:\,d_{ij}\leq d_0}R_j\,f(d_{ij})
+$$
+
+$A_i$ es el puntaje de accesibilidad de la unidad territorial $i$. Un valor alto indica mayor oferta disponible, menor presión de demanda o una mejor ubicación respecto de los equipamientos.
+
+### Decaimiento por tiempo de viaje
+
+La ponderación disminuye de manera continua hasta el umbral máximo de acceso:
+
+$$
+f(d)=
+\begin{cases}
+\exp\left[-\dfrac{1}{2}\left(\dfrac{d}{d_0}\right)^2\right], & d\leq d_0,\\[6pt]
+0, & d>d_0.
+\end{cases}
+$$
+
+Así, dos equipamientos con igual capacidad no aportan lo mismo si se encuentran a tiempos de viaje diferentes. Fuera del umbral $d_0$, su aporte es cero.
+
+La @fig-acc-e2sfca muestra la relación entre los dos pasos del método: la disponibilidad calculada para cada equipamiento se convierte en el insumo central para estimar la accesibilidad de cada unidad territorial.
+
+::: {#fig-acc-e2sfca}
+<div class="diagram-embed">
+<iframe class="diagram-frame" src="diagrams/acc-e2sfca.html" title="Los dos pasos del método E2SFCA" loading="lazy" tabindex="-1"></iframe>
+<button class="diagram-open" type="button" data-diagram-src="diagrams/acc-e2sfca.html" data-diagram-title="Los dos pasos del método E2SFCA"><span class="diagram-open__label">Ampliar el diagrama de los dos pasos del método E2SFCA</span></button>
+</div>
+
+Relación entre la disponibilidad de los equipamientos ($R_j$) y la accesibilidad de las unidades territoriales ($A_i$) en el método E2SFCA.
+:::
+
+
+## Fuentes Primarias de Datos
+
+El cálculo utiliza información censal, cartografía vial, datos de elevación y catastros sectoriales. La siguiente tabla resume las fuentes señaladas en el documento metodológico de base.
+
+| Capa o insumo | Institución responsable | Versión o volumen informado | Uso en el cálculo |
+|----------------|-------------------------|-----------------------------|-------------------|
+| Manzanas censales | Instituto Nacional de Estadísticas (INE) | Censo 2024; 254.268 polígonos | Localización de la demanda demográfica ($D_k$) y variables `PERSONAS2` y `E4A18` |
+| Red vial oficial peatonal | Instituto Nacional de Estadísticas (INE) | Más de 3,5 millones de arcos | Construcción del grafo de desplazamiento y cálculo de rutas |
+| Altimetría | IDE Chile; DEM ALOS PALSAR [@ide_alos2024] | Resolución de 12,5 metros | Cálculo de pendientes y velocidades de marcha |
+| Salud pública | Departamento de Estadística e Información de Salud (DEIS); Ministerio de Salud [@deis_catastro2025] | Catastro 2025; 2.867 recintos | Localización y capacidad de los establecimientos de salud |
+| Educación escolar y parvularia | Ministerio de Educación; JUNJI; Fundación Integra [@mineduc_rbd2024] | RBD 2024; 8.645 recintos | Matrículas y cupos autorizados |
+| Áreas verdes públicas | Observatorio Urbano del MINVU; municipios [@minvu_areas_verdes2024] | 49.976 espacios públicos | Superficie de parques, plazas y plazoletas |
+| Deporte y recreación | Instituto Nacional de Deportes (IND) [@ind_catastro2024] | 14.242 recintos | Superficie útil para actividades deportivas |
+| Cultura y patrimonio | Ministerio de las Culturas, las Artes y el Patrimonio; SICLAC; Sistema Nacional de Bibliotecas Públicas [@mincap_catastro2024] | 2.902 espacios | Superficie de museos, teatros, bibliotecas y centros culturales |
+| Servicios públicos y comercio | SUBDERE; Registro Civil; BancoEstado [@subdere_dpa2024] | 5.713 dependencias | Presencia de servicios cívicos, financieros y de atención ciudadana |
+
+: Fuentes primarias utilizadas en el cálculo de la accesibilidad {#tbl-acc-fuentes}
+
+Las cantidades corresponden a lo informado en el documento metodológico de base. Deben revisarse junto con la diferencia entre el total nacional, los subtotales por familia y los totales regionales señalada en la sección sobre la composición del catastro.
+
+
+## Resumen del Proceso
+
+La @fig-acc-proceso-general resume el flujo completo de trabajo, desde los datos originales hasta los indicadores de accesibilidad.
+
+::: {#fig-acc-proceso-general}
+<div class="diagram-embed">
+<iframe class="diagram-frame" src="diagrams/acc-proceso-general.html" title="Proceso general de la dimensión de accesibilidad" loading="lazy" tabindex="-1"></iframe>
+<button class="diagram-open" type="button" data-diagram-src="diagrams/acc-proceso-general.html" data-diagram-title="Proceso general de la dimensión de accesibilidad"><span class="diagram-open__label">Ampliar el diagrama del proceso general de la dimensión de accesibilidad</span></button>
+</div>
+
+Proceso general de construcción de los indicadores que componen la dimensión de accesibilidad.
+:::
+
+El resultado de esta metodología es un valor continuo de accesibilidad para cada indicador y unidad territorial. La normalización de los seis indicadores y su integración en el índice sintético `DIM_ACC` corresponden a la etapa siguiente de la metodología y no forman parte del cálculo descrito en este capítulo.
+
+
+## Consideraciones y Limitaciones
+
+- Los indicadores representan **acceso potencial**, calculado a partir de la ubicación, la capacidad disponible, los tiempos de viaje y la demanda estimada; no miden el uso efectivo ni la calidad percibida de los servicios.
+- Los resultados dependen de la cobertura, actualización y consistencia de los catastros sectoriales. Las diferencias detectadas entre los totales de equipamientos deben resolverse antes de la publicación definitiva.
+- La asignación de la población rural al centroide de cada entidad censal simplifica su distribución espacial y puede ocultar variaciones internas en territorios extensos o de poblamiento disperso.
+- Los umbrales de viaje, las ponderaciones modales y la función de decaimiento influyen en los valores obtenidos. Estos parámetros deben mantenerse estables para asegurar la comparabilidad entre actualizaciones.
+- El ajuste por pendiente mejora la estimación de los viajes peatonales, pero no incorpora todas las condiciones que afectan el desplazamiento real, como el estado de las vías, las barreras físicas, la frecuencia del transporte público o las restricciones horarias de los servicios.
+- El método E2SFCA permite atravesar límites administrativos y reduce el efecto del problema MAUP, aunque los resultados continúan dependiendo de la unidad territorial utilizada para representar la demanda.

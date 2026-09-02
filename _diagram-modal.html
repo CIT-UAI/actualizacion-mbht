@@ -1,0 +1,58 @@
+<dialog id="diagram-modal" class="diagram-modal" aria-labelledby="diagram-modal-title">
+  <div class="diagram-modal__panel">
+    <header class="diagram-modal__header">
+      <h2 id="diagram-modal-title" class="diagram-modal__title">Diagrama ampliado</h2>
+      <div class="diagram-modal__actions">
+        <a id="diagram-modal-link" class="diagram-modal__link" href="#" target="_blank" rel="noopener">Abrir en página completa</a>
+        <button class="diagram-modal__close" type="button" data-diagram-close aria-label="Cerrar diagrama ampliado">Cerrar ×</button>
+      </div>
+    </header>
+    <iframe id="diagram-modal-frame" class="diagram-modal__frame" title="Diagrama ampliado"></iframe>
+  </div>
+</dialog>
+
+<script>
+(() => {
+  const dialog = document.getElementById("diagram-modal");
+  const frame = document.getElementById("diagram-modal-frame");
+  const title = document.getElementById("diagram-modal-title");
+  const fullPageLink = document.getElementById("diagram-modal-link");
+  let opener = null;
+
+  if (!dialog || !frame || !title || !fullPageLink) return;
+
+  const closeDialog = () => {
+    if (dialog.open) dialog.close();
+  };
+
+  document.addEventListener("click", (event) => {
+    const openButton = event.target.closest(".diagram-open");
+    if (openButton) {
+      const source = openButton.dataset.diagramSrc;
+      const diagramTitle = openButton.dataset.diagramTitle || "Diagrama ampliado";
+
+      if (typeof dialog.showModal !== "function") {
+        window.open(source, "_blank", "noopener");
+        return;
+      }
+
+      opener = openButton;
+      title.textContent = diagramTitle;
+      frame.title = diagramTitle;
+      frame.src = source;
+      fullPageLink.href = source;
+      dialog.showModal();
+      return;
+    }
+
+    if (event.target.closest("[data-diagram-close]") || event.target === dialog) {
+      closeDialog();
+    }
+  });
+
+  dialog.addEventListener("close", () => {
+    frame.src = "about:blank";
+    if (opener) opener.focus();
+  });
+})();
+</script>

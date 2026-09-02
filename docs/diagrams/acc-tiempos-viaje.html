@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construcción de la matriz de tiempos de viaje</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&amp;family=Roboto:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #fafaf7; }
+    body { font-family: Roboto, Arial, sans-serif; color: #313135; }
+    svg { display: block; width: 100%; height: auto; }
+    .title { font: 700 32px Roboto, Arial, sans-serif; fill: #313135; }
+    .subtitle { font: 400 16px Roboto, Arial, sans-serif; fill: #4c4c4d; }
+    .eyebrow, .tag { font: 600 12px 'Geist Mono', monospace; letter-spacing: .12em; }
+    .eyebrow { fill: #4c4c4d; }
+    .tag { fill: #6c6c6e; }
+    .tag-focal { fill: #876a00; }
+    .tag-link { fill: #245fd6; }
+    .input { fill: #f4f4f4; stroke: #6c6c6e; stroke-width: 1.2; }
+    .step { fill: #ffffff; stroke: rgba(49,49,53,.28); stroke-width: 1.2; }
+    .focal { fill: rgba(255,204,0,.18); stroke: #876a00; stroke-width: 2; }
+    .output { fill: rgba(36,95,214,.06); stroke: #245fd6; stroke-width: 1.6; }
+    .node-title { font: 600 20px Roboto, Arial, sans-serif; fill: #313135; }
+    .node-sub { font: 400 16px Roboto, Arial, sans-serif; fill: #4c4c4d; }
+    .tech { font: 500 12px 'Geist Mono', monospace; fill: #6c6c6e; letter-spacing: .02em; }
+    .arrow { fill: none; stroke: #4c4c4d; stroke-width: 2; marker-end: url(#acc-travel-arrow); }
+    .arrow-focal { fill: none; stroke: #876a00; stroke-width: 2.4; marker-end: url(#acc-travel-arrow-focal); }
+    .arrow-link { fill: none; stroke: #245fd6; stroke-width: 2; marker-end: url(#acc-travel-arrow-link); }
+    .legend { font: 500 16px Roboto, Arial, sans-serif; fill: #4c4c4d; }
+  </style>
+</head>
+<body>
+  <main>
+    <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="acc-travel-title acc-travel-desc">
+      <title id="acc-travel-title">Construcción de la matriz de tiempos de viaje</title>
+      <desc id="acc-travel-desc">Los orígenes y destinos se conectan a la red vial, cuya longitud y pendiente definen costos de marcha; las rutas mínimas producen la matriz de tiempos.</desc>
+      <defs>
+        <marker id="acc-travel-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#4c4c4d"/></marker>
+        <marker id="acc-travel-arrow-focal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#876a00"/></marker>
+        <marker id="acc-travel-arrow-link" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#245fd6"/></marker>
+      </defs>
+
+      <rect width="1280" height="720" fill="#fafaf7"/>
+      <text x="48" y="52" class="eyebrow">TIEMPOS DE VIAJE · FLUJO DE DATOS</text>
+      <text x="48" y="92" class="title">De ubicaciones a rutas de menor tiempo</text>
+      <text x="48" y="124" class="subtitle">La distancia se mide sobre la red y la pendiente modifica el costo de cada tramo.</text>
+      <line x1="48" y1="148" x2="1232" y2="148" stroke="rgba(49,49,53,.14)" stroke-width="1"/>
+
+      <!-- Connectors first; off-axis routes use rounded orthogonal elbows. -->
+      <line x1="200" y1="272" x2="200" y2="376" class="arrow"/>
+      <path d="M480 272 V320 Q480 328 472 328 H448 Q440 328 440 336 V376" class="arrow-focal"/>
+      <path d="M760 272 V304 Q760 312 752 312 H528 Q520 312 520 320 V376" class="arrow-focal"/>
+      <line x1="320" y1="424" x2="360" y2="424" class="arrow"/>
+      <line x1="600" y1="424" x2="640" y2="424" class="arrow-focal"/>
+      <line x1="880" y1="424" x2="920" y2="424" class="arrow-link"/>
+
+      <!-- Sources -->
+      <g>
+        <rect x="80" y="184" width="240" height="88" rx="8" class="input"/>
+        <text x="100" y="208" class="tag">ORIGEN / DESTINO</text>
+        <text x="200" y="236" text-anchor="middle" class="node-title">Población y equipamientos</text>
+        <text x="200" y="260" text-anchor="middle" class="node-sub">coordenadas territoriales</text>
+      </g>
+      <g>
+        <rect x="360" y="184" width="240" height="88" rx="8" class="input"/>
+        <text x="380" y="208" class="tag">RED</text>
+        <text x="480" y="236" text-anchor="middle" class="node-title">Tramos transitables</text>
+        <text x="480" y="260" text-anchor="middle" class="node-sub">calles, caminos y senderos</text>
+      </g>
+      <g>
+        <rect x="640" y="184" width="240" height="88" rx="8" class="input"/>
+        <text x="660" y="208" class="tag">ALTIMETRÍA</text>
+        <text x="760" y="236" text-anchor="middle" class="node-title">DEM ALOS PALSAR</text>
+        <text x="760" y="260" text-anchor="middle" class="node-sub">elevación a 12,5 metros</text>
+      </g>
+
+      <!-- Processing pipeline -->
+      <g>
+        <rect x="80" y="376" width="240" height="96" rx="8" class="step"/>
+        <text x="100" y="400" class="tag">01 · CONECTAR</text>
+        <text x="200" y="432" text-anchor="middle" class="node-title">Snapping espacial</text>
+        <text x="200" y="456" text-anchor="middle" class="tech">cKDTree · NODO MÁS CERCANO</text>
+      </g>
+      <g>
+        <rect x="360" y="376" width="240" height="96" rx="8" class="focal"/>
+        <text x="380" y="400" class="tag tag-focal">02 · COSTEAR</text>
+        <text x="480" y="432" text-anchor="middle" class="node-title">Tiempo por tramo</text>
+        <text x="480" y="456" text-anchor="middle" class="tech">LONGITUD 3D + TOBLER</text>
+      </g>
+      <g>
+        <rect x="640" y="376" width="240" height="96" rx="8" class="step"/>
+        <text x="660" y="400" class="tag">03 · ENRUTAR</text>
+        <text x="760" y="432" text-anchor="middle" class="node-title">Rutas de menor tiempo</text>
+        <text x="760" y="456" text-anchor="middle" class="tech">UNIDAD i → EQUIPAMIENTO j</text>
+      </g>
+      <g>
+        <rect x="920" y="376" width="240" height="96" rx="8" class="output"/>
+        <text x="940" y="400" class="tag tag-link">04 · RESULTADO</text>
+        <text x="1040" y="432" text-anchor="middle" class="node-title">Matriz de tiempos</text>
+        <text x="1040" y="456" text-anchor="middle" class="tech">d_ij / t_ij</text>
+      </g>
+
+      <line x1="48" y1="624" x2="1232" y2="624" stroke="rgba(49,49,53,.14)" stroke-width="1"/>
+      <rect x="48" y="652" width="20" height="20" rx="4" fill="rgba(255,204,0,.18)" stroke="#876a00" stroke-width="1.2"/>
+      <text x="84" y="668" class="legend">La pendiente modifica la velocidad de marcha</text>
+      <line x1="452" y1="662" x2="492" y2="662" class="arrow-link"/>
+      <text x="512" y="668" class="legend">Salida utilizada por E2SFCA</text>
+    </svg>
+  </main>
+</body>
+</html>

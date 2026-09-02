@@ -1,7 +1,8 @@
 project:
   type: book
   output-dir: docs
-
+  resources:
+    - diagrams/**
 
 book:
   title: "Guía Técnica MBHT"
@@ -22,18 +23,20 @@ book:
     # - met_actualizacion.qmd
     - c_geometric.qmd
     - part: dimensiones.qmd
-      chapters: 
-      - dim_soc.qmd
-      - dim_amb.qmd
-      - dim_seg.qmd
+      chapters:
+        - dim_acc.qmd
+        - dim_soc.qmd
+        - dim_amb.qmd
+        - dim_seg.qmd
+    - mbht.qmd
     # - proyectos.qmd
     # - recomendaciones.qmd
     # - part: "Marco de Referencia"
-      # chapters:
-        # - marco_ref.qmd
-        # - def_claves.qmd
-        # - dim_mbht.qmd
-        # - clas_institucionales.qmd
+    # chapters:
+    # - marco_ref.qmd
+    # - def_claves.qmd
+    # - dim_mbht.qmd
+    # - clas_institucionales.qmd
     - references.qmd
     - anexos.qmd
 
@@ -52,8 +55,6 @@ format:
     fig-align: "center"
     mailto: "denis.berroeta@uai.cl"
     crossref:
-      fig-prefix: Figura   # (default is "Figure")
+      fig-prefix: Figura # (default is "Figure")
       tbl-prefix: Tabla # (default is "Table")
-      eq-prefix: Ecuación 
-
-
+      eq-prefix: Ecuación
