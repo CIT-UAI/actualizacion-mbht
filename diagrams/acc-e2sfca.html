@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los dos pasos del método E2SFCA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&amp;family=Roboto:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #fafaf7; }
+    body { font-family: Roboto, Arial, sans-serif; color: #313135; }
+    svg { display: block; width: 100%; height: auto; }
+    .title { font: 700 32px Roboto, Arial, sans-serif; fill: #313135; }
+    .subtitle { font: 400 16px Roboto, Arial, sans-serif; fill: #4c4c4d; }
+    .eyebrow, .tag { font: 600 12px 'Geist Mono', monospace; letter-spacing: .12em; }
+    .eyebrow { fill: #4c4c4d; }
+    .tag { fill: #6c6c6e; }
+    .tag-focal { fill: #876a00; }
+    .tag-link { fill: #245fd6; }
+    .zone { fill: rgba(49,49,53,.018); stroke: rgba(49,49,53,.18); stroke-width: 1.2; }
+    .input { fill: #ffffff; stroke: rgba(49,49,53,.28); stroke-width: 1.2; }
+    .focal { fill: rgba(255,204,0,.18); stroke: #876a00; stroke-width: 2; }
+    .result { fill: rgba(36,95,214,.06); stroke: #245fd6; stroke-width: 1.6; }
+    .zone-title { font: 700 20px Roboto, Arial, sans-serif; fill: #313135; }
+    .node-title { font: 600 20px Roboto, Arial, sans-serif; fill: #313135; }
+    .node-sub { font: 400 16px Roboto, Arial, sans-serif; fill: #4c4c4d; }
+    .tech { font: 500 12px 'Geist Mono', monospace; fill: #6c6c6e; letter-spacing: .02em; }
+    .arrow { fill: none; stroke: #4c4c4d; stroke-width: 2; marker-end: url(#acc-e2-arrow); }
+    .arrow-focal { fill: none; stroke: #876a00; stroke-width: 2.4; marker-end: url(#acc-e2-arrow-focal); }
+    .arrow-link { fill: none; stroke: #245fd6; stroke-width: 2; marker-end: url(#acc-e2-arrow-link); }
+    .legend { font: 500 16px Roboto, Arial, sans-serif; fill: #4c4c4d; }
+  </style>
+</head>
+<body>
+  <main>
+    <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="acc-e2-title acc-e2-desc">
+      <title id="acc-e2-title">Los dos pasos del método E2SFCA</title>
+      <desc id="acc-e2-desc">El primer paso calcula la disponibilidad de cada equipamiento a partir de su capacidad y demanda ponderada; el segundo agrega esa disponibilidad para estimar la accesibilidad de cada unidad territorial.</desc>
+      <defs>
+        <marker id="acc-e2-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#4c4c4d"/></marker>
+        <marker id="acc-e2-arrow-focal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#876a00"/></marker>
+        <marker id="acc-e2-arrow-link" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#245fd6"/></marker>
+      </defs>
+
+      <rect width="1280" height="720" fill="#fafaf7"/>
+      <text x="48" y="52" class="eyebrow">E2SFCA · ÁREAS DE CAPTACIÓN FLOTANTES</text>
+      <text x="48" y="92" class="title">Disponibilidad primero, accesibilidad después</text>
+      <text x="48" y="124" class="subtitle">La capacidad del servicio se distribuye entre la demanda potencial antes de asignarse a cada territorio.</text>
+      <line x1="48" y1="148" x2="1232" y2="148" stroke="rgba(49,49,53,.14)" stroke-width="1"/>
+
+      <rect x="48" y="176" width="552" height="400" rx="8" class="zone"/>
+      <rect x="680" y="176" width="552" height="400" rx="8" class="zone"/>
+      <text x="80" y="212" class="tag">PASO 1</text>
+      <text x="136" y="212" class="zone-title">Disponibilidad del equipamiento</text>
+      <text x="712" y="212" class="tag">PASO 2</text>
+      <text x="768" y="212" class="zone-title">Accesibilidad territorial</text>
+
+      <!-- Connectors first. Each shared edge uses a distinct attach point. -->
+      <path d="M280 272 H312 Q320 272 320 280 V360 Q320 368 328 368 H352" class="arrow-focal"/>
+      <line x1="280" y1="400" x2="352" y2="400" class="arrow-focal"/>
+      <path d="M280 528 H304 Q312 528 312 520 V440 Q312 432 320 432 H352" class="arrow-focal"/>
+      <line x1="552" y1="400" x2="984" y2="400" class="arrow-link"/>
+      <path d="M920 272 H944 Q952 272 952 280 V360 Q952 368 960 368 H984" class="arrow"/>
+      <path d="M920 528 H944 Q952 528 952 520 V440 Q952 432 960 432 H984" class="arrow"/>
+
+      <!-- Step 1 inputs and result -->
+      <g>
+        <rect x="80" y="232" width="200" height="80" rx="8" class="input"/>
+        <text x="100" y="256" class="tag">OFERTA</text>
+        <text x="180" y="284" text-anchor="middle" class="node-title">Capacidad</text>
+        <text x="180" y="308" text-anchor="middle" class="tech">S_j</text>
+      </g>
+      <g>
+        <rect x="80" y="360" width="200" height="80" rx="8" class="input"/>
+        <text x="100" y="384" class="tag">DEMANDA</text>
+        <text x="180" y="412" text-anchor="middle" class="node-title">Población potencial</text>
+        <text x="180" y="436" text-anchor="middle" class="tech">D_k</text>
+      </g>
+      <g>
+        <rect x="80" y="488" width="200" height="80" rx="8" class="input"/>
+        <text x="100" y="512" class="tag">PONDERACIÓN</text>
+        <text x="180" y="540" text-anchor="middle" class="node-title">Tiempo ponderado</text>
+        <text x="180" y="564" text-anchor="middle" class="tech">d_kj · f(d_kj)</text>
+      </g>
+      <g>
+        <rect x="352" y="344" width="200" height="112" rx="8" class="focal"/>
+        <text x="372" y="368" class="tag tag-focal">RESULTADO 1</text>
+        <text x="452" y="400" text-anchor="middle" class="node-title">Disponibilidad</text>
+        <text x="452" y="424" text-anchor="middle" class="tech">R_j = S_j / Σ D_k f(d_kj)</text>
+        <text x="452" y="448" text-anchor="middle" class="node-sub">oferta por habitante</text>
+      </g>
+
+      <!-- Step 2 inputs and result -->
+      <g>
+        <rect x="720" y="232" width="200" height="80" rx="8" class="input"/>
+        <text x="740" y="256" class="tag">CUENCA</text>
+        <text x="820" y="284" text-anchor="middle" class="node-title">Oferta cercana</text>
+        <text x="820" y="308" text-anchor="middle" class="tech">d_ij ≤ d_0</text>
+      </g>
+      <g>
+        <rect x="720" y="488" width="200" height="80" rx="8" class="input"/>
+        <text x="740" y="512" class="tag">PONDERACIÓN</text>
+        <text x="820" y="540" text-anchor="middle" class="node-title">Tiempo ponderado</text>
+        <text x="820" y="564" text-anchor="middle" class="tech">d_ij · f(d_ij)</text>
+      </g>
+      <g>
+        <rect x="984" y="344" width="200" height="112" rx="8" class="result"/>
+        <text x="1004" y="368" class="tag tag-link">RESULTADO 2</text>
+        <text x="1084" y="400" text-anchor="middle" class="node-title">Accesibilidad</text>
+        <text x="1084" y="424" text-anchor="middle" class="tech">A_i = Σ R_j f(d_ij)</text>
+        <text x="1084" y="448" text-anchor="middle" class="node-sub">oferta accesible</text>
+      </g>
+
+      <line x1="48" y1="624" x2="1232" y2="624" stroke="rgba(49,49,53,.14)" stroke-width="1"/>
+      <rect x="48" y="652" width="20" height="20" rx="4" fill="rgba(255,204,0,.18)" stroke="#876a00" stroke-width="1.2"/>
+      <text x="84" y="668" class="legend">La competencia reduce R_j</text>
+      <line x1="332" y1="662" x2="372" y2="662" class="arrow-link"/>
+      <text x="392" y="668" class="legend">R_j alimenta el cálculo de A_i</text>
+    </svg>
+  </main>
+</body>
+</html>
